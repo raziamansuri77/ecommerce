@@ -1,11 +1,9 @@
-import { useState } from "react";
-import "./App.css";
-import Navbar from "./components/home/Navbar";
 import Login from "./components/login/Login";
-import Signup from "./components/signup/Signup";
-import Books from "./components/home/Books";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/home/Home";
+import SignupPage from "./components/signup/Signup-Page";
+import Signup from "./components/signup/Signup";
+import Forgot from "./components/forgot/Forgot";
 
 function App() {
   return (
@@ -14,8 +12,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/forgot" element={<Forgot />} />
         </Routes>
       </BrowserRouter>
+      {/* <SignupPage /> */}
+      {/* <Signup /> */}
     </div>
   );
 }

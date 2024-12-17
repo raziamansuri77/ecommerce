@@ -1,21 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../home/Navbar";
 import BeforeNavbar from "../home/Before-Navbar";
 import SearchNavbar from "../home/Search-Navbar";
-import LoginPage from "./Login-page";
+import Navbar from "../home/Navbar";
+import ForgotPage from "./Forgot-Page";
 import Footer from "../home/Footer";
 
-export default function Login() {
+export default function Forgot() {
   return (
     <div>
       <BeforeNavbar />
       <SearchNavbar />
       <Navbar />
-      <LoginPage />
-      <div className="pt-10 pb-3">
-        <Footer />
-      </div>
+      <ForgotPage />
+      <Footer />
     </div>
   );
 }

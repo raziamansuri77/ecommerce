@@ -10,35 +10,47 @@ export default function Search() {
   return (
     <div>
       <div className="p-2 flex justify-between pr-6">
-        <div className="flex gap-2">
-          <div>
-            <div className="py-1 px-4 border-r-[1px] border-red-500 flex items-center cursor-pointer hover:font-bold">
-              <div> Book</div>
-              <MdArrowDropDown className="text-[25px]" />
-            </div>
+        <div className="flex items-center">
+          <div className="py-1 px-4 hover:text-[#E42B26] font-semibold   flex items-center cursor-pointer  duration-150 ">
+            <div className=" "> Book</div>
+            <MdArrowDropDown className="text-[25px]" />
+            <div className="w-[1px] h-[20px] bg-red-500"></div>
           </div>
-          <div className=" py-1 px-4 border-r-[1px] border-red-500 cursor-pointer hover:font-bold ">
+          <div className=" py-1 px-4   cursor-pointer  hover:text-[#E42B26] font-semibold  duration-150 ">
             New Arrivals
           </div>
-          <div className="py-1 px-4 border-r-[1px] border-red-500 cursor-pointer hover:font-bold">
+          <div className="w-[1px] h-[20px] bg-red-500"></div>
+
+          <div className="py-1 px-4  cursor-pointer hover:text-[#E42B26] font-semibold duration-150">
             Box Sets
           </div>
-          <div className="py-1 px-4 border-r-[1px] border-red-500 cursor-pointer hover:font-bold ">
+          <div className="w-[1px] h-[20px] bg-red-500"></div>
+
+          <div className="py-1 px-4  cursor-pointer hover:text-[#E42B26] font-semibold duration-150 ">
             Best Sellers
           </div>
-          <div className="py-1 px-4 border-r-[1px] border-red-500 cursor-pointer hover:font-bold">
+          <div className="w-[1px] h-[20px] bg-red-500"></div>
+
+          <div className="py-1 px-4  cursor-pointer hover:text-[#E42B26] font-semibold duration-150 ">
             Fiction Books
           </div>
-          <div className="py-1 px-4 border-r-[1px] border-red-500 cursor-pointer hover:font-bold">
+          <div className="w-[1px] h-[20px] bg-red-500"></div>
+
+          <div className="py-1 px-4  cursor-pointer  hover:text-[#E42B26] font-semibold duration-150">
             Award Winners
           </div>
-          <div className="py-1 px-4 border-r-[1px] border-red-500 cursor-pointer hover:font-bold">
+          <div className="w-[1px] h-[20px] bg-red-500"></div>
+
+          <div className="py-1 px-4  cursor-pointer  hover:text-[#E42B26] font-semibold duration-150 ">
             Featured Authors
           </div>
-          <div className="py-1 px-4 border-r-[1px] border-red-500 cursor-pointer hover:font-bold">
+          <div className="w-[1px] h-[20px] bg-red-500"></div>
+
+          <div className="py-1 px-4    cursor-pointer hover:text-[#E42B26] font-semibold  duration-150">
             Today's Deal
           </div>
-          <div className="py-1 px-4   border-red-500 cursor-pointer hover:font-bold">
+          <div className="w-[1px] h-[20px] bg-red-500"></div>
+          <div className="py-1 px-4     cursor-pointer  hover:text-[#E42B26] font-semibold  duration-150">
             Request Book
           </div>
         </div>
@@ -48,15 +60,6 @@ export default function Search() {
             <FaRegHeart />
           </div>
         </div>
-      </div>
-      {/* <img
-        src="https://www.bookswagon.com/images/promotionimages/web/2_CuratedWeb0412.jpg"
-        alt=""
-      /> */}
-      <div className="bg-[url('./public/bg1.png')] h-[100px]">
-        <p className="text-white text-[40px] font-bold flex justify-center items-center pt-3">
-          ComicsByApna BookStore:Connecting fans to the best in comics
-        </p>
       </div>
     </div>
   );
