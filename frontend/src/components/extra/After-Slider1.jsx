@@ -2,7 +2,7 @@ import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 
-export default function AfterSlider() {
+export default function Images() {
   const ImgName = [
     {
       img: "https://www.bookswagon.com/Images/staticimages/icon1.png",
@@ -55,6 +55,7 @@ export default function AfterSlider() {
 
         <MdOutlineKeyboardArrowRight className="text-[70px] cursor-pointer" />
       </div>
+      <div>sdfnsmfgsb</div>
     </div>
   );
 }

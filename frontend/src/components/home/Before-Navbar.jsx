@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BeforeNavbar() {
   return (
-    <div className="w-full p-2 bg-[#E42B26] fixed z-50">
+    <div className="lg:w-full w-[425px] sm:w-full p-2 bg-[#E42B26] fixed z-50">
       <marquee behavior="" direction="" scrollamount="8">
         <div className=" text-white flex gap-[100px]">
           <div>Grab Bestselling Books upto 50% off!</div>

@@ -36,10 +36,10 @@ export default function Slider() {
   }, []);
 
   return (
-    <div className="relative w-full   mx-auto overflow-hidden">
+    <div className="relative w-full h-[200px] sm:h-[240px] xl:h-[440px] mx-auto overflow-hidden">
       {/* Slides */}
       <div
-        className="flex transition-transform duration-500"
+        className="flex transition-transform duration-500 "
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {slides.map((slide, index) => (
@@ -47,7 +47,7 @@ export default function Slider() {
             key={index}
             src={slide}
             alt={`Slide ${index + 1}`}
-            className="w-full flex-shrink-0 cursor-pointer"
+            className="w-full h-[170px] sm:h-[200px] xl:h-[400px] flex-shrink-0 cursor-pointer"
           />
         ))}
       </div>
@@ -55,7 +55,7 @@ export default function Slider() {
       {/* Previous Button */}
       <button
         onClick={prevSlide}
-        className="absolute left-16 top-1/2 transform -translate-y-1/2 hover:bg-[#E42B26] text-white p-2 rounded-full bg-[#6B3D3A] "
+        className="absolute left-16  top-1/2 transform -translate-y-1/2 hover:bg-[#E42B26] text-white p-2 rounded-full bg-[#6B3D3A] "
       >
         &#9664;
       </button>

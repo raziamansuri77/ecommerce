@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="pt-12 pb-4">
+    <div className="pt-12 pb-4 bg-[#FCFCFC]">
       <div className="max-w-7xl mx-auto flex justify-between font-sans text-[16px]">
         <div>
           <div className="font-semibold text-[#E42B26]  italic"> Company</div>

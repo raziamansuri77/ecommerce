@@ -45,7 +45,7 @@ export default function LoginPage() {
           </div>
           <Link to="/signup">
             <div className=" text-[13px] font-semibold text-[#E42B26] cursor-pointer  hover:text-black duration-300">
-              New to Bookswagon? Sign up
+              New to Apna Book store? Sign up
             </div>
           </Link>
           <div className=" text-[13px] font-semibold cursor-pointer  hover:text-black duration-300">

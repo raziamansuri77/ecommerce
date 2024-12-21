@@ -1,26 +1,25 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
-import { FaRegUserCircle } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function SearchNavbar() {
   return (
-    <div className="px-2 flex lg:justify-between items-center pt-14 pb-2  ">
+    <div className="px-2 flex lg:justify-between   items-center pt-14 pb-2  ">
       <div className="flex items-center lg:gap-20">
         <img
           src="./public/logo.png"
           alt=""
-          className="lg:w-[95px] lg:h-[60px] w-[70px] h-[50px] sm:w-[50px] sm:h-[35px] "
+          className="lg:w-[95px] lg:h-[60px] w-[100px] h-[50px] sm:w-[80px] sm:h-[50px] "
         />
         <div className="relative sm:text-[10px] lg:text-[20px] ">
           <input
             type="text"
             placeholder="Search By Title,Author,Publisher Or ISBN"
-            className="lg:w-[500px]  sm:w-[350px] w-[330px] border-1 lg:p-1 border-[#E42B26]    sm:px-2 sm:py-1"
+            className="lg:w-[500px] sm:text-[15px] sm:w-[660px] sm:py-2 w-[330px] border-1 lg:p-1 border-[#E42B26]    sm:px-2 "
           />
-          <div className="absolute  top-0  sm:py-[6px] sm:text-[12px] sm:w-[25px] lg:py-2 cursor-pointer right-0 bg-[#E42B26] text-white h-full sm:px-2 lg:px-[10px] text-[20px]">
+          <div className="absolute     top-0 py-1   sm:text-[15px] sm:w-[40px] lg:py-2 cursor-pointer  w-[30px] px-2 right-0 bg-[#E42B26] text-white h-full  lg:px-[10px] text-[16px]">
             <FaSearch />
           </div>
         </div>

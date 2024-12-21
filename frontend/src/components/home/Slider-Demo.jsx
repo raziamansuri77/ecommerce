@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export default function Slider() {
+export default function SliderDemo() {
   const images = [
     "public/1.jpg",
     "public/2.jpg",

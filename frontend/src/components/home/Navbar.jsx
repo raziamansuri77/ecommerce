@@ -9,7 +9,7 @@ import { MdArrowDropDown } from "react-icons/md";
 export default function Search() {
   return (
     <div>
-      <div className="p-2 flex justify-between pr-6">
+      <div className="p-2 lg:flex justify-between xl:text-[17px]  lg:text-[10px] pr-6 hidden">
         <div className="flex items-center">
           <div className="py-1 px-4 hover:text-[#E42B26] font-semibold   flex items-center cursor-pointer  duration-150 ">
             <div className=" "> Book</div>
@@ -55,7 +55,9 @@ export default function Search() {
           </div>
         </div>
         <div className="relative">
-          <div className="absolute top-[1px] right-[10px]">0</div>
+          <div className="absolute xl:top-[1px] xl:right-[10px] lg:top-[7px] lg:right-3">
+            0
+          </div>
           <div className="text-[30px] text-[#E42B26]">
             <FaRegHeart />
           </div>
