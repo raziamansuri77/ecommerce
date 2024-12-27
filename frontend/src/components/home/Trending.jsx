@@ -76,9 +76,12 @@ export default function Trending() {
           {/* Card 1 */}
           <div
             ref={cardRef}
-            className="flex-shrink-0 w-60 h-80   text-black m-4 rounded-lg"
+            className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg"
           >
-            <div className="px-2   shadow-sm rounded-lg border-1 xl:h-[400px] ">
+            <div className="px-2   shadow-sm rounded-lg border-1 xl:h-[400px]    relative">
+              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
+                30%
+              </div>
               <div className="p-4 border-1 xl:h-[400px]   rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
                 <div className="  ">
                   <img
@@ -99,7 +102,10 @@ export default function Trending() {
           </div>
           {/* Card 2 */}
           <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] ">
+            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative ">
+              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
+                30%
+              </div>
               <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
                 <div className="">
                   <img
@@ -120,7 +126,10 @@ export default function Trending() {
           </div>
           {/* Card 3 */}
           <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] ">
+            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
+              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
+                30%
+              </div>
               <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
                 <div className="">
                   <img
@@ -141,7 +150,10 @@ export default function Trending() {
           </div>
           {/* Card 4 */}
           <div className="flex-shrink-0 w-60 h-80   text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] ">
+            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
+              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
+                30%
+              </div>
               <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
                 <div className="">
                   <img
@@ -163,7 +175,10 @@ export default function Trending() {
           </div>{" "}
           {/* Card 5 */}
           <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] ">
+            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
+              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
+                30%
+              </div>
               <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
                 <div className="">
                   <img
@@ -184,7 +199,10 @@ export default function Trending() {
           </div>{" "}
           {/* Card 6 */}
           <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] ">
+            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
+              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
+                30%
+              </div>
               <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
                 <div className="">
                   <img
@@ -205,7 +223,10 @@ export default function Trending() {
           </div>{" "}
           {/* Card 7 */}
           <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] ">
+            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
+              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
+                30%
+              </div>
               <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
                 <div className="">
                   <img
@@ -226,7 +247,10 @@ export default function Trending() {
           </div>{" "}
           {/* Card 8 */}
           <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] ">
+            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
+              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
+                30%
+              </div>
               <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
                 <div className="">
                   <img
@@ -247,7 +271,10 @@ export default function Trending() {
           </div>
           {/* Card 9 */}
           <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] ">
+            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
+              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
+                30%
+              </div>
               <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
                 <div className="">
                   <img
@@ -268,7 +295,10 @@ export default function Trending() {
           </div>{" "}
           {/* Card 10 */}
           <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] ">
+            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
+              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
+                30%
+              </div>
               <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
                 <div className="">
                   <img
@@ -289,7 +319,10 @@ export default function Trending() {
           </div>{" "}
           {/* Card 11 */}
           <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] ">
+            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
+              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
+                30%
+              </div>
               <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
                 <div className="">
                   <img

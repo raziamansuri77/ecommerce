@@ -100,7 +100,6 @@ export default function SignupPage() {
               </div>
             )}
           </div>
-          <div></div>
           <div className="space-y-2">
             <button
               onClick={validateCaptcha}
