@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import data from "/src/components/arrivals/data.json";
+// import data from "/src/components/arrivals/data.json";
+import arrivalsbook from "/src/components/arrivals/arrivals-books.json";
 
 export default function ArrivalsHero() {
   const [value, setValue] = useState(50);
@@ -15,7 +16,7 @@ export default function ArrivalsHero() {
         className="flex
       gap-4 w-[90%] mx-auto"
       >
-        <div className="bg-red-100 w-[40%] space-y-4">
+        <div className="bg-red-100 w-[30%] space-y-4">
           <div>Refine your Search</div>
           <div className="space-y-4">
             <div>
@@ -47,7 +48,7 @@ export default function ArrivalsHero() {
             </div>
           </div>
         </div>
-        <div className=" w-full bg-red-100">
+        <div className=" w-full ">
           <div className="flex justify-between">
             <div className="text-[18px] font-semibold">5441 results found</div>
             <div className="space-x-2">
@@ -60,12 +61,21 @@ export default function ArrivalsHero() {
               </select>
             </div>
           </div>
-          <div className="grid grid-cols-4">
-            {data.map((data) => {
+          <div className="grid grid-cols-5 gap-4">
+            {arrivalsbook.map((book) => {
               return (
-                <div>
-                  <div>{data.name}</div>
-                  <div>{data.writer}</div>
+                <div className="bg-red-200 p-3 relative ">
+                  <div className="w-[40px] h-[40px] bg-red-600 rounded-full absolute -top-3 right-0 flex items-center justify-center text-center">
+                    {book.discount - value}
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <img src={book.img} alt="" className="w-full h-[200px]" />
+                    <div className="text-gray-600 text-center">{book.name}</div>
+                    <div className="flex gap-2 items-center">
+                      <div>{book.amount}</div>
+                      <div className="line-through">{book.discount}</div>
+                    </div>
+                  </div>
                 </div>
               );
             })}

@@ -12,7 +12,7 @@ export default function Range() {
       <div className="text-center text-[30px] font-bold">New Arrivals</div>
       <div
         className="flex
-      gap-4 w-[90%] mx-auto"
+      gap-4 w-[90%] mx-auto"s
       >
         <div className="bg-red-100 w-[40%]">
           <div className="flex flex-col items-center p-4">

@@ -10,6 +10,9 @@ export default function MedicalBooks() {
           </div>
           <img src="./public/bestsellerheading.jpg" alt="" />
         </div>
+        <div>
+            
+        </div>
       </div>
     </div>
   );

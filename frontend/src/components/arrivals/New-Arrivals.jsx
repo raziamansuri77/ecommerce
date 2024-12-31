@@ -12,7 +12,7 @@ export default function NewArrivals() {
       <SearchNavbar />
       <Navbar />
       <ArrivalsHero />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
