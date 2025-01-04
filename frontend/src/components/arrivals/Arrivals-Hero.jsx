@@ -14,9 +14,9 @@ export default function ArrivalsHero() {
       <div className="text-center text-[30px] font-bold">New Arrivals</div>
       <div
         className="flex
-      gap-4 w-[90%] mx-auto"
+      gap-3 w-[90%] mx-auto"
       >
-        <div className="bg-red-100 w-[30%] space-y-4">
+        <div className="bg-red-100 w-[25%] space-y-4">
           <div>Refine your Search</div>
           <div className="space-y-4">
             <div>
@@ -61,18 +61,18 @@ export default function ArrivalsHero() {
               </select>
             </div>
           </div>
-          <div className="grid grid-cols-5 gap-4">
+          <div className="grid grid-cols-5 gap-3 py-4">
             {arrivalsbook.map((book) => {
               return (
-                <div className="bg-red-200 p-3 relative ">
-                  <div className="w-[40px] h-[40px] bg-red-600 rounded-full absolute -top-3 right-0 flex items-center justify-center text-center">
+                <div className="  shadow-inner bg-[#FBFBFB]  cursor-pointer p-4 relative ">
+                  <div className="  bg-[#FD0000] text-white text-[12px] px-4 py-[1px]  absolute -top-2 -left-2 flex items-center justify-center text-center">
                     {book.discount - value}
                   </div>
                   <div className="flex flex-col items-center">
                     <img src={book.img} alt="" className="w-full h-[200px]" />
                     <div className="text-gray-600 text-center">{book.name}</div>
                     <div className="flex gap-2 items-center">
-                      <div>{book.amount}</div>
+                      <div>{book.prize}</div>
                       <div className="line-through">{book.discount}</div>
                     </div>
                   </div>

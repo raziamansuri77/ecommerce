@@ -60,13 +60,15 @@ export default function SearchNavbar() {
                       New to ApnaBook Store? Sign up
                     </Link>
                     <hr />
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
-                      role="menuitem"
-                    >
-                      Your Account
-                    </a>
+                    <Link to="/account">
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
+                        role="menuitem"
+                      >
+                        Your Account
+                      </a>
+                    </Link>
                     <a
                       href="#"
                       className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"

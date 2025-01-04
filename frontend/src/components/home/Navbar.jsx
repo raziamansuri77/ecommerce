@@ -27,9 +27,12 @@ export default function Search() {
           </Link>
           <div className="w-[1px] h-[20px] bg-red-500"></div>
 
-          <div className="py-1 px-4  cursor-pointer hover:text-[#E42B26] font-semibold duration-150">
-            Box Sets
-          </div>
+          <Link to="/boxset">
+            {" "}
+            <div className="py-1 px-4  cursor-pointer hover:text-[#E42B26] font-semibold duration-150">
+              Box Sets
+            </div>
+          </Link>
           <div className="w-[1px] h-[20px] bg-red-500"></div>
 
           <div className="py-1 px-4  cursor-pointer hover:text-[#E42B26] font-semibold duration-150 ">

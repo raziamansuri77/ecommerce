@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "./public/personalsetttingicon.jpg",
+    "name": "Personal Setting"
+  },
+  {
+    "icon": "./public/myordericon.jpg",
+    "name": "My Order"
+  },
+  {
+    "icon": "./public/wishlisticon.jpg",
+    "name": " My Wishlist"
+  },
+  {
+    "icon": "./public/giftcertificateicon.jpg",
+    "name": "My Gift Certificates"
+  },
+  {
+    "icon": "./public/addressicon.jpg",
+    "name": "My Address"
+  },
+  {
+    "icon": "./public/chagepasswordicon.jpg",
+    "name": "Change Password"
+  }
+]
