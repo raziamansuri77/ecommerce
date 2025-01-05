@@ -9,8 +9,8 @@ import NewArrivals from "./components/arrivals/New-Arrivals";
 import Medical from "./components/medical-dream/Medical";
 import BoxSet from "./components/box-set/Box-Set";
 import BoxSetHero from "./components/box-set/box-set-hero";
-import LoginPage11 from "./components/LoginPage11";
-import AccountHero from "./components/signup/Account-Hero";
+import AccountHero from "./components/account/Account-Hero";
+import PersonalSetting from "./components/account/Personal-Setting";
 
 function App() {
   const isAuthenticated = !!localStorage.getItem("user");
@@ -28,6 +28,7 @@ function App() {
           <Route path="/boxset" element={<BoxSet />} />
           <Route path="/boxhero" element={<BoxSetHero />} />
           <Route path="/account" element={<AccountHero />} />
+          <Route path="/personalsetting" element={<PersonalSetting />} />
         </Routes>
       </BrowserRouter>
     </div>

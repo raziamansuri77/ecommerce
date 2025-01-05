@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 export default function Search() {
   return (
-    <div>
+    <div className="  border-b-[1px] border-[#E42B26] ">
       <div className="p-2 lg:flex justify-between xl:text-[17px]  lg:text-[10px] pr-6 hidden">
         <div className="flex items-center">
           <Link to="/book">
