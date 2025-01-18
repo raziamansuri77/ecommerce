@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
-// import data from "/src/components/arrivals/data.json";
-import arrivalsbook from "/src/components/arrivals/arrivals-books.json";
+import randomBook from "/src/components/Random-Book.json";
 
 export default function ArrivalsHero() {
   const [value, setValue] = useState(50);
@@ -62,11 +61,11 @@ export default function ArrivalsHero() {
             </div>
           </div>
           <div className="grid grid-cols-5 gap-3 py-4">
-            {arrivalsbook.map((book) => {
+            {randomBook.map((book) => {
               return (
                 <div className="  shadow-inner bg-[#FBFBFB]  cursor-pointer p-4 relative ">
                   <div className="  bg-[#FD0000] text-white text-[12px] px-4 py-[1px]  absolute -top-2 -left-2 flex items-center justify-center text-center">
-                    {book.discount - value}
+                    {book.discountAmount}
                   </div>
                   <div className="flex flex-col items-center">
                     <img src={book.img} alt="" className="w-full h-[200px]" />

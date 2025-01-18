@@ -69,31 +69,37 @@ export default function SearchNavbar() {
                         Your Account
                       </a>
                     </Link>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
-                      role="menuitem"
-                    >
-                      Personal Setting
-                    </a>{" "}
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
-                      role="menuitem"
-                    >
-                      Your Orders
-                    </a>{" "}
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
-                      role="menuitem"
-                    >
-                      Your Wishlist
-                    </a>{" "}
+                    <Link to="/personalsetting">
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
+                        role="menuitem"
+                      >
+                        Personal Setting
+                      </a>{" "}
+                    </Link>
+                    <Link to="/yourorder">
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
+                        role="menuitem"
+                      >
+                        Your Orders
+                      </a>{" "}
+                    </Link>
+
+                    <Link to="/wishlist">
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
+                        role="menuitem"
+                      >
+                        Your Wishlist
+                      </a>{" "}
+                    </Link>
                   </div>
                 </div>
               )}
-              {/* <IoIosArrowForward className="text-[#E42B26] text-[20px]   hover:rotate-90" /> */}
             </div>
           </Link>
         </div>

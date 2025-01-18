@@ -116,7 +116,7 @@ export default function SignupPage() {
             <img src="public/google.png" alt="" className="w-[30px] h-[30px]" />
           </div>
           <div className=" text-[13px] font-semibold text-[#E42B26] cursor-pointer  hover:text-black duration-300">
-            New to Bookswagon? Sign up
+            New to Apna Book Store? Sign up
           </div>{" "}
           <div className=" text-[13px] font-semibold cursor-pointer  hover:text-black duration-300">
             By continuing, I agree to the{" "}

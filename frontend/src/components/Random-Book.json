@@ -1,0 +1,1863 @@
+[
+  {
+    "img": "/public/rb1.jpg",
+    "name": "The 48 Laws Of Power",
+    "author": "Robert Greene",
+    "prize": "₹659",
+    "discount": "₹999",
+    "review": "4.1",
+    "discountAmount": "34%"
+  },
+  {
+    "img": "/public/rb2.jpg",
+
+    "name": "My First Library",
+    "author": "Wonder House Books Editorial",
+    "prize": "₹524 ",
+    "discount": "₹749",
+    "review": "4.1 (8)",
+    "discountAmount": "30%"
+  },
+  {
+    "img": "/public/rb3.jpg",
+
+    "name": "Harry Potter Box Set: The Complete Collection (Children’s Paperback)",
+    "author": "J.K.Rowling",
+    "prize": "₹3,069",
+    "discount": " ₹4,950",
+    "review": "4.3 (8)",
+    "discountAmount": "38%"
+  },
+  {
+    "img": "/public/rb4.jpg",
+
+    "name": "The Psychology of Money",
+    "author": " Morgan Housel",
+    "prize": " ₹1,004",
+    "discount": "  ₹1,761",
+    "review": "No Review Yet",
+    "discountAmount": "43%"
+  },
+  {
+    "img": "/public/rb5.jpg",
+
+    "name": " The Satanic Verses",
+    "author": "Salman Rushdie",
+    "prize": "₹1,350",
+    "discount": "",
+    "review": "4.5 (6)",
+    "discountAmount": ""
+  },
+  {
+    "img": "/public/rb6.jpg",
+
+    "name": "    Satanic Verses",
+    "author": "Salman Rushdie",
+    "prize": "₹1,454",
+    "discount": " ₹1,615",
+    "review": "4.5 (6)",
+    "discountAmount": "10%"
+  },
+  {
+    "img": "/public/rb7.jpg",
+
+    "name": "A Court of Thorns and Roses Paperback Box Set (5 books)",
+    "author": "Sarah J. Maas",
+    "prize": "₹4,123 ",
+    "discount": "₹5,425",
+    "review": "5.0 (7)",
+    "discountAmount": "24%"
+  },
+  {
+    "img": "/public/rb8.jpg",
+
+    "name": "    LEGO Gear Bots",
+    "author": "",
+    "prize": "₹1,827",
+    "discount": " ₹2,175",
+    "review": "3.3 (8)",
+    "discountAmount": "16%"
+  },
+  {
+    "img": "/public/rb9.jpg",
+
+    "name": "  Atomic Habits",
+    "author": "James Clear",
+    "prize": "₹1,433",
+    "discount": " ₹2,349",
+    "review": "No Review Yet",
+    "discountAmount": "39%"
+  },
+  {
+    "img": "/public/rb10.jpg",
+
+    "name": " THE PSYCHOLOGY OF MONEY (DELUXE EDITION)",
+    "author": "Housel, Morgan",
+    "prize": "₹425",
+    "discount": " ₹599",
+    "review": "4.3 (7)",
+    "discountAmount": "29%"
+  },
+  {
+    "img": "/public/rb11.jpg",
+
+    "name": " Dog Man 12: The Scarlet Shedder",
+    "author": "    Dav Pilkey",
+    "prize": "   ₹1,001",
+    "discount": " ₹1,410",
+    "review": "  No Review Yet",
+    "discountAmount": "29%"
+  },
+  {
+    "img": "/public/rb12.jpg",
+
+    "name": "    Ikigai",
+    "author": "Francesc Miralles",
+    "prize": "₹1,170",
+    "discount": " ₹2,387",
+    "review": "No Review Yet",
+    "discountAmount": "51%"
+  },
+  {
+    "img": "/public/rb13.jpg",
+
+    "name": "I Don't Love You Anymore",
+    "author": "Rithvik Singh",
+    "prize": "₹239 ",
+    "discount": "₹299",
+    "review": "No Review Yet",
+    "discountAmount": "20%"
+  },
+  {
+    "img": "/public/rb14.jpg",
+
+    "name": " Boxed - Dog Man: The Supa Buddies Mega Collection: From the Creator of Captain Underpants (Dog Man #1-10 Box Set)",
+    "author": "Dav Pilkey",
+    "prize": "₹9,268",
+    "discount": " ₹11,302",
+    "review": "3.5 (4)",
+    "discountAmount": "18%"
+  },
+  {
+    "img": "/public/rb15.jpg",
+
+    "name": "Surrounded by Idiots",
+    "author": "Thomas Erikson",
+    "prize": "₹425 ",
+    "discount": "₹599",
+    "review": "3.6 (7)",
+    "discountAmount": "29%"
+  },
+  {
+    "img": "/public/rb16.jpg",
+
+    "name": "  How to Talk to Anyone",
+    "author": "Leil Lowndes",
+    "prize": "₹748 ",
+    "discount": "₹1,084",
+    "review": "4.9 (7)",
+    "discountAmount": "31%"
+  },
+  {
+    "img": "/public/rb17.jpg",
+
+    "name": "  Throne of Glass Box Set (Paperback)",
+    "author": "Sarah J. Maas",
+    "prize": "₹5,729 ",
+    "discount": "₹8,680",
+    "review": "4.8 (10)",
+    "discountAmount": "34%"
+  },
+  {
+    "img": "/public/rb18.jpg",
+
+    "name": " Millionaire Expat",
+    "author": "A Hallam",
+    "prize": "₹1,172 ",
+    "discount": "₹2,057",
+    "review": "4.0 (5)",
+    "discountAmount": "43%"
+  },
+  {
+    "img": "/public/rb19.jpg",
+
+    "name": "  Outlive",
+    "author": "Bill Gifford",
+    "prize": "₹1,817 ",
+    "discount": "₹2,930",
+    "review": "No Review Yet",
+    "discountAmount": "38%"
+  },
+  {
+    "img": "/public/rb20.jpg",
+
+    "name": " Coloring Books Boxset",
+    "author": "Wonder House Books",
+    "prize": "₹447 ",
+    "discount": "₹629",
+    "review": "4.5 (8)",
+    "discountAmount": "29%"
+  },
+  {
+    "img": "/public/rb21.jpg",
+
+    "name": "  Manifest",
+    "author": "Nafousi, Roxie",
+    "prize": "₹425 ",
+    "discount": "₹599",
+    "review": "3.8 (5)",
+    "discountAmount": "29%"
+  },
+  {
+    "img": "/public/rb22.jpg",
+
+    "name": "Moral Story Books for Kids (Set of 10 Books)",
+    "author": "  Maple Press",
+    "prize": " ₹270 ",
+    "discount": " ₹350",
+    "review": "  4.4 (7)",
+    "discountAmount": "23%"
+  },
+  {
+    "img": "/public/rb23.jpg",
+
+    "name": "Guide to the Project Management Body of Knowledge and the Standard for Project Management",
+    "author": "Project Management Institute",
+    "prize": "₹5,670 ",
+    "discount": "₹8,100",
+    "review": "4.7 (7)",
+    "discountAmount": "30%"
+  },
+  {
+    "img": "/public/rb24.jpg",
+
+    "name": "  It Ends with Us",
+    "author": "Colleen Hoover",
+    "prize": "₹304 ",
+    "discount": "₹499",
+    "review": "4.4 (12)",
+    "discountAmount": "39%"
+  },
+  {
+    "img": "/public/rb25.jpg",
+
+    "name": "  Intelligent Investor REV Ed.",
+    "author": "Benjamin Graham",
+    "prize": "₹1,516 ",
+    "discount": "₹2,262",
+    "review": "4.5 (6)",
+    "discountAmount": "33%"
+  },
+  {
+    "img": "/public/rb26.jpg",
+
+    "name": "Saunders Comprehensive Review for the NCLEX-RN® Examination",
+    "author": "Linda Anne Silvestri",
+    "prize": "₹3,864",
+    "discount": "",
+    "review": "4.6 (8)",
+    "discountAmount": ""
+  },
+  {
+    "img": "/public/rb27.jpg",
+
+    "name": "Can't Hurt Me",
+    "author": "David Goggins",
+    "prize": "₹2,013",
+    "discount": "₹2,425",
+    "review": "4.4 (8)",
+    "discountAmount": "17%"
+  },
+  {
+    "img": "/public/rb28.jpg",
+
+    "name": "   Rich Dad Poor Dad",
+    "author": "Robert T Kiyosaki",
+    "prize": "₹549 ",
+    "discount": "₹784",
+    "review": "No Review Yet",
+    "discountAmount": "30%"
+  },
+  {
+    "img": "/public/rb29.jpg",
+
+    "name": " Diary of a Wimpy Kid: No Brainer (Book 18)",
+    "author": "Jeff Kinney",
+    "prize": "₹425 ",
+    "discount": "₹599",
+    "review": "4.9 (7)",
+    "discountAmount": "29%"
+  },
+  {
+    "img": "/public/rb30.jpg",
+
+    "name": " NKJV, End-of-Verse Reference Bible, Personal Size Large Print, Leathersoft, Brown, Red Letter, Comfort Print",
+    "author": "Thomas Nelson",
+    "prize": "₹2,246",
+    "discount": " ₹3,255",
+    "review": "5.0 (8)",
+    "discountAmount": "31%"
+  },
+  {
+    "img": "/public/rb31.jpg",
+
+    "name": " Demon Slayer: Kimetsu no Yaiba Complete Box Set",
+    "author": "Koyoharu Gotouge",
+    "prize": "₹11,936 ",
+    "discount": "₹21,315",
+    "review": "4.6 (5)",
+    "discountAmount": "44%"
+  },
+  {
+    "img": "/public/rb32.jpg",
+
+    "name": " Numicon: Box of 80 Numicon Shapes",
+    "author": "",
+    "prize": "₹4,203 ",
+    "discount": "₹5,920",
+    "review": "No Review Yet",
+    "discountAmount": "29%"
+  },
+  {
+    "img": "/public/rb33.jpg",
+
+    "name": "Eat, Drink, Nap",
+    "author": "Soho House",
+    "prize": "₹1,631",
+    "discount": " ₹2,399",
+    "review": "4.9 (8)",
+    "discountAmount": "32%"
+  },
+  {
+    "img": "/public/rb34.jpg",
+
+    "name": " It reviewts with Us",
+    "author": "Colleen Hoover",
+    "prize": "₹412 ",
+    "discount": "₹699",
+    "review": "4.5 (2)",
+    "discountAmount": "41%"
+  },
+  {
+    "img": "/public/rb35.jpg",
+
+    "name": " The Creative Act",
+    "author": "Rick Rubin",
+    "prize": "₹1,698 ",
+    "discount": "₹2,784",
+    "review": "No Review Yet",
+    "discountAmount": "39%"
+  },
+  {
+    "img": "/public/rb36.jpg",
+
+    "name": " Never Split the Difference",
+    "author": "Tahl Raz",
+    "prize": "₹489 ",
+    "discount": "₹699",
+    "review": "4.7 (6)",
+    "discountAmount": "30%"
+  },
+  {
+    "img": "/public/rb37.jpg",
+
+    "name": " Power of Your Subconscious Mind",
+    "author": "Dr Joseph Murphy",
+    "prize": "₹119 ",
+    "discount": "₹199",
+    "review": "4.2 (6)",
+    "discountAmount": "40%"
+  },
+  {
+    "img": "/public/rb38.jpg",
+
+    "name": "The Culture Map",
+    "author": "Erin Meyer",
+    "prize": "₹909 ",
+    "discount": "₹1,399",
+    "review": "4.8 (8)",
+    "discountAmount": "35%"
+  },
+  {
+    "img": "/public/rb39.jpg",
+
+    "name": " Pearson Edexcel International GCSE (9-1) Mathematics A Student Book 1",
+    "author": "D. A. Turner",
+    "prize": "₹3,944",
+    "discount": " ₹3,984",
+    "review": "4.6 (5)",
+    "discountAmount": "1%"
+  },
+  {
+    "img": "/public/rb40.jpg",
+
+    "name": "Chanel",
+    "author": "Daniele Bott",
+    "prize": "₹2,430 ",
+    "discount": "₹4,340",
+    "review": "5.0 (6)",
+    "discountAmount": "44%"
+  },
+  {
+    "img": "/public/rb41.jpg",
+
+    "name": "  Good Vibes, Good Life",
+    "author": "Vex King",
+    "prize": "₹905 ",
+    "discount": "₹1,350",
+    "review": "4.3 (6)",
+    "discountAmount": "33%"
+  },
+  {
+    "img": "/public/rb42.jpg",
+
+    "name": "2024 Cfa Program Curriculum Level I Box Set",
+    "author": "CFA INSTITUTE",
+    "prize": "₹20,136",
+    "discount": " ₹26,495",
+    "review": "No Review Yet",
+    "discountAmount": "24%"
+  },
+
+  {
+    "img": "/public/rb44.jpg",
+
+    "name": " The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "prize": "₹358",
+    "discount": " ₹550",
+    "review": "4.6 (7)",
+    "discountAmount": "35%"
+  },
+  {
+    "img": "/public/rb45.jpg",
+
+    "name": "  Good to Great",
+    "author": "Jim Collins",
+    "prize": "₹1,797 ",
+    "discount": "₹3,045",
+    "review": "4.5 (6)",
+    "discountAmount": "41%"
+  },
+  {
+    "img": "/public/rb46.jpg",
+
+    "name": "I Love You to the Moon and Back",
+    "author": "Amelia Hepworth",
+    "prize": "₹543",
+    "discount": " ₹696",
+    "review": "4.2 (5)",
+    "discountAmount": "22%"
+  },
+  {
+    "img": "/public/rb47.jpg",
+
+    "name": " A Good Girl's Guide to Murder",
+    "author": "Holly Jackson",
+    "prize": "₹324 ",
+    "discount": "₹499",
+    "review": "4.3 (4)",
+    "discountAmount": "35%"
+  },
+  {
+    "img": "/public/rb48.jpg",
+
+    "name": "  My First Disney Classics Bedtime Storybook",
+    "author": "",
+    "prize": "₹679",
+    "discount": " ₹957",
+    "review": "4.8 (8)",
+    "discountAmount": "29%"
+  },
+  {
+    "img": "/public/rb49.jpg",
+
+    "name": " First Aid for the USMLE Step 1 2024",
+    "author": "Vikas Bhushan",
+    "prize": "₹4,128 ",
+    "discount": "₹5,655",
+    "review": "No Review Yet",
+    "discountAmount": "27%"
+  },
+  {
+    "img": "/public/rb50.jpg",
+
+    "name": "Fast Like a Girl",
+    "author": "Mindy Pelz",
+    "prize": "₹1,359 ",
+    "discount": "₹1,999",
+    "review": "5.0 (7)",
+    "discountAmount": "32%"
+  },
+  {
+    "img": "/public/rb51.jpg",
+
+    "name": "    The Things You Can See Only When You Slow Down",
+    "author": "Chi-Young Kim",
+    "prize": "₹489 ",
+    "discount": "₹699",
+    "review": "5.0 (6)",
+    "discountAmount": "30%"
+  },
+  {
+    "img": "/public/rb52.jpg",
+
+    "name": "  Make Your Own Bath Bombs",
+    "author": "",
+    "prize": "₹1,701 ",
+    "discount": "₹2,001",
+    "review": "No Review Yet",
+    "discountAmount": "15%"
+  },
+  {
+    "img": "/public/rb53.jpg",
+
+    "name": "  The Body Keeps the Score",
+    "author": "Bessel Van Der Kolk",
+    "prize": "₹1,025 ",
+    "discount": "₹1,653",
+    "review": "No Review Yet",
+    "discountAmount": "38%"
+  },
+  {
+    "img": "/public/rb54.jpg",
+
+    "name": "The Housemaid",
+    "author": "Freida McFadden",
+    "prize": "₹802 ",
+    "discount": "₹1,084",
+    "review": "No Review Yet",
+    "discountAmount": "26%"
+  },
+  {
+    "img": "/public/rb55.jpg",
+
+    "name": " The 5 AM Club",
+    "author": "Robin Sharma",
+    "prize": "₹1,235 ",
+    "discount": "₹1,844",
+    "review": "4.8 (6)",
+    "discountAmount": "33%"
+  },
+  {
+    "img": "/public/rb56.jpg",
+
+    "name": "Colleen Hoover",
+    "author": "₹283 ",
+    "prize": "₹399",
+    "discount": "",
+    "review": "4.5 (8)",
+    "discountAmount": "29%"
+  },
+  {
+    "img": "/public/rb57.jpg",
+
+    "name": " World’s Greatest Books For Personal Growth & Wealth (Set of 4 Books) : Perfect Motivational Gift Set",
+    "author": "Dale Carnegie, Napoleon Hill, Dr. Joseph Murphy & George S. Clason",
+    "prize": "₹489 ",
+    "discount": "₹699",
+    "review": "4.6 (15)",
+    "discountAmount": "30%"
+  },
+  {
+    "img": "/public/rb58.jpg",
+    "name": "So Good",
+    "author": "Emily English",
+    "prize": "₹2,036",
+    "discount": " ₹2,610",
+    "review": "No Review Yet",
+    "discountAmount": "22%"
+  },
+  {
+    "img": "/public/rb59.jpg",
+    "name": "$100M Leads",
+    "author": "Alex Hormozi",
+    "prize": "₹2,506 ",
+    "discount": "₹2,610",
+    "review": "No Review Yet",
+    "discountAmount": "4%"
+  },
+  {
+    "img": "/public/rb60.jpg",
+    "name": " Essential Guide to the Dubai Real Estate Market",
+    "author": "Michael Waters",
+    "prize": "₹3,439 ",
+    "discount": "₹5,133",
+    "review": "No Review Yet",
+    "discountAmount": "33%"
+  },
+  {
+    "img": "/public/rb61.jpg",
+    "name": " The First 90 Days, Updated and Expanded",
+    "author": "Michael Watkins",
+    "prize": "₹827",
+    "discount": " ₹1,199",
+    "review": "4.3 (6)",
+    "discountAmount": "31%"
+  },
+  {
+    "img": "/public/rb62.jpg",
+    "name": "reviewt With Why",
+    "author": "Simon Sinek",
+    "prize": "₹489 ",
+    "discount": "₹699",
+    "review": "5.0 (4)",
+    "discountAmount": "30%"
+  },
+  {
+    "img": "/public/rb63.jpg",
+    "name": "The Silent Patient",
+    "author": " Alex Michaelides",
+    "prize": " ₹283",
+    "discount": " ₹399",
+    "review": "  4.0 (4)",
+    "discountAmount": "29%"
+  },
+  {
+    "img": "/public/rb64.jpg",
+    "name": " Live Beautiful",
+    "author": "Athena Calderone",
+    "prize": "₹2,433 ",
+    "discount": "₹3,924",
+    "review": "5.0 (7)",
+    "discountAmount": "38%"
+  },
+  {
+    "img": "/public/rb65.jpg",
+    "name": "Art of War (Deluxe Hardbound Edition)",
+    "author": "Sun Tzu",
+    "prize": " ₹1,035 ",
+    "discount": " ₹1,479",
+    "review": "4.7 (6)",
+    "discountAmount": "30%"
+  },
+  {
+    "img": "/public/rb66.jpg",
+    "name": "Holly Jackson box set",
+    "author": "Holly Jackson",
+    "prize": "₹909 ",
+    "discount": "₹1,399",
+    "review": "4.8 (8)",
+    "discountAmount": "35%"
+  },
+  {
+    "img": "/public/rb67.jpg",
+    "name": " Five Dysfunctions of a Team",
+    "author": "Patrick Lencioni",
+    "prize": "₹1,456 ",
+    "discount": "₹2,349",
+    "review": "5.0 (5)",
+    "discountAmount": "38%"
+  },
+  {
+    "img": "/public/rb68.jpg",
+    "name": "National Geographic Kids Why?",
+    "author": "Crispin Boyer",
+    "prize": "₹1,462 ",
+    "discount": "₹1,740",
+    "review": "4.6 (5)",
+    "discountAmount": "16%"
+  },
+  {
+    "img": "/public/rb69.jpg",
+    "name": "Gratitude",
+    "author": "Insight Editions",
+    "prize": "₹811 ",
+    "discount": "₹1,399",
+    "review": "4.9 (8)",
+    "discountAmount": "42%"
+  },
+  {
+    "img": "/public/rb70.jpg",
+    "name": "  Anxious Generation",
+    "author": "Jonathan Haidt",
+    "prize": "₹1,592 ",
+    "discount": "₹2,610",
+    "review": "No Review Yet",
+    "discountAmount": "39%"
+  },
+  {
+    "img": "/public/rb71.jpg",
+
+    "name": "  Qur'an",
+    "author": "M A S Abdel Haleem",
+    "prize": "₹496 ",
+    "discount": "₹620",
+    "review": "5.0 (6)",
+    "discountAmount": "20%"
+  },
+  {
+    "img": "/public/rb72.jpg",
+
+    "name": " Tom Ford",
+    "author": "Graydon Carter",
+    "prize": "₹7,595 ",
+    "discount": "₹10,850",
+    "review": "5.0 (6)",
+    "discountAmount": "30%"
+  },
+  {
+    "img": "/public/rb73.jpg",
+
+    "name": " Pearson Edexcel International GCSE (9-1) Chemistry Student Book",
+    "author": "Rachel Yu",
+    "prize": "₹4,192",
+    "discount": "",
+    "review": "4.4 (7)",
+    "discountAmount": ""
+  },
+  {
+    "img": "/public/rb74.jpg",
+
+    "name": " Unreasonable Hospitality",
+    "author": "Will Guidara",
+    "prize": "₹1,337",
+    "discount": " ₹2,523",
+    "review": "4.9 (7)",
+    "discountAmount": "47%"
+  },
+  {
+    "img": "/public/rb75.jpg",
+
+    "name": " Made for Living",
+    "author": "Amber Lewis",
+    "prize": "₹1,341",
+    "discount": " ₹2,199",
+    "review": "4.1 (7)",
+    "discountAmount": "39%"
+  },
+  {
+    "img": "/public/rb76.jpg",
+
+    "name": "    Trading in the Zone",
+    "author": "Mark Douglas",
+    "prize": "₹3,167 ",
+    "discount": "₹5,655",
+    "review": "4.8 (4)",
+    "discountAmount": "44%"
+  },
+  {
+    "img": "/public/rb77.jpg",
+
+    "name": "Boy, the Mole, the Fox and the Horse",
+    "author": "Charlie Mackesy",
+    "prize": "₹1,181",
+    "discount": " ₹2,001",
+    "review": "No Review Yet",
+    "discountAmount": "41%"
+  },
+  {
+    "img": "/public/rb78.jpg",
+
+    "name": "Best of Children's Classics (Set of 5 Books)",
+    "author": "Antoine de Saint-Exupéry, J.M. Barrie, Frances Hodgson Burnett & L. Frank Baum",
+    "prize": "₹679 ",
+    "discount": "₹999",
+    "review": "4.5 (6)",
+    "discountAmount": "32%"
+  },
+  {
+    "img": "/public/rb79.jpg",
+
+    "name": "Spot's Magnet Fun",
+    "author": "Eric Hill",
+    "prize": "₹333",
+    "discount": "₹450",
+    "review": "5.0 (3)",
+    "discountAmount": "26%"
+  },
+  {
+    "img": "/public/rb80.jpg",
+
+    "name": "The Bitcoin Standard",
+    "author": "Saifedean Ammous",
+    "prize": "₹1,733 ",
+    "discount": "₹2,708",
+    "review": "4.3 (6)",
+    "discountAmount": "36%"
+  },
+  {
+    "img": "/public/rb81.jpg",
+
+    "name": "This Is Home",
+    "author": "Chris Warnes",
+    "prize": "₹2,410",
+    "discount": "₹3,825",
+    "review": "4.7 (7)",
+    "discountAmount": "37%"
+  },
+  {
+    "img": "/public/rb82.jpg",
+
+    "name": "The Power of Now",
+    "author": "Eckhart Tolle",
+    "prize": "₹1,001",
+    "discount": " ₹1,410",
+    "review": "5.0 (5)",
+    "discountAmount": "29%"
+  },
+  {
+    "img": "/public/rb83.jpg",
+
+    "name": " Harry Potter and the Sorcerer's Stone (Harry Potter, Book 1) (Minalima Edition)",
+    "author": "J K ROWLING",
+    "prize": "4.4 (9)",
+    "discount": "₹2,513 ",
+    "review": "₹3,306",
+    "discountAmount": "24%"
+  },
+  {
+    "img": "/public/rb84.jpg",
+
+    "name": "When You're Ready, This is How You Heal (English)",
+    "author": "Brianna Wiest",
+    "prize": " ₹364 ",
+    "discount": "₹499",
+    "review": "  No Review Yet",
+    "discountAmount": "27%"
+  },
+  {
+    "img": "/public/rb85.jpg",
+
+    "name": " When You're Ready, This is How You Heal (English)",
+    "author": "Brianna Wiest",
+    "prize": "₹364 ",
+    "discount": "₹499",
+    "review": "No Review Yet",
+    "discountAmount": "34%"
+  },
+  {
+    "img": "/public/rb86.jpg",
+
+    "name": " Harry Potter and the Philosopher's Stone",
+    "author": "J. K. Rowling",
+    "prize": "₹395",
+    "discount": " ₹599",
+    "review": "4.8 (6)",
+    "discountAmount": "34%"
+  },
+  {
+    "img": "/public/rb87.jpg",
+
+    "name": " Whole-Brain Child",
+    "author": "Tina Payne Bryson",
+    "prize": "₹975 ",
+    "discount": "₹1,653",
+    "review": "4.6 (5)",
+    "discountAmount": "41%"
+  },
+  {
+    "img": "/public/rb88.jpg",
+
+    "name": " Think & Grow Rich: THE 21st CENTURY EDITION",
+    "author": "Napoleon Hill",
+    "prize": "₹119 ",
+    "discount": "₹199",
+    "review": "4.9 (7)",
+    "discountAmount": "40%"
+  },
+  {
+    "img": "/public/rb89.jpg",
+
+    "name": "Baby's Very First Noisy Nursery Rhymes",
+    "author": "Stella Baggott",
+    "prize": "₹824",
+    "discount": "₹1,084",
+    "review": "3.2 (6)",
+    "discountAmount": "24%"
+  },
+  {
+    "img": "/public/rb90.jpg",
+
+    "name": "The Wonderful Things You Will Be",
+    "author": "Emily Martin",
+    "prize": "₹987 ",
+    "discount": "₹1,566",
+    "review": "4.0 (8)",
+    "discountAmount": "37%"
+  },
+  {
+    "img": "/public/rb91.jpg",
+
+    "name": " Little Guides to Style",
+    "author": "Emma Baxter-Wright",
+    "prize": "₹3,845",
+    "discount": " ₹5,655",
+    "review": "5.0 (5)",
+    "discountAmount": "32%"
+  },
+  {
+    "img": "/public/rb92.jpg",
+
+    "name": "  The Laws of Human Nature",
+    "author": "Robert Greene",
+    "prize": "₹1,588 ",
+    "discount": "₹2,175",
+    "review": "No Review Yet",
+    "discountAmount": "27%"
+  },
+
+  {
+    "img": "/public/rb93.jpg",
+
+    "name": " Poor Charlie's Almanack",
+    "author": "  Charles T. Munger",
+    "prize": " ₹1,799",
+    "discount": " ₹2,499",
+    "review": "5.0 (7)",
+    "discountAmount": "28%"
+  },
+  {
+    "img": "/public/rb94.jpg",
+
+    "name": "The Watch Book Rolex: 3rd updated and extended edition",
+    "author": "Gisbert L. Brunner",
+    "prize": " ₹5,551",
+    "discount": " ₹9,570",
+    "review": "No Review Yet",
+    "discountAmount": "42%"
+  },
+  {
+    "img": "/public/rb95.jpg",
+
+    "name": "   The Boy At the Back of the Class",
+    "author": "Onjali Rauf",
+    "prize": "₹642",
+    "discount": " ₹867",
+    "review": "5.0 (6)",
+    "discountAmount": "26"
+  },
+  {
+    "img": "/public/rb96.jpg",
+
+    "name": " KS3 Maths Complete Revision & Practice – Higher (includes Online Edition, Videos & Quizzes)",
+    "author": "Au",
+    "prize": "₹1,143 ",
+    "discount": "₹1,377",
+    "review": "4.3 (6)",
+    "discountAmount": "17%"
+  },
+  {
+    "img": "/public/rb97.jpg",
+
+    "name": "The Book You Wish Your Parents Had Read (and Your Children Will Be Glad That You Did)",
+    "author": "Philippa Perry",
+    "prize": "₹455",
+    "discount": " ₹599",
+    "review": "4.2 (6)",
+    "discountAmount": "24%"
+  },
+  {
+    "img": "/public/rb98.jpg",
+
+    "name": "  Myth of Normal",
+    "author": "Gabor Maté",
+    "prize": "₹1,559 ",
+    "discount": "₹2,784",
+    "review": "5.0 (7)",
+    "discountAmount": "44%"
+  },
+  {
+    "img": "/public/rb99.jpg",
+
+    "name": "   Blue Ocean Strategy, Expanded Edition",
+    "author": "W Chan Kim",
+    "prize": "₹1,019",
+    "discount": " ₹1,499",
+    "review": "4.8 (5)",
+    "discountAmount": "32%"
+  },
+  {
+    "img": "/public/rb100.jpg",
+
+    "name": " Chanel Catwalk",
+    "author": "Patrick Mauries",
+    "prize": "₹4,170",
+    "discount": " ₹6,726",
+    "review": "5.0 (7)",
+    "discountAmount": "38%"
+  },
+  {
+    "img": "/public/rb101.jpg",
+
+    "name": " Dragon Ball Z Complete Box Set",
+    "author": "Akira Toriyama",
+    "prize": "₹13,642",
+    "discount": " ₹24,360",
+    "review": "5.0 (6)",
+    "discountAmount": "44%"
+  },
+  {
+    "img": "/public/rb102.jpg",
+
+    "name": "Paw Patrol Pocket Library",
+    "author": "Paw Patrol",
+    "prize": "₹501",
+    "discount": " ₹650",
+    "review": "4.7 (9)",
+    "discountAmount": "23%"
+  },
+  {
+    "img": "/public/rb103.jpg",
+
+    "name": "Paw Patrol Pocket Library",
+    "author": "Paw Patrol",
+    "prize": "₹501",
+    "discount": " ₹650",
+    "review": "4.7 (9)",
+    "discountAmount": "42%"
+  },
+
+  {
+    "img": "/public/box-set13.jpg",
+    "name": "Tintin Paperback Boxed Set 23 titles",
+    "author": "Herge",
+    "prize": "₹9,099",
+    "discount": " ₹13,999",
+    "discountAmount": "35%"
+  },
+  {
+    "img": "/public/box-set14.jpg",
+    "name": "Three-Body Problem Boxed Set",
+    "author": "Joel Martinsen",
+    "prize": "₹3,729",
+    "discount": " ₹4,843",
+    "discountAmount": "23%"
+  },
+  {
+    "img": "/public/box-set15.jpg",
+    "name": "Essential Ottolenghi [Special Edition, Two-Book",
+    "author": "Yotam Ottolengh",
+    "prize": "₹3,655",
+    "discount": " ₹4,250",
+    "discountAmount": "14%"
+  },
+  {
+    "img": "/public/box-set16.jpg",
+    "name": "Six of Crows Boxed Set",
+    "author": "Leigh Bardugo",
+    "prize": "₹1,629",
+    "discount": " ₹2,294",
+    "discountAmount": "29%"
+  },
+  {
+    "img": "/public/box-set17.jpg",
+    "name": "Harry Potter: The Illustrated Collection",
+    "author": "Jim Kay",
+    "prize": "₹8,364",
+    "discount": " ₹10,200",
+    "discountAmount": "18%"
+  },
+  {
+    "img": "/public/box-set18.jpg",
+    "name": "Magic Tree House Books 1-28 Boxed Set",
+    "author": "Mary Pope Os",
+    "prize": "₹5,359",
+    "discount": " ₹7,999",
+    "discountAmount": "33%"
+  },
+  {
+    "img": "/public/box-set19.jpg",
+    "name": "Harry Potter Paperback Boxed Set: Books 1-7",
+    "author": "J K ROWLINGJ K ROWLING",
+    "prize": "₹7,140",
+    "discount": " ₹8,500 ",
+    "discountAmount": "16%"
+  },
+  {
+    "img": "/public/box-set20.jpg",
+    "name": "Classic boxed set",
+    "author": "Suzanne Collins",
+    "prize": "₹1,876",
+    "discount": " ₹2,886",
+    "discountAmount": "35%"
+  },
+  {
+    "img": "/public/box-set1.jpg",
+    "name": "Boxed - Dog Man: The Supa Buddies Mega Collection:",
+    "author": "Dav Pilkey",
+    "prize": "₹9,165",
+    "discount": " ₹11,042",
+    "discountAmount": "17%"
+  },
+
+  {
+    "img": "/public/box-set2.jpg",
+    "name": "Caraval Paperback Boxed Set",
+    "author": "Stephanie Garber",
+    "prize": "₹2,391",
+    "discount": " ₹3,568",
+    "discountAmount": "33%"
+  },
+
+  {
+    "img": "/public/box-set3.jpg",
+    "name": "Percy Jackson and the Olympians 5 Book",
+    "author": "Rick Riordan",
+    "prize": "₹334",
+    "discount": " ₹3,710",
+    "discountAmount": "91%"
+  },
+  {
+    "img": "/public/box-set4.jpg",
+    "name": "Percy Jackson and the Olympians 5 Book",
+    "author": "Rick Riordan",
+    "prize": "₹2,751",
+    "discount": "₹3,821",
+    "discountAmount": "28%"
+  },
+  {
+    "img": "/public/box-set5.jpg",
+    "name": "Frank Herbert's Dune Saga 6-Book Boxed Set",
+    "author": "Frank Herbert",
+    "prize": "₹5,875",
+    "discount": " ₹9,180",
+    "discountAmount": "36%"
+  },
+
+  {
+    "img": "/public/box-set6.jpg",
+    "name": "Paperback Boxed Set, The-10th Anniversary Edition",
+
+    "author": "Rick Riordan",
+    "prize": "₹2,887",
+    "discount": "₹4,246",
+    "discountAmount": "32%"
+  },
+  {
+    "img": "/public/box-set7.jpg",
+    "name": "George R. R. Martin's A Game of Thrones Leather-",
+    "author": "George R. R. Mart",
+    "prize": "₹4,985",
+
+    "discount": " ₹7,225",
+    "discountAmount": "31%"
+  },
+  {
+    "img": "/public/box-set8.jpg",
+    "name": "Cat Kid Comic Club Collection: From the",
+    "author": "Dav Pilkey",
+    "prize": "₹2,982",
+    "discount": " ₹3,313",
+    "discountAmount": "10%"
+  },
+  {
+    "img": "/public/box-set9.jpg",
+    "name": "The Naturals Paperback Boxed Set",
+    "author": "Jennifer Lynn Barnes",
+    "prize": "₹2,924",
+    "discount": " ₹5,317",
+    "discountAmount": "45%"
+  },
+  {
+    "img": "/public/box-set10.jpg",
+    "name": "Twisted Series 4-Book Boxed Set",
+    "author": "Ana Huang",
+    "prize": "₹2,951",
+    "discount": "₹4,339",
+    "discountAmount": "32%"
+  },
+  {
+    "img": "/public/box-set11.jpg",
+    "name": "The Captain Underpants Colossal Color Collection",
+    "author": "Dav Pilkey",
+    "prize": "₹4,748",
+    "discount": "₹5,521",
+    "discountAmount": "14%"
+  },
+  {
+    "img": "/public/box-set12.jpg",
+    "name": "The Hobbit & The Lord of the Rings Boxed Set",
+    "author": "J. R. R. Tolkien",
+    "prize": "₹5,688",
+    "discount": "",
+    "discountAmount": ""
+  },
+  {
+    "img": "/public/na1.jpg",
+    "name": "Proceedings of the 2nd International ",
+    "author": "Santo Banerjee",
+    "review": "No Review Yet",
+    "prize": "₹ 41,663 ",
+    "discount": "₹ 43,399",
+    "discountAmount": "30%"
+  },
+  {
+    "img": "/public/na2.jpg",
+    "name": "Seismic Isolation,Energy Dissipation ",
+    "author": "Mustafa Erdik",
+    "review": "No Review Yet",
+    "prize": "₹ 34,425",
+    "discount": "₹ 38,250"
+  },
+  {
+    "img": "/public/na3.jpg",
+
+    "name": "Power System Dynamic Modelling and Analysis",
+    "author": "Babak Badrza...",
+    "review": "No Review Yet",
+    "prize": "₹ 34,037 ",
+    "discount": ""
+  },
+  {
+    "img": "/public/na4.jpg",
+
+    "name": "Analysis on Fock Spaces and Mathematical",
+    "author": "Asao Arai",
+    "review": "No Review Yet",
+    "prize": "₹ 26,805",
+    "discount": ""
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/937/9781805218937.jpg",
+    "name": "Oyster Perpetual Submariner",
+    "authore": "Nicholas Foulkes",
+    "review": "No Review Yet",
+    "prize": "₹7,487 ",
+    "discount": "₹10,850",
+    "dicount-discountAmount": "31%"
+  },
+  {
+    "img": "/public/na6.jpg",
+
+    "name": "6-79b",
+    "author": "Henning Radtke",
+    "review": "No Review Yet",
+    "prize": "₹ 24,139",
+    "discount": ""
+  },
+  {
+    "img": "/public/na7.jpg",
+
+    "name": "Entertainment Media and Communication..",
+    "author": "Nicholas Davi...",
+    "review": "No Review Yet",
+    "prize": "₹ 24,067",
+    "discount": ""
+  },
+  {
+    "img": "/public/na8.jpg",
+
+    "name": "Routledge HAndbook Protection",
+    "author": "Jurgita Malina...",
+    "review": "No Review Yet",
+    "prize": "₹22,372",
+    "discount": "₹ 23,800"
+  },
+  {
+    "img": "/public/na9.jpg",
+
+    "name": "Cytokine Storm Syndrome",
+    "author": "Edward M Beh...",
+    "review": "No Review Yet",
+    "prize": "₹ 22,320",
+    "discount": "₹ 24,000"
+  },
+  {
+    "img": "/public/na10.jpg",
+
+    "name": "New Technologies,Development and",
+    "author": "Isak Karabego...",
+    "review": "No Review Yet",
+    "prize": "₹ 21,048",
+    "discount": "₹ 21,699"
+  },
+  {
+    "img": "/public/na11.jpg",
+
+    "name": "Partial Identification in Econometrics and ..",
+    "author": "Vladik Kreinov...",
+    "review": "No Review Yet",
+    "prize": "₹ 21,048",
+    "discount": "₹ 21,699"
+  },
+  {
+    "img": "/public/na12.jpg",
+
+    "name": "Human Microbiome",
+    "author": "Muhammad Sa...",
+    "review": "No Review Yet",
+    "prize": "₹ 21,048",
+    "discount": "₹ 21,699"
+  },
+  {
+    "img": "/public/na13.jpg",
+
+    "name": "Management of Migraube Pain...",
+    "author": "Shvetabk Bhatt",
+    "review": "No Review Yet",
+    "prize": "₹ 20,831",
+    "discount": "₹ 21,699"
+  },
+  {
+    "img": "/public/na14.jpg",
+
+    "name": "Antiviral Innate Immunity",
+    "author": "Chunfu Zheng ",
+    "review": "No Review Yet",
+    "prize": "₹ 20,831",
+    "discount": "₹ 21,699"
+  },
+  {
+    "img": "/public/na15.jpg",
+
+    "name": "Mathematical Modeling and Simulation of",
+    "author": "Dmitri Vinnikov",
+    "review": "No Review Yet",
+    "prize": " 20,831",
+    "discount": "₹ 21,699"
+  },
+  {
+    "img": "/public/na16.jpg",
+
+    "name": "Hepatitis B Virus",
+    "author": "Haitao Guo",
+    "review": "No Review Yet",
+    "prize": "₹ 20,831",
+    "discount": "₹ 21,699"
+  },
+  {
+    "img": "/public/na17.jpg",
+
+    "name": "Advances in Computer Science and Ubiquitous",
+    "author": "Yi Plan",
+    "review": "No Review Yet",
+    "prize": "₹20,831",
+    "discount": "₹21,699"
+  },
+  {
+    "img": "/public/na18.jpg",
+
+    "name": "Mathematical Analysis, Differential Equations",
+    "author": "Panos M Pard...",
+    "review": "No Review Yet",
+    "prize": "₹ 20,812",
+    "discount": ""
+  },
+  {
+    "img": "/public/na19.jpg",
+
+    "name": "Consensus",
+    "author": "Thomas Jeschke",
+    "review": "No Review Yet",
+    "prize": "₹ 20,534",
+    "discount": ""
+  },
+  {
+    "img": "/public/na20.jpg",
+
+    "name": "Fluorescence Imagine of the Brain",
+    "author": "Dmitri Rusakov",
+    "review": "No Review Yet",
+    "prize": "₹ 20,314",
+    "discount": "₹ 22,080"
+  },
+  {
+    "img": "/public/na21.jpg",
+
+    "name": "Pathogens Associated with the Development",
+    "author": "Noe Velazque...",
+    "review": "No Review Yet",
+    "prize": "₹ 20,314",
+    "discount": "₹ 22,080"
+  },
+  {
+    "img": "/public/na22.jpg",
+
+    "name": "Signal and Information Processing,Networking",
+    "author": "Yue Wang",
+    "review": "No Review Yet",
+    "prize": "₹ 19,958",
+    "discount": "₹ 31,680"
+  },
+  {
+    "img": "/public/na23.jpg",
+
+    "name": "HAndbook of Evidenece-Based inpatient Mental",
+    "author": "JArrod M Leffler",
+    "review": "No Review Yet",
+    "prize": "₹ 19,958",
+    "discount": "₹ 31,680"
+  },
+  {
+    "img": "/public/na24.jpg",
+
+    "name": "Digital Twin and Blockchain fr Smart",
+    "author": "Amit Kumar T...",
+    "review": "No Review Yet",
+    "prize": "₹ 19,530",
+    "discount": "₹ 21,700"
+  },
+  {
+    "img": "/public/na25.jpg",
+
+    "name": "Covid-19 Pandemic",
+    "author": "Rita E Colwell",
+    "review": "No Review Yet",
+    "prize": "₹ 19,529",
+    "discount": "₹ 21,592"
+  },
+  {
+    "img": "/public/na26.jpg",
+
+    "name": "Verlage 3,Verbreitender",
+    "author": "Thomas Keide...",
+    "review": "No Review Yet",
+    "prize": "₹ 19,404",
+    "discount": ""
+  },
+  {
+    "img": "/public/na27.jpg",
+
+    "name": "Epizootic Hemorrhagic Disease Virus",
+    "author": "Carrie Batten",
+    "review": "No Review Yet",
+    "prize": "₹ 19,312",
+    "discount": "₹ 21,699"
+  },
+  {
+    "img": "/public/na28.jpg",
+
+    "name": "Traditional Resources and Tools for Modern",
+    "author": "Anupam Das T...",
+    "review": "No Review Yet",
+    "prize": "₹ 18,943",
+    "discount": "₹ 19,529"
+  },
+  {
+    "img": "/public/na29.jpg",
+
+    "name": "Non,Thermal Food Processing",
+    "author": "Kaavya Rathn...",
+    "review": "No Review Yet",
+    "prize": "₹ 18,769",
+    "discount": "₹ 20,400"
+  },
+  {
+    "img": "/public/na30.jpg",
+
+    "name": "   Wind and Truth",
+    "authore": "Brandon Sanderson",
+    "review": "No Review Yet",
+    "prize": "₹2,229 ",
+    "discount": "₹3,230",
+    "dicount-discountAmount": "31%"
+  },
+
+  {
+    "img": "/public/na1.jpg",
+    "name": "Proceedings of the 2nd International ",
+    "writer": "Santo Banerjee",
+    "review": "No Review Yet",
+    "prize": "₹ 41,663 ",
+    "discount": "₹ 43,399"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/166/9780241583166.jpg",
+    "name": "Diary of a Wimpy Kid: Hot Mess (Book 19)",
+    "author": "Jeff Kinney",
+    "review": "No Review Yet",
+    "prize": "₹455",
+    "discount": "₹650",
+    "discountAmount": "30%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/088/9781961409088.jpg",
+    "name": "2025 Cfa Program Curriculum Level I Box Set",
+    "author": "CFA INSTITUTE",
+
+    "review": " No Review Yet",
+    "prize": "₹17,000",
+    "discount": " ₹21,250",
+    "dicount-discountAmount": "20%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/223/9780593734223.jpg",
+
+    "name": " Nexus",
+    "author": "Yuval Noah Harari",
+    "review": "No Review Yet",
+    "prize": "₹1,815",
+    "discount": " ₹2,975",
+    "dicount-discountAmount": "39%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/126/9781394260126.jpg",
+
+    "name": "GMAT Official Guide 2024-2025 Bundle: Books + Online Question Bank",
+    "author": "Gmac (Graduate Management Admission Council)",
+    "review": "No Review Yet",
+    "prize": "₹6,639",
+    "discount": " ₹9,350",
+    "dicount-discountAmount": "29%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/273/9781668052273.jpg",
+
+    "name": " War",
+    "author": "Bob Woodward",
+    "review": "No Review Yet",
+    "prize": "₹579",
+    "discount": " ₹999",
+    "dicount-discountAmount": "42%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/430/9781665955430.jpg",
+
+    "name": "  Reckless",
+    "author": "Lauren Roberts",
+    "review": "No Review Yet",
+    "prize": "₹1,384",
+    "discount": " ₹2,386",
+    "dicount-discountAmount": "42%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/897/9781399712897.jpg",
+
+    "name": "The Elements of Baking",
+    "author": "Katarina Cermelj",
+    "review": "No Review Yet",
+    "prize": "₹2,539",
+    "discount": " ₹3,255",
+    "dicount-discountAmount": "22%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/914/9781785038914.jpg",
+
+    "name": " Ottolenghi COMFORT",
+    "author": "Yotam Ottolenghi",
+    "review": "No Review Yet",
+    "prize": "₹2,441",
+    "discount": " ₹3,255",
+    "dicount-discountAmount": "25%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/021/9789358567021.jpg",
+
+    "name": " Greatest Short Stories of Dostoevsky",
+    "author": "Fyodor Dostoevsky",
+    "review": "No Review Yet",
+    "prize": "₹119",
+    "discount": " ₹199",
+    "dicount-discountAmount": "40%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/381/9780593230381.jpg",
+
+    "name": " Message The",
+    "author": "Ta-Nehisi Coates",
+    "review": "No Review Yet",
+    "prize": "₹1,177",
+    "discount": "",
+    "dicount-discountAmount": ""
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/700/9780241691700.jpg",
+
+    "name": "Percy Jackson and the Olympians: Wrath of the Triple Goddess",
+    "author": "Rick Riordan",
+    "review": "No Review Yet",
+    "prize": "₹489",
+    "discount": " ₹699",
+    "dicount-discountAmount": " 30%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/203/9781368092203.jpg",
+    "name": " The Book of Bill",
+    "author": "Alex Hirsch",
+    "review": "No Review Yet",
+    "prize": "₹1,675 ",
+    "discount": "₹2,295",
+    "dicount-discountAmount": "27%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/635/9780374602635.jpg",
+    "name": "  Intermezzo",
+    "author": "Sally Rooney",
+    "review": "No Review Yet",
+    "prize": "₹1,824 ",
+    "discount": "₹2,465 ",
+    "dicount-discountAmount": "26%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/666/9781506291666.jpg",
+
+    "name": "AP Biology Premium, 2025: 6 Practice Tests + Comprehensive Review + Online Practice",
+    "author": "Barron's Educational Series",
+    "review": "No Review Yet",
+    "prize": "₹1,479",
+    "discount": " ₹2,550 ",
+    "dicount-discountAmount": "42%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/259/9780349442259.jpg",
+    "name": " The Striker",
+    "author": "Ana Huang",
+    "review": "No Review Yet",
+    "prize": "₹824",
+    "discount": " ₹1,084",
+    "dicount-discountAmount": "24%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/758/9789358566758.jpg",
+    "name": " Start Living Again",
+    "author": "Saranya Umakanthan",
+    "review": "No Review Yet",
+    "prize": "₹119",
+    "discount": " ₹199",
+    "dicount-discountAmount": "40%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/192/9781546130192.jpg",
+    "name": "Harry Potter Books 1-3 Boxed Set (Minalima Editions)",
+    "author": "J K ROWLING",
+    "review": "No Review Yet",
+    "prize": "₹8,379",
+    "discount": " ₹9,858",
+    "dicount-discountAmount": "15% "
+  },
+
+  {
+    "img": "https://www.bookswagon.com/productimages/images200/413/9781394258413.jpg",
+    "name": "ISC2 CISSP Certified Information Systems Security Professional Official Study Guide & Practice Tests Bundle",
+    "author": "Mike Chapple",
+    "review": "No Review Yet",
+    "prize": "₹6,429",
+    "discount": " ₹8,138",
+    "dicount-discountAmount": "21%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/765/9781637744765.jpg",
+    "name": "  Never Enough",
+    "author": "Andrew Wilkinson",
+    "review": "No Review Yet",
+    "prize": "₹1,862",
+    "discount": " ₹2,550",
+    "dicount-discountAmount": "27%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/233/9781787335233.jpg",
+    "name": " The Food For Life Cookbook",
+    "author": "Tim Spector",
+    "review": "No Review Yet",
+    "prize": "₹2,279 ",
+    "discount": "₹3,038",
+    "dicount-discountAmount": "25%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/662/9781401978662.jpg",
+    "name": "7 Rules of Self-Reliance",
+    "author": "Maha Abouelenein",
+    "review": "No Review Yet",
+    "prize": "₹1,607",
+    "discount": " ₹2,295",
+    "dicount-discountAmount": "30%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/027/9781394260027.jpg",
+    "name": "   GMAT Official Guide 2024-2025: Book + Online Question Bank",
+    "author": "Gmac (Graduate Management Admission Council)",
+    "review": "No Review Yet",
+    "prize": "₹2,975 ",
+    "discount": "₹4,250",
+    "dicount-discountAmount": "30%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/934/9780593328934.jpg",
+    "name": "  Big Vegan Flavor",
+    "author": "Nisha Vora",
+    "review": "No Review Yet",
+    "prize": "₹2,257",
+    "discount": " ₹3,825",
+    "dicount-discountAmount": "41%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/371/9780241608371.jpg",
+    "name": "We Solve Murders",
+    "author": "Richard Osman",
+    "review": "No Review Yet",
+    "prize": "₹620",
+    "discount": " ₹899",
+    "dicount-discountAmount": "31%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/228/9781984862228.jpg",
+    "name": " Turkuaz Kitchen",
+    "author": "Bëtul Tunç",
+    "review": "No Review Yet",
+    "prize": "₹2,220",
+    "discount": " ₹3,364",
+    "dicount-discountAmount": "34%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/443/9780241712443.jpg",
+    "name": " Grand Prix",
+    "author": "Will Buxton",
+    "review": "No Review Yet",
+    "prize": "₹2,062 ",
+    "discount": "₹2,713",
+    "dicount-discountAmount": "24%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/447/9781401979447.jpg",
+    "name": "  Eat Like a Girl",
+    "author": "Mindy Pelz",
+    "review": "No Review Yet",
+    "prize": "₹1,913",
+    "discount": " ₹2,550",
+    "dicount-discountAmount": "25%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/954/9781419766954.jpg",
+    "name": "Hot Mess (Diary of a Wimpy Kid Book 19)",
+    "author": "Jeff Kinney",
+    "review": "No Review Yet",
+    "prize": "₹944",
+    "discount": " ₹1,627",
+    "dicount-discountAmount": "42%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/459/9781338896459.jpg",
+    "name": "Big Jim Begins: A Graphic Novel",
+    "author": "Dav Pilkey",
+    "review": "No Review Yet",
+    "prize": "₹1,029",
+    "discount": " ₹1,410",
+    "dicount-discountAmount": "27%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/223/9789360452223.jpg",
+    "name": " Be Financially Smart",
+    "author": "Nita Menezes",
+    "review": "No Review Yet",
+    "prize": "₹259 ",
+    "discount": "₹399",
+    "dicount-discountAmount": "35%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/614/9781399728614.jpg",
+    "name": " Play Along",
+    "author": "Liz Tomforde",
+    "review": "No Review Yet",
+    "prize": "₹813 ",
+    "discount": "₹1,084",
+    "dicount-discountAmount": "25%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/937/9781805218937.jpg",
+    "name": "Oyster Perpetual Submariner",
+    "author": "Nicholas Foulkes",
+    "review": "No Review Yet",
+    "prize": "₹7,487 ",
+    "discount": "₹10,850",
+    "dicount-discountAmount": "31%"
+  },
+  {
+    "img": " https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/227/9781728296227.jpg",
+    "name": "   Boyfriend",
+    "author": "Freida McFadden",
+    "review": "No Review Yet",
+    "prize": "₹1,102 ",
+    "discount": "₹1,530",
+    "dicount-discountAmount": "28%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/044/9780241672044.jpg",
+    "name": "The Grandest Game",
+    "author": "Jennifer Lynn Barnes",
+    "review": "No Review Yet",
+    "prize": "₹425 ",
+    "discount": "₹599",
+    "dicount-discountAmount": "29%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/707/9781035416707.jpg",
+    "name": "Formula One Circuits From Above",
+    "author": "Bruce Jones",
+    "review": "No Review Yet",
+    "prize": "₹2,441 ",
+    "discount": "₹3,255",
+    "dicount-discountAmount": "25%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/269/9780593811269.jpg",
+    "name": " Ms. Rachel and the Special Surprise: Encouraging Speech and Learning Through Play and Music",
+    "author": "Monique Dong",
+    "review": "No Review Yet",
+    "prize": "₹1,193 ",
+    "discount": "₹1,955",
+    "dicount-discountAmount": "39%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/397/9780143470397.jpg",
+    "name": "Power of Ignored Skills",
+    "author": "Manoj Tripathi",
+    "review": "No Review Yet",
+    "prize": "₹205 ",
+    "discount": "₹250",
+    "dicount-discountAmount": "18%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/949/9780593517949.jpg",
+    "name": " Princeton Review AP Physics C Premium Prep",
+    "author": "Princeton Review",
+    "review": "No Review Yet",
+    "prize": "₹1,381 ",
+    "discount": "₹2,125",
+    "dicount-discountAmount": "35%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/180/9781250319180.jpg",
+    "name": "   Wind and Truth",
+    "author": "Brandon Sanderson",
+    "review": "No Review Yet",
+    "prize": "₹2,229 ",
+    "discount": "₹3,230",
+    "dicount-discountAmount": "31%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/969/9780593320969.jpg",
+    "name": "   Patriot",
+    "author": "Alexei Navalny",
+    "review": "No Review Yet",
+    "prize": "₹2,051 ",
+    "discount": "₹3,798",
+    "dicount-discountAmount": "46%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/714/9781529146714.jpg",
+    "name": "  The Stoic Path to Wealth: Ancient Wisdom for Enduring Prosperity",
+    "author": "Foroux, Darius",
+    "review": "No Review Yet",
+    "prize": "₹425 ",
+    "discount": "₹599",
+    "dicount-discountAmount": "29%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/861/9781035051861.jpg",
+    "name": "  RecipeTin Eats: Tonight",
+    "author": "Nagi Maehashi",
+    "review": "No Review Yet",
+    "prize": "₹2,285 ",
+    "discount": "₹2,821",
+    "dicount-discountAmount": "19%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/218/9780593714218.jpg",
+    "name": "Journey of Leadership",
+    "author": "Ramesh Srinivasan",
+    "review": "No Review Yet",
+    "prize": "₹1,632 ",
+    "discount": "₹2,720",
+    "dicount-discountAmount": "40%"
+  },
+  {
+    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/200/9781961409200.jpg",
+    "name": " 2025 Cfa Program Curriculum Level II Box Set",
+    "author": "CFA INSTITUTE",
+    "review": "No Review Yet",
+    "prize": "₹16,788",
+    "discount": " ₹21,250",
+    "dicount-discountAmount": "21%"
+  }
+]

@@ -3,7 +3,7 @@ import SearchNavbar from "../home/Search-Navbar";
 import BeforeNavbar from "../home/Before-Navbar";
 import Navbar from "../home/Navbar";
 import Footer from "../home/Footer";
-import ArrivalsHero from "./Arrivals-Hero";
+import Parent from "../Parent";
 
 export default function NewArrivals() {
   return (
@@ -11,7 +11,7 @@ export default function NewArrivals() {
       <BeforeNavbar />
       <SearchNavbar />
       <Navbar />
-      <ArrivalsHero />
+      <Parent test={"New Arrivals"} />
       <Footer />
     </div>
   );

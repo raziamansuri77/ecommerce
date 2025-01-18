@@ -34,20 +34,23 @@ export default function Search() {
             </div>
           </Link>
           <div className="w-[1px] h-[20px] bg-red-500"></div>
-
-          <div className="py-1 px-4  cursor-pointer hover:text-[#E42B26] font-semibold duration-150 ">
-            Best Sellers
-          </div>
+          <Link to="/bestSeller">
+            <div className="py-1 px-4  cursor-pointer hover:text-[#E42B26] font-semibold duration-150 ">
+              Best Sellers
+            </div>
+          </Link>
           <div className="w-[1px] h-[20px] bg-red-500"></div>
-
-          <div className="py-1 px-4  cursor-pointer hover:text-[#E42B26] font-semibold duration-150 ">
-            Fiction Books
-          </div>
+          <Link to="/fictionBooks">
+            <div className="py-1 px-4  cursor-pointer hover:text-[#E42B26] font-semibold duration-150 ">
+              Fiction Books
+            </div>
+          </Link>
           <div className="w-[1px] h-[20px] bg-red-500"></div>
-
-          <div className="py-1 px-4  cursor-pointer  hover:text-[#E42B26] font-semibold duration-150">
-            Award Winners
-          </div>
+          <Link to="/awardWinners">
+            <div className="py-1 px-4  cursor-pointer  hover:text-[#E42B26] font-semibold duration-150">
+              Award Winners
+            </div>
+          </Link>
           <div className="w-[1px] h-[20px] bg-red-500"></div>
 
           <div className="py-1 px-4  cursor-pointer  hover:text-[#E42B26] font-semibold duration-150 ">

@@ -11,8 +11,7 @@ export default function AccountHero() {
       <BeforeNavbar />
       <SearchNavbar />
       <Navbar />
-      <PersonalSetting />
-      {/* <YourAccount /> */}
+      <YourAccount />
       <Footer />
     </div>
   );

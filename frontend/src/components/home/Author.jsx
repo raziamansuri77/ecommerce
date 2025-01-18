@@ -150,13 +150,6 @@ export default function Author() {
                 <p>Sylvia Plath</p>
               </div>
             </div>
-            {/* Card 10 */}
-            <div className="flex-shrink-0 h-[100px]    text-black m-4 rounded-lg">
-              <div className="text-center flex  flex-col gap-2 items-center cursor-pointer">
-                <div className="w-[140px] h-[140px] bg-cover bg-[url('./public/auth11.jpg')]  rounded-full"></div>
-                <p>Shashi Tharoor</p>
-              </div>
-            </div>
           </div>
 
           {/* Previous Button */}
