@@ -1,19 +1,59 @@
 import React, { useState } from "react";
 import randomBook from "/src/components/Random-Book.json";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 export default function Parent(props) {
   const [value, setValue] = useState(50);
   const handleChange = (event) => {
     setValue(event.target.value);
   };
+  // books visible or not
+  const [displayedBooks, setDisplayedBooks] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(10);
 
-  // const [arrival, setArrival] = useState("arrival");
-  // const [boxSet, setBoxSet] = useState("boxset");
-  let text = ["arrival", "boxSet", "awardWinner", "bestSellers"];
-  // (function demo(props.test) {
-  //   console.log("rendom text..", test);
-  // })();
+  useEffect(() => {
+    // Shuffle books array on page load
+    const shuffledBooks = [...randomBook].sort(() => Math.random() - 0.5);
+    setDisplayedBooks(shuffledBooks.slice(0, 10));
+  }, []);
+
+  const handleShowMore = () => {
+    const nextBooks = randomBook.slice(currentIndex, currentIndex + 10);
+    setDisplayedBooks([...displayedBooks, ...nextBooks]);
+    setCurrentIndex(currentIndex + 10);
+  };
+  // let text = ["arrival", "boxSet", "awardWinner", "bestSellers"];
+
+  // const BookList = () => {
+  //   const [sortType, setSortType] = useState("relevance");
+  //   const [books, setBooks] = useState(booksData.books);
+
+  //   const handleSort = (type) => {
+  //     let sortedBooks = [...books];
+
+  //     switch (type) {
+  //       case "relevance":
+  //         sortedBooks.sort((a, b) => b.relevance - a.relevance);
+  //         break;
+  //       case "price-low":
+  //         sortedBooks.sort((a, b) => a.price - b.price);
+  //         break;
+  //       case "price-high":
+  //         sortedBooks.sort((a, b) => b.price - a.price);
+  //         break;
+  //       case "discount":
+  //         sortedBooks.sort((a, b) => b.discount - a.discount);
+  //         break;
+  //       default:
+  //         break;
+  //     }
+
+  //     setBooks(sortedBooks);
+  //     setSortType(type);
+  //   };
+
   return (
-    <div>
+    <div className="min-h-screen">
       <div className="text-center text-[30px] font-bold">
         {/* {text ? arrival : boxSet} */}
         {props.test || "razia"}
@@ -57,45 +97,84 @@ export default function Parent(props) {
         <div className=" w-full ">
           <div className="flex justify-end">
             {/* <div className="text-[18px] font-semibold">5441 results found</div> */}
-            <div className="space-x-2">
+            {/* <div className="space-x-2">
               <label htmlFor="sort">Sort By: </label>
               <select name="" id="" className="bg-[#E9E9ED]">
-                <option value="relevance"> Relevance</option>
-                <option value="prize-low-high">Price-Low to High</option>
-                <option value="prize-high-low">Price-High to Low</option>
-                <option value="discount">Discount</option>
+                <option
+                  value="relevance"
+                  // className={sortType === "relevance" ? "active" : ""}
+                  // onClick={() => handleSort("relevance")}
+                >
+                  {" "}
+                  Relevance
+                </option>
+                <option
+                  value="prize-low-high"
+                  // className={sortType === "price-low" ? "active" : ""}
+                  // onClick={() => handleSort("price-low")}
+                >
+                  Price-Low to High
+                </option>
+                <option
+                  value="prize-high-low"
+                  // className={sortType === "price-high" ? "active" : ""}
+                  // onClick={() => handleSort("price-high")}
+                >
+                  Price-High to Low
+                </option>
+                <option
+                  value="discount"
+                  // className={sortType === "discount" ? "active" : ""}
+                  // onClick={() => handleSort("discount")}
+                >
+                  Discount
+                </option>
               </select>
-            </div>
+            </div> */}
           </div>
           <div className="grid grid-cols-5 gap-3 py-4 ">
-            {randomBook.map((book) => {
+            {displayedBooks.map((book) => {
               return (
-                <div className="  shadow-inner bg-[#FBFBFB]  cursor-pointer p-4 relative ">
-                  <div className="  bg-[#FD0000] text-white text-[12px] px-4 py-[1px]  absolute -top-2 -left-2 flex items-center justify-center text-center">
-                    {book.discountAmount}
+                <Link to="/quickview">
+                  <div
+                    key={book.key}
+                    className="  shadow-inner bg-[#FBFBFB]  cursor-pointer p-4 relative "
+                  >
+                    <div className="  bg-[#FD0000] text-white text-[12px] px-4 py-[1px]  absolute -top-2 -left-2 flex items-center justify-center text-center">
+                      {book.discountAmount}
+                    </div>
+                    <div className="flex flex-col items-center">
+                      <img src={book.img} alt="" className="w-full h-[200px]" />
+                      <div className="text-gray-600 text-center font-bold">
+                        {book.name}
+                      </div>
+                      <div className="text-gray-600 text-center">
+                        {book.author}
+                      </div>
+                      <div className="text-gray-600 text-center">
+                        {book.review}
+                      </div>
+                      <div className="flex gap-2 items-center">
+                        <div>{book.prize}</div>
+                        <div className="line-through">{book.discount}</div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex flex-col items-center">
-                    <img src={book.img} alt="" className="w-full h-[200px]" />
-                    <div className="text-gray-600 text-center font-bold">
-                      {book.name}
-                    </div>
-                    <div className="text-gray-600 text-center">
-                      {book.author}
-                    </div>
-                    <div className="text-gray-600 text-center">
-                      {book.review}
-                    </div>
-                    <div className="flex gap-2 items-center">
-                      <div>{book.prize}</div>
-                      <div className="line-through">{book.discount}</div>
-                    </div>
-                  </div>
-                </div>
+                </Link>
               );
             })}
           </div>
+          {currentIndex < randomBook.length && (
+            <div
+              onClick={handleShowMore}
+              className="text-center hover:text-[#B01A16] duration-500 py-4 hover:underline cursor-pointer"
+            >
+              Load more books
+            </div>
+          )}
         </div>
       </div>
     </div>
   );
 }
+// }

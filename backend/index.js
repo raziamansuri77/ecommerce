@@ -1,25 +1,46 @@
 const express = require("express");
-const app = express();
-const bodyParser = require("body-parser");
 const cors = require("cors");
-const AuthRouter = require("./Routes/AuthRouter");
-const ProductRouter = require("./Routes/ProductRouter");
+const bodyParser = require("body-parser");
+const connectDB = require("./config/db");
 
+connectDB();
+const app = express();
 require("dotenv").config();
-require("./Models/db");
+// require("./config/db");
+const authRoutes = require("./routes/authRoutes");
+const authenticate = require("./middleware/authMiddleware");
+const errorHandler = require("./middleware/errorHandler"); // Import the error handler
+
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 const PORT = process.env.PORT || 8080;
 
-app.get("/ping", (req, res) => {
-  res.send("PONG");
+// Use authentication routes
+app.use("/api/v1", authRoutes);
+
+// Get user profile - PROTECTED ROUTE
+app.get("/api/v1/user/:userId", authenticate, async (req, res) => {
+  try {
+    // The authenticate middleware already fetched the user
+    res.json(req.user);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
 });
 
-app.use(bodyParser.json());
-app.use(cors());
-app.use("/auth", AuthRouter);
-app.use("/products", ProductRouter);
+// Handle 404 errors
+app.use(errorHandler);
+
+// Global error handler
+app.use((err, req, res, next) => {
+  console.error("Global error handler:", err);
+  res
+    .status(500)
+    .json({ error: "Internal server error", details: err.message });
+});
 
 app.listen(PORT, () => {
-  console.log(`Server is running on ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
-
-// BCxWyq9vxYWemuog;

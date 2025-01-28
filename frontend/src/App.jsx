@@ -1,37 +1,38 @@
-import Login from "./components/login/Login";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import Home from "./components/home/Home";
-import SignupPage from "./components/signup/Signup-Page";
-import Signup from "./components/signup/Signup";
-import Forgot from "./components/forgot/Forgot";
-import Book from "./components/books/Book";
-import NewArrivals from "./components/arrivals/New-Arrivals";
-import Medical from "./components/medical-dream/Medical";
-import BoxSet from "./components/box-set/Box-Set";
-import BoxSetHero from "./components/box-set/box-set-hero";
-import AccountHero from "./components/account/Account-Hero";
-import PersonalSetting from "./components/account/Personal-Setting";
-import YourOrder from "./components/account/Your-Order";
-import Wishlist from "./components/account/Wishlist";
-import Certificates from "./components/account/Certificates";
-import Address from "./components/account/Address";
-import ChangePassword from "./components/account/ChangePassword";
-import BestSellers from "./components/best-sellers/Best-Sellers";
-import FictionBooks from "./components/fiction-books/Fiction-Books";
-import AwardWinners from "./components/award-winners/Award-Winners";
+import Home from "./home/Home";
+import Login from "./login/Login";
+import Signup from "./signup/Signup";
+import Forgot from "./forgot/Forgot";
+import Medical from "./medical-dream/Medical";
+import BoxSet from "./box-set/Box-Set";
+import BoxSetHero from "./box-set/Box-Set-Hero";
+import AccountHero from "./account/Account-Hero";
+import PersonalSetting from "./account/Personal-Setting";
+import YourOrder from "./account/Your-Order";
+import Wishlist from "./account/Wishlist";
+import Certificates from "./account/Certificates";
+import Address from "./account/Address";
+import ChangePassword from "./account/ChangePassword";
+import BestSellers from "./best-sellers/Best-Sellers";
+import FictionBooks from "./fiction-books/Fiction-Books";
+import AwardWinners from "./award-winners/Award-Winners";
+import Authors from "./author/authors";
+import NewArrivals from "./arrivals/New-Arrivals";
+import TodaysDeal from "./todays-deal/Todays-Deal";
+import RequestBook from "./request-book/Request-Book";
+import BookDetails from "./components/Book-Details";
+import SliderNext from "./home/Slider-Next";
+import QuickView from "./components/Quick-View";
 
 function App() {
-  // const isAuthenticated = !!localStorage.getItem("user");
   return (
     <div>
-      {/* <TabCom /> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/forgot" element={<Forgot />} />
-          <Route path="/book" element={<Book />} />
           <Route path="/newarrivals" element={<NewArrivals />} />
           <Route path="/medical" element={<Medical />} />
           <Route path="/boxset" element={<BoxSet />} />
@@ -46,6 +47,12 @@ function App() {
           <Route path="/bestSeller" element={<BestSellers />} />
           <Route path="/fictionBooks" element={<FictionBooks />} />
           <Route path="/awardWinners" element={<AwardWinners />} />
+          <Route path="/authors" element={<Authors />} />
+          <Route path="/todaysDeal" element={<TodaysDeal />} />
+          <Route path="/requestBook" element={<RequestBook />} />
+          <Route path="/bookDetails" element={<BookDetails />} />
+          <Route path="/SliderNext" element={<SliderNext />} />
+          <Route path="/quickview" element={<QuickView />} />
         </Routes>
       </BrowserRouter>
     </div>
