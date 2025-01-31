@@ -1,13 +1,12 @@
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const connectDB = require("./config/db");
+const connectDB = require("./config/connectdb");
+const authRoutes = require("./Routes/authRoutes");
 
 connectDB();
 const app = express();
 require("dotenv").config();
-// require("./config/db");
-const authRoutes = require("./routes/authRoutes");
 const authenticate = require("./middleware/authMiddleware");
 const errorHandler = require("./middleware/errorHandler"); // Import the error handler
 

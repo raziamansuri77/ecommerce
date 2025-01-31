@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import randomBook from "/src/components/Random-Book.json";
 
 export default function ArrivalsHero() {
@@ -11,6 +12,11 @@ export default function ArrivalsHero() {
   const [visibleBooks, setVisibleBooks] = useState(10);
   const showMoreBooks = () => {
     setVisibleBooks(visibleBooks + 10);
+  };
+  const navigate = useNavigate();
+
+  const handleBookClick = (book) => {
+    navigate(`/book/${book.id}`, { state: { bookData: book } });
   };
   return (
     <div>
@@ -71,6 +77,7 @@ export default function ArrivalsHero() {
                   <div
                     key={book.id}
                     className="  shadow-inner bg-[#FBFBFB]  cursor-pointer p-4 relative "
+                    onClick={() => handleBookClick(book)}
                   >
                     <div className="  bg-[#FD0000] text-white text-[12px] px-4 py-[1px]  absolute -top-2 -left-2 flex items-center justify-center text-center">
                       {book.discountAmount}

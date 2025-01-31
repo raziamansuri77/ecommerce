@@ -11,36 +11,39 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const { login } = useAuth();
   const navigate = useNavigate();
-
-  // Function to generate random CAPTCHA
+  // Function to generate random CAPTCHA - without event parameter
   const generateCaptcha = () => {
     const characters =
       "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     let result = "";
-    for (let i = 0; i < 6; i++) {
+    const length = 6;
+
+    for (let i = 0; i < length; i++) {
       result += characters.charAt(
         Math.floor(Math.random() * characters.length)
       );
     }
+
     setCaptchaText(result);
-    setIsValid(null); // Reset validation status
+    setUserInput("");
+    setIsValid(null);
+  };
+
+  // For button click handler - with event parameter
+  const handleCaptchaRefresh = (e) => {
+    e.preventDefault();
+    generateCaptcha();
   };
 
   // Function to play CAPTCHA as sound
-  const playCaptchaSound = () => {
-    const sound = new Howl({
-      src: [`data:audio/wav;base64,${btoa(generateCaptchaSound(captchaText))}`],
-      format: ["wav"],
-    });
-    sound.play();
-  };
-
-  // Generate CAPTCHA sound data
-  const generateCaptchaSound = (text) => {
-    const utterance = new SpeechSynthesisUtterance(text);
-    const synth = window.speechSynthesis;
-    synth.speak(utterance);
-    return "";
+  const playCaptchaSound = (e) => {
+    e.preventDefault(); // Prevent form submission
+    if ("speechSynthesis" in window) {
+      const utterance = new SpeechSynthesisUtterance(captchaText);
+      utterance.rate = 0.8;
+      utterance.pitch = 1.2;
+      window.speechSynthesis.speak(utterance);
+    }
   };
 
   // Handle input change
@@ -60,16 +63,36 @@ export default function LoginPage() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    if (isValid) {
-      try {
-        await login({ email, password });
-        navigate("/"); // Redirect to home page after successful login
-      } catch (error) {
-        console.error("Login failed", error);
-        // Handle login error (e.g., display error message)
-      }
-    } else {
-      alert("Please enter the correct captcha");
+
+    // Validate all required fields
+    if (!email.trim()) {
+      alert("Email is required");
+      return;
+    }
+
+    if (!password.trim()) {
+      alert("Password is required");
+      return;
+    }
+
+    if (!userInput.trim()) {
+      alert("Please enter the CAPTCHA");
+      return;
+    }
+
+    // Validate CAPTCHA first
+    if (userInput !== captchaText) {
+      alert("Please enter the correct CAPTCHA");
+      return;
+    }
+
+    // If all validations pass, proceed with login
+    try {
+      await login({ email, password });
+      navigate("/"); // Redirect to home page after successful login
+    } catch (error) {
+      console.error("Login failed", error);
+      alert("Login failed. Please check your credentials.");
     }
   };
 
@@ -119,16 +142,6 @@ export default function LoginPage() {
                 className="px-2 py-1 outline-none border"
               />
             </div>
-            {isValid === true && (
-              <div style={{ color: "green", marginTop: "10px" }}>
-                ✅ Correct!
-              </div>
-            )}
-            {isValid === false && (
-              <div style={{ color: "red", marginTop: "10px" }}>
-                ❌ Incorrect!"
-              </div>
-            )}
           </div>
           <Link to="/forgot">
             <div className="text-right px-2   font-semibold text-[#E42B26] cursor-pointer  hover:text-black duration-300">

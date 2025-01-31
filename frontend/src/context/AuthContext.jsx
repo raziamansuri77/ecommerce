@@ -17,9 +17,19 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = async (credentials) => {
-    const response = await authService.login(credentials);
-    setUser(response);
-    return response;
+    try {
+      const response = await axios.post(
+        "http://localhost:5000/api/auth/login",
+        credentials
+      );
+      if (response.data) {
+        localStorage.setItem("user", JSON.stringify(response.data));
+        setUser(response.data);
+        return response.data;
+      }
+    } catch (error) {
+      throw error;
+    }
   };
 
   const register = async (userData) => {
