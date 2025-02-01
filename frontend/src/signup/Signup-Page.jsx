@@ -12,17 +12,19 @@ export default function SignupPage() {
   const { register } = useAuth();
   const navigate = useNavigate();
 
-  // Function to generate random CAPTCHA
+  // Update the generateCaptcha function for better randomization
   const generateCaptcha = () => {
     const characters =
       "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     let result = "";
-    for (let i = 0; i < 6; i++) {
-      result += characters.charAt(
-        Math.floor(Math.random() * characters.length)
-      );
+    const length = 6;
+
+    for (let i = 0; i < length; i++) {
+      const randomIndex = Math.floor(Math.random() * characters.length);
+      result += characters.charAt(randomIndex);
     }
     setCaptchaText(result);
+    setUserInput(""); // Clear user input when generating new CAPTCHA
     setIsValid(null); // Reset validation status
   };
 
@@ -43,14 +45,20 @@ export default function SignupPage() {
     return "";
   };
 
-  // Handle input change
+  // Add immediate validation on input change
   const handleChange = (e) => {
-    setUserInput(e.target.value);
+    const input = e.target.value;
+    setUserInput(input);
+    if (input.length === captchaText.length) {
+      setIsValid(input === captchaText);
+    }
   };
 
-  // Validate CAPTCHA
+  // Add a separate validation function for form submission
   const validateCaptcha = () => {
-    setIsValid(userInput === captchaText);
+    const isValidCaptcha = userInput === captchaText;
+    setIsValid(isValidCaptcha);
+    return isValidCaptcha;
   };
 
   // Initialize CAPTCHA on mount
@@ -58,18 +66,21 @@ export default function SignupPage() {
     generateCaptcha();
   }, []);
 
+  // Update handleSignup to use the new validation
   const handleSignup = async (e) => {
     e.preventDefault();
-    if (isValid) {
-      try {
-        await register({ email, password, name: email }); // Assuming email as name for now
-        navigate("/"); // Redirect to home page after successful signup
-      } catch (error) {
-        console.error("Signup failed", error);
-        // Handle signup error (e.g., display error message)
-      }
-    } else {
-      alert("Please enter the correct captcha");
+
+    if (!validateCaptcha()) {
+      alert("Please enter the correct CAPTCHA");
+      return;
+    }
+
+    try {
+      await register({ email, password });
+      navigate("/");
+    } catch (error) {
+      console.error("Signup error:", error);
+      alert("Signup failed. Please try again.");
     }
   };
 
@@ -129,11 +140,11 @@ export default function SignupPage() {
           </div>
           <div className="space-y-2">
             <button
-              onClick={validateCaptcha}
-              style={{ marginLeft: "10px" }}
-              className=" border-2 border-[#E42B26] w-full p-1 text-[#E42B26] hover:text-black text-[12px] duration-300 "
+              type="submit"
+              className="bg-[#E42B26] w-full p-1 text-white"
+              onClick={handleSignup}
             >
-              Request OTP
+              Register
             </button>
             <button className="bg-[#E42B26] w-full p-1 text-white   ">
               <Link to="/login">Existing User? Log in</Link>

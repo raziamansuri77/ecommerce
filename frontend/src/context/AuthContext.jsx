@@ -1,67 +1,89 @@
-import { createContext, useContext, useState, useEffect } from "react";
-import authService from "../services/authService";
+import React, { createContext, useState, useContext, useEffect } from "react";
+import axios from "axios";
 
-const AuthContext = createContext(null);
+const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const initializeAuth = () => {
-      const currentUser = authService.getCurrentUser();
-      setUser(currentUser);
-      setLoading(false);
-    };
-    initializeAuth();
+    const storedUser = sessionStorage.getItem("user");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+    setLoading(false);
   }, []);
 
-  const login = async (credentials) => {
+  const register = async (userData) => {
     try {
+      console.log("Registration attempt with:", userData);
+
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
-        credentials
+        "http://localhost:5000/api/v1/register",
+        userData
       );
-      if (response.data) {
-        localStorage.setItem("user", JSON.stringify(response.data));
-        setUser(response.data);
-        return response.data;
+      console.log("Registration response:", response.data);
+
+      if (response.status === 201) {
+        console.log("Registration successful, attempting auto-login");
+
+        const loginResponse = await axios.post(
+          "http://localhost:5000/api/v1/login",
+          {
+            email: userData.email,
+            password: userData.password,
+          }
+        );
+        console.log("Auto-login response:", loginResponse.data);
+
+        if (loginResponse.status === 200) {
+          const { token } = loginResponse.data;
+          const newUser = { ...userData, token };
+          setUser(newUser);
+          sessionStorage.setItem("user", JSON.stringify(newUser));
+          console.log(
+            "User successfully logged in after registration:",
+            newUser
+          );
+        }
       }
     } catch (error) {
+      console.error("Registration error details:", {
+        message: error.message,
+        response: error.response?.data,
+        status: error.response?.status,
+      });
+      throw error;
+    }
+  };
+  const login = async (userData) => {
+    try {
+      const response = await axios.post("/api/v1/login", userData);
+      if (response.status === 200) {
+        const { token } = response.data;
+        const newUser = { ...userData, token };
+        setUser(newUser);
+        sessionStorage.setItem("user", JSON.stringify(newUser));
+      }
+    } catch (error) {
+      console.error("Login failed:", error);
       throw error;
     }
   };
 
-  const register = async (userData) => {
-    const response = await authService.register(userData);
-    setUser(response);
-    return response;
-  };
-
   const logout = () => {
-    authService.logout();
     setUser(null);
-  };
-
-  const value = {
-    user,
-    loading,
-    login,
-    register,
-    logout,
+    sessionStorage.removeItem("user");
   };
 
   return (
-    <AuthContext.Provider value={value}>
-      {!loading && children}
+    <AuthContext.Provider value={{ user, register, login, logout, loading }}>
+      {children}
     </AuthContext.Provider>
   );
 };
 
 export const useAuth = () => {
-  const context = useContext(AuthContext);
-  if (!context) {
-    throw new Error("useAuth must be used within an AuthProvider");
-  }
-  return context;
+  return useContext(AuthContext);
 };

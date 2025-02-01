@@ -45,13 +45,13 @@ export default function SearchNavbar() {
                   role="menu"
                 >
                   <div className="py-1 h-[500px]" role="none">
-                    <a
+                    <div
                       href="#"
                       className="block px-4 bg-[#E42B26] text-[15px] font-semibold text-center  py-2 text-sm  text-white  "
                       role="menuitem"
                     >
                       Login
-                    </a>
+                    </div>
                     <Link
                       to="/signup"
                       className="block px-4 py-2 text-sm   text-[#E42B26] hover:underline text-center text-[15px]"
@@ -61,41 +61,41 @@ export default function SearchNavbar() {
                     </Link>
                     <hr />
                     <Link to="/account">
-                      <a
+                      <div
                         href="#"
                         className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
                         role="menuitem"
                       >
                         Your Account
-                      </a>
+                      </div>
                     </Link>
                     <Link to="/personalsetting">
-                      <a
+                      <div
                         href="#"
                         className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
                         role="menuitem"
                       >
                         Personal Setting
-                      </a>{" "}
+                      </div>{" "}
                     </Link>
                     <Link to="/yourorder">
-                      <a
+                      <div
                         href="#"
                         className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
                         role="menuitem"
                       >
                         Your Orders
-                      </a>{" "}
+                      </div>{" "}
                     </Link>
 
                     <Link to="/wishlist">
-                      <a
+                      <div
                         href="#"
                         className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
                         role="menuitem"
                       >
                         Your Wishlist
-                      </a>{" "}
+                      </div>{" "}
                     </Link>
                   </div>
                 </div>
