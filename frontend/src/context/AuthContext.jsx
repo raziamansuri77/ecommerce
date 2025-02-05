@@ -19,22 +19,16 @@ export const AuthProvider = ({ children }) => {
     try {
       console.log("Registration attempt with:", userData);
 
-      const response = await axios.post(
-        "http://localhost:5000/api/v1/register",
-        userData
-      );
+      const response = await axios.post("/api/v1/register", userData);
       console.log("Registration response:", response.data);
 
       if (response.status === 201) {
         console.log("Registration successful, attempting auto-login");
 
-        const loginResponse = await axios.post(
-          "http://localhost:5000/api/v1/login",
-          {
-            email: userData.email,
-            password: userData.password,
-          }
-        );
+        const loginResponse = await axios.post("/api/v1/login", {
+          email: userData.email,
+          password: userData.password,
+        });
         console.log("Auto-login response:", loginResponse.data);
 
         if (loginResponse.status === 200) {

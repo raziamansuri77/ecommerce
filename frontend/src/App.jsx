@@ -23,6 +23,7 @@ import RequestBook from "./request-book/Request-Book";
 import BookDetails from "./components/Book-Details";
 import SliderNext from "./home/Slider-Next";
 import QuickView from "./components/Quick-View";
+import InternationalBestseller from "./international-bestseller/international-seller";
 
 function App() {
   return (
@@ -53,6 +54,10 @@ function App() {
           <Route path="/bookDetails" element={<BookDetails />} />
           <Route path="/SliderNext" element={<SliderNext />} />
           <Route path="/quickview" element={<QuickView />} />
+          <Route
+            path="InternationalBestseller"
+            element={<InternationalBestseller />}
+          />
         </Routes>
       </BrowserRouter>
     </div>

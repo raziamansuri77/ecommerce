@@ -15,6 +15,7 @@ import TopBooks from "./Top-Books";
 import DiscountBooks from "./Discount-Books";
 import Footer from "./Footer";
 import Slider2 from "./Slider2";
+import ExamBooks from "./Exam-Books";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <BestSeller />
       <Winners />
       <TopBooks />
+      <ExamBooks />
       <DiscountBooks />
       <Author />
       <Footer />

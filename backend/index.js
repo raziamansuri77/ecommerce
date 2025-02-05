@@ -9,13 +9,16 @@ const app = express();
 require("dotenv").config();
 const authenticate = require("./middleware/authMiddleware");
 const errorHandler = require("./middleware/errorHandler"); // Import the error handler
-
 app.use(cors());
+app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const PORT = process.env.PORT || 8080;
-
+//testing path backend
+// app.use("/", (req, res) => {
+//   res.send("Hello World!");
+// });
 // Use authentication routes
 app.use("/api/v1", authRoutes);
 

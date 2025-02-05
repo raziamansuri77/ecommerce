@@ -2,20 +2,20 @@ import React from "react";
 import Navbar from "../home/Navbar";
 import BeforeNavbar from "../home/Before-Navbar";
 import SearchNavbar from "../home/Search-Navbar";
-import Parent from "../components/Parent";
 import Footer from "../home/Footer";
+import Parent from "../components/Parent";
 
-export default function AwardWinners() {
+export default function InternationalBestseller() {
   return (
     <div>
       <BeforeNavbar />
       <SearchNavbar />
       <Navbar />
       <div className="text-[30px] font-bold text-center py-2">
-        Award Winners
+        International Bestsellers
       </div>
 
-      <Parent test={"Box Set"} />
+      <Parent />
       <Footer />
     </div>
   );

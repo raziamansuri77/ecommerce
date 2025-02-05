@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import { Link } from "react-router-dom";
 export default function IconSlider() {
   const scrollContainer = useRef(null);
   const cardRef = useRef(null);
@@ -59,7 +60,7 @@ export default function IconSlider() {
   };
 
   return (
-    <div>
+    <div className=" ">
       <div className="relative  pb-4  border-t-2 border-b-2  border-gray-300 items-center">
         <button
           onClick={scrollPrev}
@@ -76,28 +77,32 @@ export default function IconSlider() {
             ref={cardRef}
             className="flex-shrink-0     text-black m-4 rounded-lg"
           >
-            <div className="text-center flex  flex-col items-center cursor-pointer">
-              <img
-                src="https://www.bookswagon.com/Images/staticimages/icon1.png"
-                alt=""
-                // className="w-[80px] "
-              />
-              <p>Best Seller</p>
-            </div>
+            <Link to="/bestseller">
+              <div className="text-center flex  flex-col items-center cursor-pointer">
+                <img
+                  src="https://www.bookswagon.com/Images/staticimages/icon1.png"
+                  alt=""
+                  // className="w-[80px] "
+                />
+                <p>Best Seller</p>
+              </div>
+            </Link>
           </div>
           {/* Card 2 */}
           <div className="flex-shrink-0    text-black m-4 rounded-lg">
-            <div className="text-center flex  flex-col items-center cursor-pointer">
-              <img
-                src="https://www.bookswagon.com/Images/staticimages/icon8.png"
-                alt=""
-                // className="w-[80px] "
-              />
-              <p>Award Winners</p>
-            </div>
+            <Link to="/awardWinners">
+              <div className="text-center flex  flex-col items-center cursor-pointer">
+                <img
+                  src="https://www.bookswagon.com/Images/staticimages/icon8.png"
+                  alt=""
+                  // className="w-[80px] "
+                />
+                <p>Award Winners</p>
+              </div>
+            </Link>
           </div>
           {/* Card 3 */}
-          <div className="flex-shrink-0    text-black m-4 rounded-lg">
+          {/* <div className="flex-shrink-0    text-black m-4 rounded-lg">
             <div className="text-center flex  flex-col items-center cursor-pointer">
               <img
                 src="https://www.bookswagon.com/Images/staticimages/TodaysDeal.png"
@@ -106,17 +111,19 @@ export default function IconSlider() {
               />
               <p>Best Seller</p>
             </div>
-          </div>
+          </div> */}
           {/* Card 4 */}
           <div className="flex-shrink-0    text-black m-4 rounded-lg">
-            <div className="text-center flex  flex-col items-center cursor-pointer">
-              <img
-                src="https://www.bookswagon.com/Images/staticimages/icon4.png"
-                alt=""
-                className="w-[80px] "
-              />
-              <p>Box Sets</p>
-            </div>
+            <Link to="/boxset">
+              <div className="text-center flex  flex-col items-center cursor-pointer">
+                <img
+                  src="https://www.bookswagon.com/Images/staticimages/icon4.png"
+                  alt=""
+                  className="w-[80px] "
+                />
+                <p>Box Sets</p>
+              </div>
+            </Link>
           </div>{" "}
           {/* Card 5 */}
           <div className="flex-shrink-0   text-black m-4 rounded-lg">

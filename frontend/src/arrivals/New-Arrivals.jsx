@@ -10,6 +10,7 @@ export default function NewArrivals() {
       <BeforeNavbar />
       <SearchNavbar />
       <Navbar />
+      <div className="text-[30px] font-bold text-center py-2">New Arrival</div>
       <Parent />
       <Footer />
     </div>

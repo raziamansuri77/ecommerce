@@ -138,21 +138,21 @@ export default function SignupPage() {
               </div>
             )}
           </div>
-          <div className="space-y-2">
+          <div className="space-y-4 ">
             <button
               type="submit"
               className="bg-[#E42B26] w-full p-1 text-white"
               onClick={handleSignup}
             >
-              Register
+              Sign Up
             </button>
             <button className="bg-[#E42B26] w-full p-1 text-white   ">
               <Link to="/login">Existing User? Log in</Link>
             </button>
           </div>
-          <div className="flex justify-center ">
+          {/* <div className="flex justify-center ">
             <img src="public/google.png" alt="" className="w-[30px] h-[30px]" />
-          </div>
+          </div> */}
           <div className=" text-[13px] font-semibold text-[#E42B26] cursor-pointer  hover:text-black duration-300">
             New to Apna Book Store? Sign up
           </div>{" "}

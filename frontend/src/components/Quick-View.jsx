@@ -15,14 +15,15 @@ export default function QuickView() {
           return (
             <div
               key={book.key}
-              className=" w-[200px] h-[600px] shadow-inner bg-[#FBFBFB]  cursor-pointer p-4 relative "
+              className=" w-full h-[600px] shadow-inner flex gap-8 bg-[#FBFBFB]    p-4 relative "
             >
-              {/* <div className="  bg-[#FD0000] text-white text-[12px] px-4 py-[1px]  absolute -top-2 -left-2 flex items-center justify-center text-center">
-                {book.discountAmount}
-              </div>
-              <div className="flex flex-col items-center">
-                <img src={book.img} alt="" className="w-full h-[200px]" />
-                <div className="text-gray-600 text-center font-bold">
+              <div>
+                <div className="  bg-[#FD0000] text-white text-[12px] px-4 py-[1px]  absolute -top-2 -left-2 flex items-center justify-center text-center">
+                  {book.discountAmount}
+                </div>
+                <div className="flex flex-col items-center ">
+                  <img src={book.img} alt="" className="w-[200px] h-[300px]" />
+                  {/* <div className="text-gray-600 text-center font-bold">
                   {book.name}
                 </div>
                 <div className="text-gray-600 text-center">{book.author}</div>
@@ -31,7 +32,24 @@ export default function QuickView() {
                   <div>{book.prize}</div>
                   <div className="line-through">{book.discount}</div>
                 </div> */}
-              {/* </div> */}
+                </div>
+              </div>
+              <div>
+                <div className="text-[35px] font-bold text-[#B01A16]">
+                  {book.name}
+                </div>
+                <div>By:{book.author}</div>
+                <div>{book.review}</div>
+                <div>{book.prize}</div>
+                <div className="line-through">{book.discount}</div>
+              </div>
+              <div>
+                <div className="border-b-2 border-gray-300">
+                  <button>Add to Cart</button>
+                  <button>Buy Now</button>
+                  <button>Add to Wishlist</button>
+                </div>
+              </div>
             </div>
           );
         })}

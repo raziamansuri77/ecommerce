@@ -349,9 +349,11 @@ export default function BestSeller() {
             <MdOutlineKeyboardArrowRight className="text-[70px] cursor-pointer" />
           </button>
         </div>
-        <div className="text-center text-[#E42B26] font-semibold underline cursor-pointer py-4">
-          Show All
-        </div>
+        <Link to="/InternationalBestseller">
+          <div className="text-center text-[#E42B26] font-semibold underline cursor-pointer py-4">
+            Show All
+          </div>
+        </Link>
       </div>
       <div className="py-8   w-full  ">
         <Link to="/medical">

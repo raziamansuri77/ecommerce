@@ -12,6 +12,8 @@ export default function BestSellers() {
       <BeforeNavbar />
       <SearchNavbar />
       <Navbar />
+      <div className="text-[30px] font-bold text-center py-2">Best Sellers</div>
+
       <Parent />
       {/* <BestSellersBase /> */}
       <Footer />

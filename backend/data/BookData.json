@@ -5,7 +5,8 @@
     "author": "Dav Pilkey",
     "prize": "₹9,165",
     "discount": " ₹11,042",
-    "discountAmount": "17%"
+    "discountAmount": "17%",
+    "description": "A collection of Dog Man adventures featuring the Supa Buddies. Follow the heroic adventures of Dog Man in this complete box set of this bestselling series."
   },
 
   {
@@ -14,7 +15,8 @@
     "author": "Stephanie Garber",
     "prize": "₹2,391",
     "discount": " ₹3,568",
-    "discountAmount": "33%"
+    "discountAmount": "33%",
+    "description": "Enter the magical world of Caraval in this complete collection. Follow Scarlett and Tella's enchanting journey through games of love, loss, and magic."
   },
 
   {
@@ -23,7 +25,8 @@
     "author": "Rick Riordan",
     "prize": "₹334",
     "discount": " ₹3,710",
-    "discountAmount": "91%"
+    "discountAmount": "91%",
+    "description": "Join Percy Jackson on his epic adventures with Greek gods and monsters in this complete series of five thrilling books."
   },
   {
     "img": "https://www.bookswagon.com/productimages/images200/045/9781368098045.jpg",
@@ -31,7 +34,8 @@
     "author": "Rick Riordan",
     "prize": "₹2,751",
     "discount": "₹3,821",
-    "discountAmount": "28%"
+    "discountAmount": "28%",
+    "description": "Experience the complete Percy Jackson saga in this collection featuring all five books of demigod adventures and Greek mythology."
   },
   {
     "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/886/9780593201886.jpg",
@@ -39,26 +43,27 @@
     "author": "Frank Herbert",
     "prize": "₹5,875",
     "discount": " ₹9,180",
-    "discountAmount": "36%"
+    "discountAmount": "36%",
+    "description": "Immerse yourself in the complete Dune saga, featuring all six original novels of this groundbreaking science fiction epic."
   },
 
   {
     "img": "https://www.bookswagon.com/productimages/images200/099/9781368053099.jpg",
     "name": "Paperback Boxed Set, The-10th Anniversary Edition",
-
     "author": "Rick Riordan",
     "prize": "₹2,887",
     "discount": "₹4,246",
-    "discountAmount": "32%"
+    "discountAmount": "32%",
+    "description": "Celebrate the 10th anniversary of this beloved series with this special edition boxed set featuring exclusive content and artwork."
   },
   {
     "img": "https://www.bookswagon.com/productimages/images200/481/9781101965481.jpg",
     "name": "George R. R. Martin's A Game of Thrones Leather-",
     "author": "George R. R. Mart",
     "prize": "₹4,985",
-
     "discount": " ₹7,225",
-    "discountAmount": "31%"
+    "discountAmount": "31%",
+    "description": "A luxurious leather-bound edition of the epic fantasy series that has captured millions of readers worldwide."
   },
   {
     "img": "https://www.bookswagon.com/productimages/images200/397/9781338864397.jpg",
@@ -66,7 +71,8 @@
     "author": "Dav Pilkey",
     "prize": "₹2,982",
     "discount": " ₹3,313",
-    "discountAmount": "10%"
+    "discountAmount": "10%",
+    "description": "Join Cat Kid in this hilarious comic collection featuring creative stories and art from the creator of Dog Man."
   },
   {
     "img": "https://www.bookswagon.com/productimages/images200/613/9780316556613.jpg",
@@ -74,7 +80,8 @@
     "author": "Jennifer Lynn Barnes",
     "prize": "₹2,924",
     "discount": " ₹5,317",
-    "discountAmount": "45%"
+    "discountAmount": "45%",
+    "description": "Follow a group of teens with natural abilities who work with the FBI to solve cold cases in this thrilling series."
   },
   {
     "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/535/9780349438535.jpg",
@@ -82,7 +89,8 @@
     "author": "Ana Huang",
     "prize": "₹2,951",
     "discount": "₹4,339",
-    "discountAmount": "32%"
+    "discountAmount": "32%",
+    "description": "Experience the passionate and twisted romance series that has captivated readers worldwide in this complete collection."
   },
   {
     "img": "https://www.bookswagon.com/productimages/images200/323/9781338603323.jpg",
@@ -90,7 +98,8 @@
     "author": "Dav Pilkey",
     "prize": "₹4,748",
     "discount": "₹5,521",
-    "discountAmount": "14%"
+    "discountAmount": "14%",
+    "description": "Join the hilarious adventures of George and Harold with their superhero creation Captain Underpants in this colorful collection."
   },
   {
     "img": "https://www.bookswagon.com/productimages/images200/109/9780008376109.jpg",
@@ -98,7 +107,8 @@
     "author": "J. R. R. Tolkien",
     "prize": "₹5,688",
     "discount": "",
-    "discountAmount": ""
+    "discountAmount": "",
+    "description": "Journey through Middle-earth with this classic collection featuring The Hobbit and the complete Lord of the Rings trilogy."
   },
   {
     "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/577/9781405294577.jpg",
@@ -106,16 +116,17 @@
     "author": "Herge",
     "prize": "₹9,099",
     "discount": " ₹13,999",
-    "discountAmount": "35%"
+    "discountAmount": "35%",
+    "description": "Complete collection of Tintin's globe-trotting adventures featuring all 23 titles of this beloved comic series."
   },
   {
     "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/498/9781250254498.jpg",
     "name": "Three-Body Problem Boxed Set",
     "author": "Joel Martinsen",
     "prize": "₹3,729",
-
     "discount": " ₹4,843",
-    "discountAmount": "23%"
+    "discountAmount": "23%",
+    "description": "Explore this groundbreaking Chinese science fiction trilogy that has become an international phenomenon."
   },
   {
     "img": "https://www.bookswagon.com/productimages/images200/337/9781984858337.jpg",
@@ -123,7 +134,8 @@
     "author": "Yotam Ottolengh",
     "prize": "₹3,655",
     "discount": " ₹4,250",
-    "discountAmount": "14%"
+    "discountAmount": "14%",
+    "description": "A special edition collection featuring two essential cookbooks from renowned chef Yotam Ottolenghi."
   },
   {
     "img": "https://www.bookswagon.com/productimages/images200/101/9781250211101.jpg",
@@ -131,7 +143,8 @@
     "author": "Leigh Bardugo",
     "prize": "₹1,629",
     "discount": " ₹2,294",
-    "discountAmount": "29%"
+    "discountAmount": "29%",
+    "description": "Enter the dark and thrilling world of Ketterdam with this duology following a crew of dangerous outcasts."
   },
   {
     "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/911/9781338312911.jpg",
@@ -139,7 +152,8 @@
     "author": "Jim Kay",
     "prize": "₹8,364",
     "discount": " ₹10,200",
-    "discountAmount": "18%"
+    "discountAmount": "18%",
+    "description": "Experience the magic of Harry Potter with stunning illustrations by Jim Kay in this beautiful collection."
   },
   {
     "img": "https://www.bookswagon.com/productimages/images200/916/9780375849916.jpg",
@@ -147,7 +161,8 @@
     "author": "Mary Pope Os",
     "prize": "₹5,359",
     "discount": " ₹7,999",
-    "discountAmount": "33%"
+    "discountAmount": "33%",
+    "description": "Join Jack and Annie on their magical adventures through time and space in this comprehensive collection of 28 books."
   },
   {
     "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/074/9780545162074.jpg",
@@ -155,7 +170,8 @@
     "author": "J K ROWLINGJ K ROWLING",
     "prize": "₹7,140",
     "discount": " ₹8,500 ",
-    "discountAmount": "16%"
+    "discountAmount": "16%",
+    "description": "The complete magical journey of Harry Potter from year one to seven at Hogwarts in this complete paperback collection."
   },
   {
     "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/441/9781407135441.jpg",
@@ -163,6 +179,7 @@
     "author": "Suzanne Collins",
     "prize": "₹1,876",
     "discount": " ₹2,886",
-    "discountAmount": "35%"
+    "discountAmount": "35%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
   }
 ]
