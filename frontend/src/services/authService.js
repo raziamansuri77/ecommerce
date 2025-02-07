@@ -7,6 +7,7 @@ export const authService = {
   register: async (userData) => {
     try {
       const response = await axios.post(`${API_URL}/register`, userData);
+
       if (response.data.token) {
         localStorage.setItem("token", response.data.token);
         localStorage.setItem("user", JSON.stringify(response.data));

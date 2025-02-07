@@ -3,39 +3,35 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const connectDB = require("./config/connectdb");
 const authRoutes = require("./Routes/authRoutes");
+const bookRoutes = require("./Routes/bookRoutes");
 
 connectDB();
 const app = express();
 require("dotenv").config();
 const authenticate = require("./middleware/authMiddleware");
-const errorHandler = require("./middleware/errorHandler"); // Import the error handler
+const errorHandler = require("./middleware/errorHandler");
+
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const PORT = process.env.PORT || 8080;
-//testing path backend
-// app.use("/", (req, res) => {
-//   res.send("Hello World!");
-// });
-// Use authentication routes
+// Routes
 app.use("/api/v1", authRoutes);
+app.use("/api/v1/", bookRoutes);
 
 // Get user profile - PROTECTED ROUTE
 app.get("/api/v1/user/:userId", authenticate, async (req, res) => {
   try {
-    // The authenticate middleware already fetched the user
     res.json(req.user);
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
 });
 
-// Handle 404 errors
 app.use(errorHandler);
 
-// Global error handler
 app.use((err, req, res, next) => {
   console.error("Global error handler:", err);
   res
