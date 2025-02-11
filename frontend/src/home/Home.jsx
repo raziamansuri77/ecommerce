@@ -26,15 +26,15 @@ export default function Home() {
       <Comics />
       <Slider />
       <IconSlider />
-      <Trending />
-      <Seller />
-      <Arrivals />
-      <BestSeller />
-      <Winners />
-      <TopBooks />
-      <ExamBooks />
+      {/* <Trending /> */}
+      {/* <Seller /> */}
+      {/* <Arrivals /> */}
+      {/* <BestSeller /> */}
+      {/* <Winners /> */}
+      {/* <TopBooks /> */}
+      {/* <ExamBooks /> */}
       <DiscountBooks />
-      <Author />
+      {/* <Author /> */}
       <Footer />
     </div>
   );

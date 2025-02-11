@@ -127,36 +127,42 @@ export default function IconSlider() {
           </div>{" "}
           {/* Card 5 */}
           <div className="flex-shrink-0   text-black m-4 rounded-lg">
-            <div className="text-center flex  flex-col items-center cursor-pointer">
-              <img
-                src="https://www.bookswagon.com/Images/staticimages/icon7.png"
-                alt=""
-                className="w-[80px] "
-              />
-              <p>International Best Seller</p>
-            </div>
+            <Link to="/internationalBestSeller">
+              <div className="text-center flex  flex-col items-center cursor-pointer">
+                <img
+                  src="https://www.bookswagon.com/Images/staticimages/icon7.png"
+                  alt=""
+                  className="w-[80px] "
+                />
+                <p>International Best Seller</p>
+              </div>
+            </Link>
           </div>{" "}
           {/* Card 6 */}
           <div className="flex-shrink-0   text-black m-4 rounded-lg">
-            <div className="text-center flex  flex-col items-center cursor-pointer">
-              <img
-                src="https://www.bookswagon.com/Images/staticimages/icon2.png"
-                alt=""
-                className="w-[80px] "
-              />
-              <p>New Arrivals</p>
-            </div>
+            <Link to="/newArrivals">
+              <div className="text-center flex  flex-col items-center cursor-pointer">
+                <img
+                  src="https://www.bookswagon.com/Images/staticimages/icon2.png"
+                  alt=""
+                  className="w-[80px] "
+                />
+                <p>New Arrivals</p>
+              </div>
+            </Link>
           </div>{" "}
           {/* Card 7 */}
           <div className="flex-shrink-0   text-black m-4 rounded-lg">
-            <div className="text-center flex  flex-col items-center cursor-pointer">
-              <img
-                src="https://www.bookswagon.com/Images/staticimages/icon5.png"
-                alt=""
-                className="w-[80px] "
-              />
-              <p>Fiction Books</p>
-            </div>
+            <Link to="/fictionBooks">
+              <div className="text-center flex  flex-col items-center cursor-pointer">
+                <img
+                  src="https://www.bookswagon.com/Images/staticimages/icon5.png"
+                  alt=""
+                  className="w-[80px] "
+                />
+                <p>Fiction Books</p>
+              </div>
+            </Link>
           </div>{" "}
           {/* Card 8 */}
           <div className="flex-shrink-0 h-[100px]    text-black m-4 rounded-lg">

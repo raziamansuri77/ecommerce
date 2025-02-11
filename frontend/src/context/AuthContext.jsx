@@ -1,4 +1,5 @@
 import React, { createContext, useState, useContext, useEffect } from "react";
+import { Navigate } from "react-router-dom";
 import axios from "axios";
 
 const AuthContext = createContext();
@@ -17,48 +18,37 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (userData) => {
     try {
-      console.log("Registration attempt with:", userData);
-
       const response = await axios.post("/api/v1/register", userData);
-      console.log("Registration response:", response.data);
-
       if (response.status === 201) {
-        console.log("Registration successful, attempting auto-login");
-
         const loginResponse = await axios.post("/api/v1/login", {
           email: userData.email,
           password: userData.password,
         });
-        console.log("Auto-login response:", loginResponse.data);
 
         if (loginResponse.status === 200) {
-          const { token } = loginResponse.data;
-          const newUser = { ...userData, token };
+          const { token, userId, email } = loginResponse.data;
+          const newUser = { email, userId, token };
           setUser(newUser);
           sessionStorage.setItem("user", JSON.stringify(newUser));
-          console.log(
-            "User successfully logged in after registration:",
-            newUser
-          );
+          sessionStorage.setItem("authToken", token);
         }
       }
     } catch (error) {
-      console.error("Registration error details:", {
-        message: error.message,
-        response: error.response?.data,
-        status: error.response?.status,
-      });
+      console.error("Registration error:", error);
       throw error;
     }
   };
+
   const login = async (userData) => {
     try {
       const response = await axios.post("/api/v1/login", userData);
       if (response.status === 200) {
-        const { token } = response.data;
-        const newUser = { ...userData, token };
+        const { token, userId, email } = response.data;
+        const newUser = { email, userId, token };
         setUser(newUser);
         sessionStorage.setItem("user", JSON.stringify(newUser));
+        sessionStorage.setItem("authToken", token);
+        return response.data;
       }
     } catch (error) {
       console.error("Login failed:", error);
@@ -69,10 +59,24 @@ export const AuthProvider = ({ children }) => {
   const logout = () => {
     setUser(null);
     sessionStorage.removeItem("user");
+    sessionStorage.removeItem("authToken");
+  };
+
+  const isAuthenticated = () => {
+    return !!sessionStorage.getItem("authToken");
   };
 
   return (
-    <AuthContext.Provider value={{ user, register, login, logout, loading }}>
+    <AuthContext.Provider
+      value={{
+        user,
+        register,
+        login,
+        logout,
+        loading,
+        isAuthenticated,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );
@@ -80,4 +84,18 @@ export const AuthProvider = ({ children }) => {
 
 export const useAuth = () => {
   return useContext(AuthContext);
+};
+
+export const ProtectedRoute = ({ children }) => {
+  const { isAuthenticated, loading } = useAuth();
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (!isAuthenticated()) {
+    return <Navigate to="/login" />;
+  }
+
+  return children;
 };

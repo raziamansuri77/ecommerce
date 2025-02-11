@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import { Link } from "react-router-dom";
 export default function Arrivals() {
   const scrollContainer = useRef(null);
   const cardRef = useRef(null);
@@ -342,9 +343,11 @@ export default function Arrivals() {
           <MdOutlineKeyboardArrowRight className="text-[70px] cursor-pointer" />
         </button>
       </div>
-      <div className="text-center text-[#E42B26] font-semibold underline cursor-pointer py-4">
-        Show All
-      </div>
+      <Link to="/newArrivals">
+        <div className="text-center text-[#E42B26] font-semibold underline cursor-pointer py-4">
+          Show All
+        </div>
+      </Link>
     </div>
   );
 }

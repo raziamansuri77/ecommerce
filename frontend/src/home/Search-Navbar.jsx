@@ -1,12 +1,16 @@
-import React from "react";
-import { FaSearch } from "react-icons/fa";
-import { IoIosArrowForward } from "react-icons/io";
-import { FaUserCircle } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaSearch, FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useAuth } from "../context/AuthContext";
 
 export default function SearchNavbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { user, logout } = useAuth();
+
+  const handleLogout = () => {
+    logout();
+    setIsOpen(false);
+  };
 
   return (
     <div className="px-2 flex lg:justify-between   items-center pt-14 pb-2  ">
@@ -29,79 +33,65 @@ export default function SearchNavbar() {
       </div>
 
       <div className="lg:flex items-center hidden">
-        <div className=" h-[30px] px-2 border-r-[1px] border-[#E42B26] flex relative">
-          <Link to="/login">
-            {" "}
-            <div
-              className="flex items-center gap-2 "
-              onMouseEnter={() => setIsOpen(true)}
-              onMouseLeave={() => setIsOpen(false)}
-            >
-              <FaUserCircle className="text-[#E42B26] text-[20px]" />
-              <div>My Account</div>
-              {isOpen && (
-                <div
-                  className="absolute p-2 -right-4 top-4 h-[260px] w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
-                  role="menu"
-                >
-                  <div className="py-1 h-[500px]" role="none">
-                    <div
-                      href="#"
-                      className="block px-4 bg-[#E42B26] text-[15px] font-semibold text-center  py-2 text-sm  text-white  "
-                      role="menuitem"
-                    >
-                      Login
-                    </div>
-                    <Link
-                      to="/signup"
-                      className="block px-4 py-2 text-sm   text-[#E42B26] hover:underline text-center text-[15px]"
-                      role="menuitem"
-                    >
-                      New to ApnaBook Store? Sign up
-                    </Link>
-                    <hr />
-                    <Link to="/account">
-                      <div
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
-                        role="menuitem"
-                      >
-                        Your Account
-                      </div>
-                    </Link>
-                    <Link to="/personalsetting">
-                      <div
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
-                        role="menuitem"
-                      >
-                        Personal Setting
-                      </div>{" "}
-                    </Link>
-                    <Link to="/yourorder">
-                      <div
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
-                        role="menuitem"
-                      >
-                        Your Orders
-                      </div>{" "}
-                    </Link>
+        <div className="h-[30px] px-2 border-r-[1px] border-[#E42B26] flex relative">
+          <div
+            className="flex items-center gap-2"
+            onMouseEnter={() => setIsOpen(true)}
+            onMouseLeave={() => setIsOpen(false)}
+          >
+            <FaUserCircle className="text-[#E42B26] text-[20px]" />
+            <div>{user ? user.email : "My Account"}</div>
 
-                    <Link to="/wishlist">
-                      <div
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center"
-                        role="menuitem"
+            {isOpen && (
+              <div className="absolute p-2 -right-4 top-4 h-[260px] w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
+                <div className="py-1" role="none">
+                  {user ? (
+                    <>
+                      <button
+                        onClick={handleLogout}
+                        className="block w-full px-4 bg-[#E42B26] text-[15px] font-semibold text-center py-2 text-sm text-white"
                       >
-                        Your Wishlist
-                      </div>{" "}
-                    </Link>
-                  </div>
+                        Logout
+                      </button>
+                      <Link to="/account">
+                        <div className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center">
+                          Your Account
+                        </div>
+                      </Link>
+                      <Link to="/personalsetting">
+                        <div className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center">
+                          Personal Setting
+                        </div>
+                      </Link>
+                      <Link to="/yourorder">
+                        <div className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center">
+                          Your Orders
+                        </div>
+                      </Link>
+                      <Link to="/wishlist">
+                        <div className="block px-4 py-2 text-sm text-gray-700 hover:underline text-center">
+                          Your Wishlist
+                        </div>
+                      </Link>
+                    </>
+                  ) : (
+                    <>
+                      <Link to="/login">
+                        <div className="block px-4 bg-[#E42B26] text-[15px] font-semibold text-center py-2 text-sm text-white">
+                          Login
+                        </div>
+                      </Link>
+                      <Link to="/signup">
+                        <div className="block px-4 py-2 text-sm text-[#E42B26] hover:underline text-center text-[15px]">
+                          New to ApnaBook Store? Sign up
+                        </div>
+                      </Link>
+                    </>
+                  )}
                 </div>
-              )}
-            </div>
-          </Link>
+              </div>
+            )}
+          </div>
         </div>
         <div className="px-2 relative ">
           <img

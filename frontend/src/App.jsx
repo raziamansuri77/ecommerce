@@ -1,4 +1,6 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ProtectedRoute } from "./context/AuthContext";
+
 import Home from "./home/Home";
 import Login from "./login/Login";
 import Signup from "./signup/Signup";
@@ -24,40 +26,68 @@ import BookDetails from "./components/Book-Details";
 import SliderNext from "./home/Slider-Next";
 import QuickView from "./components/Quick-View";
 import InternationalBestseller from "./international-bestseller/international-seller";
+import TopBooks from "./home/Top-Books";
+import TopBooksPage from "./top-books/Top-Books-Page";
+import TopBooksBase from "./top-books/Top-Books-Base";
+
+const routes = [
+  // Public Routes
+  { path: "/", element: <Home /> },
+  { path: "/login", element: <Login /> },
+  { path: "/signup", element: <Signup /> },
+  { path: "/forgot", element: <Forgot /> },
+
+  // Protected Routes - Book Browsing
+  { path: "/newarrivals", element: <NewArrivals />, protected: true },
+  { path: "/medical", element: <Medical />, protected: true },
+  { path: "/boxset", element: <BoxSet />, protected: true },
+  { path: "/boxhero", element: <BoxSetHero />, protected: true },
+  { path: "/bestSeller", element: <BestSellers />, protected: true },
+  { path: "/fictionBooks", element: <FictionBooks />, protected: true },
+  { path: "/awardWinners", element: <AwardWinners />, protected: true },
+  { path: "/authors", element: <Authors />, protected: true },
+  { path: "/todaysDeal", element: <TodaysDeal />, protected: true },
+  {
+    path: "/InternationalBestseller",
+    element: <InternationalBestseller />,
+    protected: true,
+  },
+
+  // Protected Routes - User Account
+  { path: "/account", element: <AccountHero />, protected: true },
+  { path: "/personalsetting", element: <PersonalSetting />, protected: true },
+  { path: "/yourorder", element: <YourOrder />, protected: true },
+  { path: "/wishlist", element: <Wishlist />, protected: true },
+  { path: "/certificates", element: <Certificates />, protected: true },
+  { path: "/address", element: <Address />, protected: true },
+  { path: "/changepassword", element: <ChangePassword />, protected: true },
+
+  // Protected Routes - Book Details
+  { path: "/bookDetails", element: <BookDetails />, protected: true },
+  { path: "/SliderNext", element: <SliderNext />, protected: true },
+  { path: "/quickview", element: <QuickView />, protected: true },
+  { path: "/requestBook", element: <RequestBook />, protected: true },
+  { path: "/topBooksBase", element: <TopBooksBase />, protected: true },
+];
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/forgot" element={<Forgot />} />
-          <Route path="/newarrivals" element={<NewArrivals />} />
-          <Route path="/medical" element={<Medical />} />
-          <Route path="/boxset" element={<BoxSet />} />
-          <Route path="/boxhero" element={<BoxSetHero />} />
-          <Route path="/account" element={<AccountHero />} />
-          <Route path="/personalsetting" element={<PersonalSetting />} />
-          <Route path="/yourorder" element={<YourOrder />} />
-          <Route path="/wishlist" element={<Wishlist />} />
-          <Route path="/certificates" element={<Certificates />} />
-          <Route path="/address" element={<Address />} />
-          <Route path="/changepassword" element={<ChangePassword />} />
-          <Route path="/bestSeller" element={<BestSellers />} />
-          <Route path="/fictionBooks" element={<FictionBooks />} />
-          <Route path="/awardWinners" element={<AwardWinners />} />
-          <Route path="/authors" element={<Authors />} />
-          <Route path="/todaysDeal" element={<TodaysDeal />} />
-          <Route path="/requestBook" element={<RequestBook />} />
-          <Route path="/bookDetails" element={<BookDetails />} />
-          <Route path="/SliderNext" element={<SliderNext />} />
-          <Route path="/quickview" element={<QuickView />} />
-          <Route
-            path="InternationalBestseller"
-            element={<InternationalBestseller />}
-          />
+          {routes.map(({ path, element, protected: isProtected }) => (
+            <Route
+              key={path}
+              path={path}
+              element={
+                isProtected ? (
+                  <ProtectedRoute>{element}</ProtectedRoute>
+                ) : (
+                  element
+                )
+              }
+            />
+          ))}
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import randomBook from "../components/Random-Book.json";
+// import randomBook from "../components/Random-Book.json";
 export default function BestSellersBase() {
   const [value, setValue] = useState(50);
   const handleChange = (event) => {

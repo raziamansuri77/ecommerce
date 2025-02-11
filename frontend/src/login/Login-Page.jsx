@@ -10,6 +10,7 @@ export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { login } = useAuth();
+  console.log("LoginPage rendering");
   const navigate = useNavigate();
   // Function to generate random CAPTCHA - without event parameter
   const generateCaptcha = () => {
@@ -88,8 +89,12 @@ export default function LoginPage() {
 
     // If all validations pass, proceed with login
     try {
-      await login({ email, password });
-      navigate("/"); // Redirect to home page after successful login
+      const response = await login({ email, password });
+      // Store auth data in sessionStorage
+      sessionStorage.setItem("authToken", response.token);
+      sessionStorage.setItem("userId", response.userId);
+      sessionStorage.setItem("userEmail", response.email);
+      navigate("/");
     } catch (error) {
       console.error("Login failed", error);
       alert("Login failed. Please check your credentials.");

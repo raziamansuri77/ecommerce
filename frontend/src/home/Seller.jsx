@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { FaLessThan } from "react-icons/fa6";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import { Link } from "react-router-dom";
 export default function Seller() {
   const scrollContainer = useRef(null);
   const cardRef = useRef(null);
@@ -343,9 +344,11 @@ export default function Seller() {
           <MdOutlineKeyboardArrowRight className="text-[70px] cursor-pointer" />
         </button>
       </div>
-      <div className="text-center text-[#E42B26] font-semibold underline cursor-pointer py-4">
-        Show All
-      </div>
+      <Link to="/bestSeller">
+        <div className="text-center text-[#E42B26] font-semibold underline cursor-pointer py-4">
+          Show All
+        </div>
+      </Link>
     </div>
   );
 }
