@@ -1,13 +1,119 @@
 import React, { useRef, useState, useEffect } from "react";
-import { FaLessThan } from "react-icons/fa6";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import {
+  MdOutlineKeyboardArrowRight,
+  MdOutlineKeyboardArrowLeft,
+} from "react-icons/md";
+
+// Book data array
+const trendingBooks = [
+  {
+    id: 1,
+    title: "The Psychology",
+    author: "Housel,Morgan",
+    price: 251,
+    originalPrice: 322,
+    image: "public/t1.jpg",
+    discount: "30%",
+  },
+  {
+    id: 2,
+    title: "Karnal II : Son of Surya",
+    author: "Kevin Missal",
+    price: 257,
+    originalPrice: 396,
+    image: "public/t2.jpg",
+    discount: "30%",
+  },
+  {
+    id: 3,
+    title: "White Nights",
+    author: "Ronald Meyer",
+    price: 314,
+    originalPrice: 338,
+    image: "public/t3.jpg",
+    discount: "30%",
+  },
+  {
+    id: 4,
+    title: "30 Days To Better English",
+    author: "Lewis Norman",
+    price: 119,
+    originalPrice: 199,
+    image: "public/t4.jpg",
+    discount: "30%",
+  },
+  {
+    id: 5,
+    title: "VAgabond (Vizbig Edition),Vol.3",
+    author: "Takehiko Inoue",
+    price: 1388,
+    originalPrice: 32169,
+    image: "public/t5.jpg",
+    discount: "30%",
+  },
+  {
+    id: 6,
+    title: "Rooster Fighter,Vol.1",
+    author: "Syu Sakuratani",
+    price: 309,
+    originalPrice: 1105,
+    image: "public/t6.jpg",
+    discount: "30%",
+  },
+  {
+    id: 7,
+    title: "Vagabond(Vizbig Edition),Vol.2",
+    author: "Takehiko Inoue",
+    price: 1714,
+    originalPrice: 2169,
+    image: "public/t7.jpg",
+    discount: "30%",
+  },
+  {
+    id: 8,
+    title: "Fire & Blood",
+    author: "Grorge R.R.....",
+    price: 536,
+    originalPrice: 850,
+    image: "public/t8.jpg",
+    discount: "30%",
+  },
+  {
+    id: 9,
+    title: "Vagabond (Vizbig Edition),Vol.4",
+    author: "Housel,Morgan",
+    price: 1410,
+    originalPrice: 2169,
+    image: "public/t9.jpg",
+    discount: "30%",
+  },
+  {
+    id: 10,
+    title: "Conceptual Physics | Twelfth Edition | By Pearson",
+    author: "Paul G. Hewitt",
+    price: 824,
+    originalPrice: 1070,
+    image: "public/t10.jpg",
+    discount: "30%",
+  },
+  {
+    id: 11,
+    title: "20th Century Boys:The Perfect Edition,Vol.1",
+    author: "Naoki Urasawa",
+    price: 1237,
+    originalPrice: 2061,
+    image: "public/t11.jpg",
+    discount: "30%",
+  },
+];
+
 export default function Trending() {
+  // Refs and state for scroll functionality
   const scrollContainer = useRef(null);
   const cardRef = useRef(null);
   const [cardWidth, setCardWidth] = useState(0);
 
-  // Set the card width once the component is mounted or resized
+  // Effect to handle card width calculations
   useEffect(() => {
     if (cardRef.current) {
       setCardWidth(cardRef.current.clientWidth);
@@ -20,19 +126,16 @@ export default function Trending() {
     };
 
     window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Scroll handlers
   const scrollNext = () => {
     if (scrollContainer.current) {
       const container = scrollContainer.current;
       const totalScrollWidth = container.scrollWidth;
       const currentScroll = container.scrollLeft;
 
-      // If we're at the end, jump back to the start
       if (currentScroll + container.clientWidth >= totalScrollWidth) {
         container.scrollTo({ left: 0, behavior: "smooth" });
       } else {
@@ -46,7 +149,6 @@ export default function Trending() {
       const container = scrollContainer.current;
       const currentScroll = container.scrollLeft;
 
-      // If we're at the start, jump to the last card
       if (currentScroll <= 0) {
         const totalScrollWidth = container.scrollWidth;
         container.scrollTo({
@@ -61,298 +163,75 @@ export default function Trending() {
 
   return (
     <div>
+      {/* Header */}
       <div className="text-[30px] font-bold text-center py-4">Now Trending</div>
+
+      {/* Carousel Container */}
       <div className="relative">
+        {/* Previous Button */}
         <button
           onClick={scrollPrev}
-          className="absolute top-1/2 left-4 h-[50px]    text-black p-3 rounded-full"
+          className="absolute top-1/2 left-4 h-[50px] text-black p-3 rounded-full"
         >
           <MdOutlineKeyboardArrowLeft className="text-[70px] cursor-pointer" />
         </button>
+
+        {/* Cards Container */}
         <div
-          className="flex overflow-x-hidden scroll-smooth max-w-7xl mx-auto  h-[430px]  " // Hides scrollbar while enabling smooth scroll
+          className="flex overflow-x-hidden scroll-smooth max-w-7xl mx-auto h-[430px]"
           ref={scrollContainer}
         >
-          {/* Card 1 */}
-          <div
-            ref={cardRef}
-            className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg"
-          >
-            <div className="px-2   shadow-sm rounded-lg border-1 xl:h-[400px]    relative">
-              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
-                30%
-              </div>
-              <div className="p-4 border-1 xl:h-[400px]   rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
-                <div className="  ">
-                  <img
-                    src="public/t1.jpg"
-                    className="cursor-pointer w-[170px] h-[240px] "
-                  />
-                </div>
-                <div className="text-center w-full px-2 py-2">
-                  <p>The Psychology</p>
-                  <p>Housel,Morgan</p>
-                  <div className="flex justify-center gap-4">
-                    <p>251</p>
-                    <p>322</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Card 2 */}
-          <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative ">
-              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
-                30%
-              </div>
-              <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
-                <div className="">
-                  <img
-                    src="public/t2.jpg"
-                    className="cursor-pointer w-[170px] h-[240px]  "
-                  />
-                </div>
-                <div className="text-center w-full px-2 py-2">
-                  <p>Karnal II : Son of Surya</p>
-                  <p>Kevin Missal</p>
-                  <div className="flex justify-center gap-4">
-                    <p>257</p>
-                    <p>396</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Card 3 */}
-          <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
-              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
-                30%
-              </div>
-              <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
-                <div className="">
-                  <img
-                    src="public/t3.jpg"
-                    className="cursor-pointer w-[170px] h-[240px]   "
-                  />
-                </div>
-                <div className="text-center w-full px-2 py-2">
-                  <p>White Nights</p>
-                  <p>Ronald Meyer</p>
-                  <div className="flex justify-center gap-4">
-                    <p>314</p>
-                    <p>338</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Card 4 */}
-          <div className="flex-shrink-0 w-60 h-80   text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
-              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
-                30%
-              </div>
-              <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
-                <div className="">
-                  <img
-                    src="public/t4.jpg"
-                    className="cursor-pointer w-[170px] h-[240px] "
-                  />
+          {/* Mapping through books array */}
+          {trendingBooks.map((book) => (
+            <div
+              key={book.id}
+              ref={book.id === 1 ? cardRef : null}
+              className="flex-shrink-0 w-60 h-80 text-black m-4 rounded-lg"
+            >
+              <div className="px-2 shadow-sm rounded-lg border-1 xl:h-[400px] relative">
+                {/* Discount Badge */}
+                <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
+                  {book.discount}
                 </div>
 
-                <div className="text-center w-full px-2 py-2">
-                  <p>30 Days To Better English</p>
-                  <p>Lewis Norman</p>
-                  <div className="flex justify-center gap-4">
-                    <p>119</p>
-                    <p>199</p>
+                {/* Card Content */}
+                <div className="p-4 border-1 xl:h-[400px] rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
+                  {/* Image Container */}
+                  <div className="overflow-hidden">
+                    <div className="hover:scale-110 duration-500 transition-transform">
+                      <img
+                        src={book.image}
+                        className="cursor-pointer w-[170px] h-[240px]"
+                        alt={book.title}
+                      />
+                    </div>
+                  </div>
+
+                  {/* Book Details */}
+                  <div className="text-center w-full px-2 py-2">
+                    <p>{book.title}</p>
+                    <p>{book.author}</p>
+                    <div className="flex justify-center gap-4">
+                      <p>{book.price}</p>
+                      <p>{book.originalPrice}</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>{" "}
-          {/* Card 5 */}
-          <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
-              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
-                30%
-              </div>
-              <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
-                <div className="">
-                  <img
-                    src="public/t5.jpg"
-                    className="cursor-pointer w-[170px] h-[240px]  "
-                  />
-                </div>
-                <div className="text-center w-full px-2 py-2">
-                  <p>VAgabond (Vizbig Edition),Vol.3</p>
-                  <p>Takehiko Inoue</p>
-                  <div className="flex justify-center gap-4">
-                    <p>1,388</p>
-                    <p>32,169</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>{" "}
-          {/* Card 6 */}
-          <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
-              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
-                30%
-              </div>
-              <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
-                <div className="">
-                  <img
-                    src="public/t6.jpg"
-                    className="cursor-pointer w-[170px] h-[240px]  "
-                  />
-                </div>
-                <div className="text-center w-full px-2 py-2">
-                  <p>Rooster Fighter,Vol.1</p>
-                  <p>Syu Sakuratani</p>
-                  <div className="flex justify-center gap-4">
-                    <p>309</p>
-                    <p>1,105</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>{" "}
-          {/* Card 7 */}
-          <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
-              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
-                30%
-              </div>
-              <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
-                <div className="">
-                  <img
-                    src="public/t7.jpg"
-                    className="cursor-pointer w-[170px] h-[240px]  "
-                  />
-                </div>
-                <div className="text-center w-full px-2 py-2">
-                  <p>Vagabond(Vizbig Edition),Vol.2</p>
-                  <p>Takehiko Inoue</p>
-                  <div className="flex justify-center gap-4">
-                    <p>1,714</p>
-                    <p>2,169</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>{" "}
-          {/* Card 8 */}
-          <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
-              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
-                30%
-              </div>
-              <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
-                <div className="">
-                  <img
-                    src="public/t8.jpg"
-                    className="cursor-pointer  w-[170px] h-[240px] "
-                  />
-                </div>
-                <div className="text-center w-full px-2 py-2">
-                  <p>Fire & Blood</p>
-                  <p>Grorge R.R.....</p>
-                  <div className="flex justify-center gap-4">
-                    <p>536</p>
-                    <p>850</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Card 9 */}
-          <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
-              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
-                30%
-              </div>
-              <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
-                <div className="">
-                  <img
-                    src="public/t9.jpg"
-                    className="cursor-pointer  w-[170px] h-[240px] "
-                  />
-                </div>
-                <div className="text-center w-full px-2 py-2">
-                  <p>Vagabond (Vizbig Edition),Vol.4</p>
-                  <p>Housel,Morgan</p>
-                  <div className="flex justify-center gap-4">
-                    <p>1,410</p>
-                    <p>2,169</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>{" "}
-          {/* Card 10 */}
-          <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
-              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
-                30%
-              </div>
-              <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
-                <div className="">
-                  <img
-                    src="public/t10.jpg"
-                    className="cursor-pointer  w-[170px] h-[240px] "
-                  />
-                </div>
-                <div className="text-center w-full px-2 py-2">
-                  <p>Conceptual Physics | Twelfth Edition | By Pearson</p>
-                  <p>Paul G. Hewitt</p>
-                  <div className="flex justify-center gap-4">
-                    <p>824</p>
-                    <p>1070</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>{" "}
-          {/* Card 11 */}
-          <div className="flex-shrink-0 w-60 h-80  text-black m-4 rounded-lg">
-            <div className="px-2  shadow-sm rounded-lg border-1 xl:h-[400px] relative">
-              <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
-                30%
-              </div>
-              <div className="p-4 border-1 xl:h-[400px]  rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
-                <div className="">
-                  <img
-                    src="public/t11.jpg"
-                    className="cursor-pointer  w-[170px] h-[240px] "
-                  />
-                </div>
-                <div className="text-center w-full px-2 py-2">
-                  <p>20th Century Boys:The Perfect Edition,Vol.1</p>
-                  <p>Naoki Urasawa</p>
-                  <div className="flex justify-center gap-4">
-                    <p>1,237</p>
-                    <p>2,061</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>{" "}
+          ))}
         </div>
-
-        {/* Previous Button */}
 
         {/* Next Button */}
         <button
           onClick={scrollNext}
-          className="absolute top-1/2 right-4   text-black p-3 rounded-full"
+          className="absolute top-1/2 right-4 text-black p-3 rounded-full"
         >
           <MdOutlineKeyboardArrowRight className="text-[70px] cursor-pointer" />
         </button>
       </div>
+
+      {/* Footer */}
       <div className="text-center text-[#E42B26] font-semibold underline cursor-pointer py-4">
         Show All
       </div>

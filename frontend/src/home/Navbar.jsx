@@ -6,19 +6,17 @@ import { FaUserCircle } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { MdArrowDropDown } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../context/GlobalContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Search() {
+  const { wishlistItems } = useGlobalContext();
+  const navigate = useNavigate();
   return (
     <div className="  border-b-[1px] border-[#E42B26] ">
       <div className="p-2 lg:flex justify-between xl:text-[17px]     lg:text-[10px] pr-6 hidden">
         <div className="flex items-center">
           <Link to="/">
-            {" "}
-            {/* <div className="py-1 px-4 hover:text-[#E42B26] font-semibold   flex items-center cursor-pointer  duration-150 ">
-              <div className=" "> Book</div>
-              <MdArrowDropDown className="text-[25px]" />
-              <div className="w-[1px] h-[20px] bg-red-500"></div>
-            </div> */}{" "}
             <div className=" py-1 px-4   cursor-pointer  hover:text-[#E42B26] font-semibold  duration-150 ">
               Home
             </div>
@@ -79,9 +77,12 @@ export default function Search() {
             </div>
           </Link>
         </div>
-        <div className="relative">
+        <div
+          className="relative cursor-pointer"
+          onClick={() => navigate("/wishlist")}
+        >
           <div className="absolute xl:top-[1px] xl:right-[10px] lg:top-[7px] lg:right-3">
-            0
+            {wishlistItems.length}
           </div>
           <div className="text-[30px] text-[#E42B26]">
             <FaRegHeart />

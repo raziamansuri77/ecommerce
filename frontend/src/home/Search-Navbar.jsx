@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import { FaSearch, FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { useGlobalContext } from "../context/GlobalContext";
+import { useNavigate } from "react-router-dom";
 
 export default function SearchNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { user, logout } = useAuth();
+  const { cartItems } = useGlobalContext();
+  const navigate = useNavigate();
 
   const handleLogout = () => {
     logout();
@@ -93,13 +97,16 @@ export default function SearchNavbar() {
             )}
           </div>
         </div>
-        <div className="px-2 relative ">
+        <div
+          className="px-2 relative cursor-pointer"
+          onClick={() => navigate("/cart")}
+        >
           <img
             src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/cart_white.svg"
             alt=""
-            className="w-[40px] "
+            className="w-[40px]"
           />
-          <div className="absolute top-[-6px] right-5">0</div>
+          <div className="absolute top-[-6px] right-5">{cartItems.length}</div>
         </div>
       </div>
     </div>

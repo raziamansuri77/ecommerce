@@ -29,6 +29,8 @@ import InternationalBestseller from "./international-bestseller/international-se
 import TopBooks from "./home/Top-Books";
 import TopBooksPage from "./top-books/Top-Books-Page";
 import TopBooksBase from "./top-books/Top-Books-Base";
+import CartPage from "./pages/CartPage";
+import WishlistPage from "./pages/WishlistPage";
 
 const routes = [
   // Public Routes
@@ -65,9 +67,11 @@ const routes = [
   // Protected Routes - Book Details
   { path: "/bookDetails", element: <BookDetails />, protected: true },
   { path: "/SliderNext", element: <SliderNext />, protected: true },
-  { path: "/quickview", element: <QuickView />, protected: true },
   { path: "/requestBook", element: <RequestBook />, protected: true },
   { path: "/topBooksBase", element: <TopBooksBase />, protected: true },
+  { path: "/quickview/:id", element: <QuickView />, protected: true },
+  { path: "/cart", element: <CartPage />, protected: true },
+  { path: "/wishlist", element: <WishlistPage />, protected: true },
 ];
 
 function App() {

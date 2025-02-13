@@ -14,7 +14,6 @@ export default function ArrivalsHero() {
     setVisibleBooks(visibleBooks + 10);
   };
   const navigate = useNavigate();
-
   const handleBookClick = (book) => {
     navigate(`/book/${book.id}`, { state: { bookData: book } });
   };
