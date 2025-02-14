@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import BeforeNavbar from "../home/Before-Navbar";
 import SearchNavbar from "../home/Search-Navbar";
@@ -20,6 +20,39 @@ export default function QuickView() {
     addToWishlist(bookData);
     console.log("Added to wishlist:", bookData);
   };
+  const icons = [
+    {
+      img: "/public/delivery.png",
+      name: "Free Delivery",
+      description:
+        "Free shipping on orders over ₹499. Delivery within 5-7 business days.",
+    },
+    {
+      img: "./public/return.png",
+      name: "Easy Returns",
+      description:
+        "Hassle-free returns within 30 days of delivery. No questions asked policy.",
+    },
+    {
+      img: "./public/secure.png",
+      name: "Secure Payment",
+      description:
+        "Multiple secure payment options including Credit/Debit cards, UPI, and Net Banking.",
+    },
+    {
+      img: "./public/quality.png",
+      name: "Quality Check",
+      description:
+        "All books undergo strict quality checks to ensure pristine condition.",
+    },
+    {
+      img: "./public/support.png",
+      name: "24/7 Support",
+      description:
+        "Round-the-clock customer support available via chat, email, and phone.",
+    },
+  ];
+  const [selectedDescription, setSelectedDescription] = useState(null);
 
   return (
     <div>
@@ -29,16 +62,16 @@ export default function QuickView() {
       <div className="py-12 px-6">
         {/* shadow-inner  bg-[#FBFBFB]*/}
         {bookData && (
-          <div className="w-full h-[500px]  px-8 flex gap-8  ">
-            <div className="bg-blue-200 h-[400px] shadow-lg relative">
+          <div className="w-full h-[400px]  px-8 flex gap-8  ">
+            <div className=" h-[300px] shadow-lg relative">
               <div className="bg-[#FD0000]  text-white text-[12px] px-4 py-[1px] absolute -top-2 -left-2 flex items-center justify-center text-center">
                 {bookData.discountAmount}
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center ">
                 <img
                   src={bookData.img}
                   alt={bookData.name}
-                  className="w-[350px] h-[400px]"
+                  className="w-[220px] h-[300px]"
                 />
               </div>
             </div>
@@ -54,27 +87,30 @@ export default function QuickView() {
                 </div>
                 <div>{bookData.description}</div>
               </div>
-              <div className="flex">
-                <div>
-                  <img src="/public/premium-quality.png" alt="" />
-                  <p> Premium quality</p>
+
+              <div>
+                <div className="flex mt-[68px]">
+                  {icons.map((icon, index) => (
+                    <div
+                      key={index}
+                      className="flex flex-col items-center text-center w-full space-y-2"
+                      onClick={() => setSelectedDescription(icon.description)}
+                    >
+                      <img
+                        src={icon.img}
+                        alt=""
+                        className="cursor-pointer w-[40px] rounded-full bg-[#F9F9F9] p-2 hover:bg-[#E42B26]/10 transition-colors"
+                      />
+                      <p className="text-[13px] font-medium">{icon.name}</p>
+                    </div>
+                  ))}
                 </div>
-                <div>
-                  <img src="/public/easy-return.png" alt="" />
-                  <p>Easy Return</p>
-                </div>
-                <div>
-                  <img src="/public/certified-product.png" alt="" />
-                  <p>Certified product</p>
-                </div>
-                <div>
-                  <img src="/public/secure-express.png" alt="" />
-                  <p>Secure Checkout</p>
-                </div>
-                <div>
-                  <img src="/public/" alt="" />
-                  <p>Money back guarantee</p>
-                </div>
+
+                {selectedDescription && (
+                  <div className="mt-6 p-4 bg-[#F9F9F9] rounded-md text-center text-gray-700">
+                    {selectedDescription}
+                  </div>
+                )}
               </div>
             </div>
             <div>

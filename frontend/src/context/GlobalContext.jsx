@@ -8,7 +8,10 @@ export const GlobalContextProvider = ({ children }) => {
 
   // Cart functions
   const addToCart = (book) => {
-    setCartItems([...cartItems, book]);
+    // Check if the book is already in the cart
+    if (!cartItems.find((item) => item.id === book.id)) {
+      setCartItems([...cartItems, book]);
+    }
   };
 
   const removeFromCart = (bookId) => {
@@ -17,7 +20,10 @@ export const GlobalContextProvider = ({ children }) => {
 
   // Wishlist functions
   const addToWishlist = (book) => {
-    setWishlistItems([...wishlistItems, book]);
+    // Check if the book is already in the wishlist
+    if (!wishlistItems.find((item) => item.id === book.id)) {
+      setWishlistItems([...wishlistItems, book]);
+    }
   };
 
   const removeFromWishlist = (bookId) => {
