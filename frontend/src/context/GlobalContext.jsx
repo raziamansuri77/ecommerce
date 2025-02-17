@@ -9,25 +9,64 @@ export const GlobalContextProvider = ({ children }) => {
   // Cart functions
   const addToCart = (book) => {
     // Check if the book is already in the cart
-    if (!cartItems.find((item) => item.id === book.id)) {
-      setCartItems([...cartItems, book]);
-    }
+    // If the book is already in the cart, create a new cart item
+    const newCartItem = {
+      ...book,
+      quantity: 1,
+      cartItemId: Date.now() + Math.random(), // Generate a unique cart item ID
+    };
+    // Update the cart items state with the new item
+    setCartItems([...cartItems, newCartItem]);
   };
 
-  const removeFromCart = (bookId) => {
-    setCartItems(cartItems.filter((item) => item.id !== bookId));
+  const removeFromCart = (cartItemId) => {
+    // Remove an item from the cart based on its cartItemId
+    setCartItems(cartItems.filter((item) => item.cartItemId !== cartItemId));
+  };
+
+  const increaseQuantity = (cartItemId) => {
+    // Increase the quantity of an item in the cart
+    setCartItems(
+      cartItems.map((item) =>
+        item.cartItemId === cartItemId
+          ? { ...item, quantity: item.quantity + 1 }
+          : item
+      )
+    );
+  };
+
+  const decreaseQuantity = (cartItemId) => {
+    // Decrease the quantity of an item in the cart
+    setCartItems(
+      cartItems
+        .map((item) =>
+          item.cartItemId === cartItemId
+            ? { ...item, quantity: Math.max(item.quantity - 1, 0) }
+            : item
+        )
+        .filter((item) => item.quantity > 0) // Remove the item if the quantity becomes 0
+    );
   };
 
   // Wishlist functions
   const addToWishlist = (book) => {
-    // Check if the book is already in the wishlist
-    if (!wishlistItems.find((item) => item.id === book.id)) {
-      setWishlistItems([...wishlistItems, book]);
-    }
+    // Always add a new item to the wishlist, even if it already exists
+    const newWishlistItem = {
+      ...book,
+      wishlistItemId: Date.now() + Math.random(), // Generate a unique wishlist item ID
+    };
+    setWishlistItems([...wishlistItems, newWishlistItem]);
   };
 
-  const removeFromWishlist = (bookId) => {
-    setWishlistItems(wishlistItems.filter((item) => item.id !== bookId));
+  const removeFromWishlist = (wishlistItemId) => {
+    // Remove an item from the wishlist based on its bookId
+    setWishlistItems(
+      wishlistItems.filter((item) => item.wishlistItemId !== wishlistItemId)
+    );
+  };
+
+  const isInCart = (bookId) => {
+    return cartItems.some((item) => item.id === bookId);
   };
 
   const contextValue = {
@@ -37,6 +76,9 @@ export const GlobalContextProvider = ({ children }) => {
     removeFromCart,
     addToWishlist,
     removeFromWishlist,
+    increaseQuantity,
+    decreaseQuantity,
+    isInCart,
   };
 
   return (

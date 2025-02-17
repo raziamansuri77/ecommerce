@@ -8,12 +8,15 @@ import RequestBookMain from "./Request-Book-Main";
 export default function RequestBook() {
   return (
     <div>
-      <BeforeNavbar />
-      <SearchNavbar />
-      <Navbar />
-      {/* <Parent /> */}
-      <RequestBookMain />
-      <Footer />
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white w-full">
+        <BeforeNavbar />
+        <SearchNavbar />
+        <Navbar />
+      </div>
+      <div className="mt-[170px]">
+        <RequestBookMain />
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -31,6 +31,7 @@ import TopBooksPage from "./top-books/Top-Books-Page";
 import TopBooksBase from "./top-books/Top-Books-Base";
 import CartPage from "./pages/CartPage";
 import WishlistPage from "./pages/WishlistPage";
+import FileBase from "./common-file/file-base";
 
 const routes = [
   // Public Routes
@@ -72,6 +73,7 @@ const routes = [
   { path: "/quickview/:id", element: <QuickView />, protected: true },
   { path: "/cart", element: <CartPage />, protected: true },
   { path: "/wishlist", element: <WishlistPage />, protected: true },
+  { path: "/filebase", element: <FileBase />, protected: true },
 ];
 
 function App() {

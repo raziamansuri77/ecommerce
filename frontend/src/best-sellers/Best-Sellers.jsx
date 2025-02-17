@@ -9,12 +9,18 @@ import Parent from "../components/Parent";
 export default function BestSellers() {
   return (
     <div>
-      <BeforeNavbar />
-      <SearchNavbar />
-      <Navbar />
-      <div className="text-[30px] font-bold text-center py-2">Best Sellers</div>
-      <Parent />
-      <Footer />
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white w-full">
+        <BeforeNavbar />
+        <SearchNavbar />
+        <Navbar />
+      </div>
+      <div className="mt-[190px]">
+        <div className="text-[30px] font-bold text-center py-2">
+          Best Sellers
+        </div>
+        <Parent />
+        <Footer />
+      </div>
     </div>
   );
 }

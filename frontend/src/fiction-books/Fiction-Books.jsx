@@ -8,12 +8,16 @@ import Footer from "../home/Footer";
 export default function FictionBooks() {
   return (
     <div>
-      <BeforeNavbar />
-      <SearchNavbar />
-      <Navbar />
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white w-full">
+        <BeforeNavbar />
+        <SearchNavbar />
+        <Navbar />
+      </div>
       {/* <Parent /> */}
-      <FictionBooksBase />
-      <Footer />
+      <div className="mt-[190px]">
+        <FictionBooksBase />
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -12,14 +12,17 @@ export default function QuickView() {
   const { addToCart, addToWishlist } = useGlobalContext();
 
   const handleAddToCart = () => {
+    // Add the book to the cart
     addToCart(bookData);
     console.log("Added to cart:", bookData);
   };
 
   const handleAddToWishlist = () => {
+    // Add the book to the wishlist
     addToWishlist(bookData);
     console.log("Added to wishlist:", bookData);
   };
+
   const icons = [
     {
       img: "/public/delivery.png",
@@ -56,10 +59,12 @@ export default function QuickView() {
 
   return (
     <div>
-      <BeforeNavbar />
-      <SearchNavbar />
-      <Navbar />
-      <div className="py-12 px-6">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white w-full">
+        <BeforeNavbar />
+        <SearchNavbar />
+        <Navbar />
+      </div>
+      <div className="py-12 px-6 mt-[175px] ">
         {/* shadow-inner  bg-[#FBFBFB]*/}
         {bookData && (
           <div className="w-full h-[400px]  px-8 flex gap-8  ">
@@ -71,7 +76,7 @@ export default function QuickView() {
                 <img
                   src={bookData.img}
                   alt={bookData.name}
-                  className="w-[220px] h-[300px]"
+                  className="w-[270px] h-[300px]"
                 />
               </div>
             </div>

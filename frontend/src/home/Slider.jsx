@@ -39,7 +39,7 @@ export default function Slider() {
   return (
     <div className="relative w-full h-[200px] sm:h-[240px] xl:h-[440px] mx-auto overflow-hidden">
       {/* Slides */}
-      <Link to="/SliderNext">
+      <Link to="/filebase">
         <div
           className="flex transition-transform duration-500 "
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}

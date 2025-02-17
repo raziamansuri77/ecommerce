@@ -8,10 +8,12 @@ import authorData from "../author/author-data.json";
 export default function Authors() {
   return (
     <div>
-      <BeforeNavbar />
-      <SearchNavbar />
-      <Navbar />
-      <div className="py-6 px-12">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white w-full">
+        <BeforeNavbar />
+        <SearchNavbar />
+        <Navbar />
+      </div>
+      <div className="py-6 px-12 mt-[190px]">
         <div className="text-[20px] font-semibold ">Featured Authors</div>
 
         <div className="grid grid-cols-2 gap-16">

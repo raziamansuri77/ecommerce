@@ -7,12 +7,18 @@ import Navbar from "../home/Navbar";
 export default function NewArrivals() {
   return (
     <div>
-      <BeforeNavbar />
-      <SearchNavbar />
-      <Navbar />
-      <div className="text-[30px] font-bold text-center py-2">New Arrival</div>
-      <Parent />
-      <Footer />
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white w-full">
+        <BeforeNavbar />
+        <SearchNavbar />
+        <Navbar />
+      </div>
+      <div className="mt-[190px]">
+        <div className="text-[30px] font-bold text-center py-2">
+          New Arrival
+        </div>
+        <Parent />
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -8,12 +8,16 @@ import TodaysDealMain from "./Todays-Deal-Main";
 export default function TodaysDeal() {
   return (
     <div>
-      <BeforeNavbar />
-      <SearchNavbar />
-      <Navbar />
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white w-full">
+        <BeforeNavbar />
+        <SearchNavbar />
+        <Navbar />
+      </div>
       {/* <Parent /> */}
-      <TodaysDealMain />
-      <Footer />
+      <div className="mt-[170px]">
+        <TodaysDealMain />
+        <Footer />
+      </div>
     </div>
   );
 }

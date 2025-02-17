@@ -20,22 +20,26 @@ import ExamBooks from "./Exam-Books";
 export default function Home() {
   return (
     <div>
-      <BeforeNavbar />
-      <SearchNavbar className="" />
-      <Navbar />
-      <Comics />
-      <Slider />
-      <IconSlider />
-      <Trending />
-      <Seller />
-      <Arrivals />
-      <BestSeller />
-      <Winners />
-      <TopBooks />
-      <ExamBooks />
-      <DiscountBooks />
-      <Author />
-      <Footer />
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white w-full">
+        <BeforeNavbar />
+        <SearchNavbar />
+        <Navbar />
+      </div>
+      <div className="md:mt-[170px] mt-[100px]">
+        <Comics />
+        <Slider />
+        <IconSlider />
+        <Trending />
+        <Seller />
+        <Arrivals />
+        <BestSeller />
+        <Winners />
+        <TopBooks />
+        <ExamBooks />
+        <DiscountBooks />
+        <Author />
+        <Footer />
+      </div>
     </div>
   );
 }
