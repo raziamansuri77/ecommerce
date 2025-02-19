@@ -5,12 +5,15 @@ import SearchNavbar from "../home/Search-Navbar";
 import Navbar from "../home/Navbar";
 
 export default function CartPage() {
+  const { bookData } = location.state || {};
+
   const {
     cartItems,
     removeFromCart,
     increaseQuantity,
     decreaseQuantity,
     addToWishlist,
+    addToCart,
   } = useGlobalContext();
 
   // Calculate total price
@@ -23,7 +26,10 @@ export default function CartPage() {
     addToWishlist(item);
     removeFromCart(item.cartItemId);
   };
-
+  const handleBuyNow = () => {
+    addToCart(bookData);
+    navigate("/checkout");
+  };
   return (
     <div>
       <BeforeNavbar />
@@ -89,6 +95,12 @@ export default function CartPage() {
                     className="py-2 px-4 rounded-md border-2 shadow-sm border-[#EF4444] text-[#EF4444]"
                   >
                     Move to wishlist
+                  </button>
+                  <button
+                    onClick={handleBuyNow}
+                    className="px-4 py-2 w-full rounded-full bg-[#C86800] text-white mr-2"
+                  >
+                    Buy Now
                   </button>
                 </div>
               </li>

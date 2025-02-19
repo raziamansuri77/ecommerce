@@ -32,6 +32,7 @@ import TopBooksBase from "./top-books/Top-Books-Base";
 import CartPage from "./pages/CartPage";
 import WishlistPage from "./pages/WishlistPage";
 import FileBase from "./common-file/file-base";
+import CheckoutPage from "./pages/CheckoutPage";
 
 const routes = [
   // Public Routes
@@ -74,6 +75,11 @@ const routes = [
   { path: "/cart", element: <CartPage />, protected: true },
   { path: "/wishlist", element: <WishlistPage />, protected: true },
   { path: "/filebase", element: <FileBase />, protected: true },
+  {
+    path: "/checkout",
+    element: <CheckoutPage />,
+    protected: true,
+  },
 ];
 
 function App() {

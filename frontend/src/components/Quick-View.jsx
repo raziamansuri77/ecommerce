@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import BeforeNavbar from "../home/Before-Navbar";
 import SearchNavbar from "../home/Search-Navbar";
 import Navbar from "../home/Navbar";
@@ -10,6 +10,8 @@ export default function QuickView() {
   const location = useLocation();
   const { bookData } = location.state || {};
   const { addToCart, addToWishlist } = useGlobalContext();
+  // Inside your component:
+  const navigate = useNavigate();
 
   const handleAddToCart = () => {
     // Add the book to the cart
@@ -22,7 +24,10 @@ export default function QuickView() {
     addToWishlist(bookData);
     console.log("Added to wishlist:", bookData);
   };
-
+  const handleBuyNow = () => {
+    addToCart(bookData);
+    navigate("/checkout");
+  };
   const icons = [
     {
       img: "/public/delivery.png",
@@ -126,7 +131,10 @@ export default function QuickView() {
                 >
                   Add to Cart
                 </button>
-                <button className="px-4 py-2 w-full rounded-full bg-[#C86800] text-white  mr-2">
+                <button
+                  onClick={handleBuyNow}
+                  className="px-4 py-2 w-full rounded-full bg-[#C86800] text-white mr-2"
+                >
                   Buy Now
                 </button>
                 <button
