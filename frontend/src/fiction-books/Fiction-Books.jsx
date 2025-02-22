@@ -10,11 +10,13 @@ export default function FictionBooks() {
     <div>
       <div className="fixed top-0 left-0 right-0 z-50 bg-white w-full">
         <BeforeNavbar />
-        <SearchNavbar />
+        <div className="mt-[35px]">
+          <SearchNavbar />
+        </div>
         <Navbar />
       </div>
       {/* <Parent /> */}
-      <div className="mt-[190px]">
+      <div className="mt-[250px] md:mt-[210px]">
         <FictionBooksBase />
         <Footer />
       </div>

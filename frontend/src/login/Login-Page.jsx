@@ -103,8 +103,8 @@ export default function LoginPage() {
 
   return (
     <div className="flex justify-center items-center  pb-12 border-b-2 bg-[url('public/loginbg.jpg')] bg-cover py-8">
-      <div className="w-[500px] h-[590px] shadow-sm pb-6 bg-white  relative">
-        <div className="   text-[#E42B26] font-bold flex justify-between h-[120px]">
+      <div className="w-[500px] h-[550px] shadow-sm pb-6 bg-white  relative">
+        <div className=" text-[#E42B26] font-bold flex justify-between h-[120px]">
           <div className="text-[28px] p-4 ">
             India's Largest Online Book Store
           </div>
@@ -160,10 +160,6 @@ export default function LoginPage() {
               className="bg-[#E42B26] w-full p-1 text-white   "
             >
               Login
-            </button>
-            <p>or</p>
-            <button className=" border-2 border-[#E42B26] w-full p-1 text-[#E42B26] hover:text-black text-[12px] duration-300 ">
-              Request OTP
             </button>
           </div>
           {/* <div className="flex justify-center ">

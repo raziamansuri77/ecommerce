@@ -11,7 +11,6 @@ import BoxSetHero from "./box-set/Box-Set-Hero";
 import AccountHero from "./account/Account-Hero";
 import PersonalSetting from "./account/Personal-Setting";
 import YourOrder from "./account/Your-Order";
-import Wishlist from "./account/Wishlist";
 import Certificates from "./account/Certificates";
 import Address from "./account/Address";
 import ChangePassword from "./account/ChangePassword";
@@ -33,6 +32,7 @@ import CartPage from "./pages/CartPage";
 import WishlistPage from "./pages/WishlistPage";
 import FileBase from "./common-file/file-base";
 import CheckoutPage from "./pages/CheckoutPage";
+import SearchResults from "./components/SearchResults";
 
 const routes = [
   // Public Routes
@@ -61,7 +61,6 @@ const routes = [
   { path: "/account", element: <AccountHero />, protected: true },
   { path: "/personalsetting", element: <PersonalSetting />, protected: true },
   { path: "/yourorder", element: <YourOrder />, protected: true },
-  { path: "/wishlist", element: <Wishlist />, protected: true },
   { path: "/certificates", element: <Certificates />, protected: true },
   { path: "/address", element: <Address />, protected: true },
   { path: "/changepassword", element: <ChangePassword />, protected: true },
@@ -78,6 +77,11 @@ const routes = [
   {
     path: "/checkout",
     element: <CheckoutPage />,
+    protected: true,
+  },
+  {
+    path: "/search-results",
+    element: <SearchResults />,
     protected: true,
   },
 ];

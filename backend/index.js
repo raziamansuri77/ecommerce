@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const PORT = process.env.PORT || 8080;
 // Routes
 app.use("/api/v1", authRoutes);
-app.use("/api/v1/", bookRoutes);
+app.use("/api/v1/books", bookRoutes);
 
 // Get user profile - PROTECTED ROUTE
 app.get("/api/v1/user/:userId", authenticate, async (req, res) => {

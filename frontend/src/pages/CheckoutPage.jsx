@@ -35,9 +35,11 @@ export default function CheckoutPage() {
   return (
     <div>
       <BeforeNavbar />
-      <SearchNavbar />
+      <div className="pt-[35px]">
+        <SearchNavbar />
+      </div>
       <Navbar />
-      <div className="container mx-auto mt-8 p-8 bg-gray-100 rounded-lg shadow-md">
+      <div className="container mx-auto mt-8 p-8 bg-gray-100 rounded-lg shadow-md md:max-w-7xl">
         <h1 className="text-2xl font-bold mb-6 text-gray-800">Checkout</h1>
         <div className="flex flex-col md:flex-row gap-8">
           {/* Items List */}

@@ -10,7 +10,6 @@ export default function CommonFile(props) {
   const [hoveredBook, setHoveredBook] = useState(null);
   const navigate = useNavigate();
 
-  // Add this handler
   const handleBookClick = (book) => {
     navigate(`/quickview/${book._id}`, { state: { bookData: book } });
   };
@@ -41,27 +40,20 @@ export default function CommonFile(props) {
   }
 
   return (
-    <div className="max-w-7xl   mx-auto ">
-      <div className="text-center text-[30px] font-bold"></div>
-      <div
-        className="flex
-           gap-3 w-[90%] mx-auto"
-      >
-        <div className=" w-full ">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center text-xl sm:text-2xl lg:text-[30px] font-bold"></div>
+      <div className="w-full sm:w-[90%] mx-auto">
+        <div className="w-full">
           <div className="flex justify-end"></div>
-          <div className="grid grid-cols-1 gap-3 py-4 ">
+          <div className="grid grid-cols-1 gap-3 py-4">
             {displayedBooks.map((book) => (
-              // <Link to="/quickview" key={book._id}>
-              <div className="  flex gap-10  p-4 group">
-                <div className="flex w-full border-r-2 gap-8">
-                  <div className="relative shadow-inner border-2 border-[#E5E5E5] ">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-10 p-4 group">
+                <div className="flex flex-col sm:flex-row w-full sm:border-r-2 gap-4 sm:gap-8">
+                  <div className="relative shadow-inner border-2 border-[#E5E5E5] w-full sm:w-auto">
                     <img
                       src={book.img}
                       alt={book.name}
                       className="w-full h-[200px] object-cover"
-                      //   onMouseEnter={() => setHoveredBook(book._id)}
-                      //   onMouseLeave={() => setHoveredBook(null)}
-                      //   onClick={() => handleBookClick(book)}
                     />
                     <div className="bg-[#FD0000] text-white text-[12px] px-4 py-[1px] absolute -top-2 -left-2 flex items-center justify-center text-center">
                       {book.discountAmount}
@@ -74,19 +66,19 @@ export default function CommonFile(props) {
                       </div>
                     )}
                   </div>
-                  <div>
-                    <div className="text-gray-600 text-center font-bold line-clamp-1">
+                  <div className="text-center sm:text-left">
+                    <div className="text-gray-600 font-bold line-clamp-1">
                       {book.name}
                     </div>
                     <div>{book.author}</div>
-                    <div className=" ">
+                    <div className="flex flex-row justify-center sm:justify-start gap-2">
                       <div>{book.prize}</div>
                       <div className="line-through">{book.discount}</div>
                     </div>
                   </div>
                 </div>
 
-                <div className="w-full mt-[80px] space-y-2">
+                <div className="w-full sm:mt-[80px] space-y-2">
                   <div className="text-[#468d66] font-bold"> Available </div>
                   <div>
                     Ships within
@@ -96,19 +88,18 @@ export default function CommonFile(props) {
                       Explain..
                     </span>{" "}
                   </div>
-                  <div className=" gap-4  flex h-[40px]   ">
+                  <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
                     <Link to="/cart" className="text-blue-500">
-                      <button className="bg-[#397D58] py-2 px-4 rounded-md text-white">
+                      <button className="w-full sm:w-auto bg-[#397D58] py-2 px-4 rounded-md text-white">
                         Add to cart
                       </button>
                     </Link>
-                    <button className="py-2 px-4 rounded-md border-2 shadow-sm">
+                    <button className="w-full sm:w-auto py-2 px-4 rounded-md border-2 shadow-sm">
                       Add to wishlist
                     </button>
                   </div>
                 </div>
               </div>
-              // </Link>
             ))}
           </div>
           {books.length > 0 && currentIndex < books.length && (

@@ -10,7 +10,6 @@ export default function Parent(props) {
   const [hoveredBook, setHoveredBook] = useState(null);
   const navigate = useNavigate();
 
-  // Add this handler
   const handleBookClick = (book) => {
     navigate(`/quickview/${book._id}`, { state: { bookData: book } });
   };
@@ -41,19 +40,15 @@ export default function Parent(props) {
   }
 
   return (
-    <div className=" ">
+    <div className="w-full px-4">
       <div className="text-center text-[30px] font-bold"></div>
-      <div
-        className="flex
-           gap-3 w-[90%] mx-auto"
-      >
-        <div className=" w-full ">
+      <div className="flex gap-3 w-full max-w-[1200px] mx-auto">
+        <div className="w-full">
           <div className="flex justify-end"></div>
-          <div className="grid grid-cols-6 gap-3 py-4 ">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 py-4">
             {displayedBooks.map((book) => (
-              // <Link to="/quickview" key={book._id}>
               <div
-                className="shadow-inner bg-[#FBFBFB] cursor-pointer  p-4 relative group"
+                className="shadow-inner bg-[#FBFBFB] cursor-pointer p-4 relative group"
                 onMouseEnter={() => setHoveredBook(book._id)}
                 onMouseLeave={() => setHoveredBook(null)}
                 onClick={() => handleBookClick(book)}
@@ -65,32 +60,31 @@ export default function Parent(props) {
                   <img
                     src={book.img}
                     alt={book.name}
-                    className="w-full h-[200px] object-cover"
+                    className="w-full h-[150px] sm:h-[180px] md:h-[200px] object-cover"
                   />
                   {hoveredBook === book._id && (
                     <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                      <span className="text-white font-semibold text-lg">
+                      <span className="text-white font-semibold text-base sm:text-lg">
                         Quick View
                       </span>
                     </div>
                   )}
-                  <div className="text-gray-600 text-center font-bold line-clamp-1">
+                  <div className="text-gray-600 text-center font-bold line-clamp-1 text-sm sm:text-base">
                     {book.name}
                   </div>
-                  <div>{book.author}</div>
-                  <div className="flex justify-between gap-6">
+                  <div className="text-sm sm:text-base">{book.author}</div>
+                  <div className="flex justify-between gap-4 sm:gap-6 text-sm sm:text-base">
                     <div>{book.prize}</div>
                     <div className="line-through">{book.discount}</div>
                   </div>
                 </div>
               </div>
-              // </Link>
             ))}
           </div>
           {books.length > 0 && currentIndex < books.length && (
             <div
               onClick={handleShowMore}
-              className="text-center hover:text-[#B01A16] duration-500 py-4 hover:underline cursor-pointer"
+              className="text-center hover:text-[#B01A16] duration-500 py-4 hover:underline cursor-pointer text-sm sm:text-base"
             >
               Load more books
             </div>

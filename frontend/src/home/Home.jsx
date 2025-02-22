@@ -22,10 +22,12 @@ export default function Home() {
     <div>
       <div className="fixed top-0 left-0 right-0 z-50 bg-white w-full">
         <BeforeNavbar />
-        <SearchNavbar />
+        <div className="pt-[30px]">
+          <SearchNavbar />
+        </div>
         <Navbar />
       </div>
-      <div className="md:mt-[170px] mt-[100px]">
+      <div className="md:mt-[192px] mt-[180px]">
         <Comics />
         <Slider />
         <IconSlider />

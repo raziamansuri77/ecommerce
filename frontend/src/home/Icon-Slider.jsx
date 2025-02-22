@@ -7,7 +7,6 @@ export default function IconSlider() {
   const cardRef = useRef(null);
   const [cardWidth, setCardWidth] = useState(0);
 
-  // Set the card width once the component is mounted or resized
   useEffect(() => {
     if (cardRef.current) {
       setCardWidth(cardRef.current.clientWidth);
@@ -32,7 +31,6 @@ export default function IconSlider() {
       const totalScrollWidth = container.scrollWidth;
       const currentScroll = container.scrollLeft;
 
-      // If we're at the end, jump back to the start
       if (currentScroll + container.clientWidth >= totalScrollWidth) {
         container.scrollTo({ left: 0, behavior: "smooth" });
       } else {
@@ -46,7 +44,6 @@ export default function IconSlider() {
       const container = scrollContainer.current;
       const currentScroll = container.scrollLeft;
 
-      // If we're at the start, jump to the last card
       if (currentScroll <= 0) {
         const totalScrollWidth = container.scrollWidth;
         container.scrollTo({
@@ -60,131 +57,119 @@ export default function IconSlider() {
   };
 
   return (
-    <div className=" ">
-      <div className="relative  pb-4  border-t-2 border-b-2  border-gray-300 items-center">
+    <div className="w-full">
+      <div className="relative pb-4 border-t-2   pt-8 border-b-2 border-gray-300 items-center">
         <button
           onClick={scrollPrev}
-          className="absolute top-6 left-4 h-[50px]    text-black p-3 rounded-full"
+          className="absolute  top-[75px] transform -translate-y-1/2 left-0 md:left-4 h-[30px] md:h-[50px] text-black p-2 md:p-3 rounded-full z-10"
         >
-          <MdOutlineKeyboardArrowLeft className="text-[70px] cursor-pointer" />
+          <MdOutlineKeyboardArrowLeft className="text-[40px] md:text-[70px] cursor-pointer" />
         </button>
         <div
-          className="flex overflow-x-hidden  gap-16 scroll-smooth max-w-7xl h-[150px] mx-auto      " // Hides scrollbar while enabling smooth scroll
+          className="flex overflow-x-hidden gap-4 md:gap-8 lg:gap-16 scroll-smooth max-w-full md:max-w-3xl lg:max-w-7xl h-[100px] md:h-[120px] lg:h-[150px] mx-auto px-8 md:px-12"
           ref={scrollContainer}
         >
           {/* Card 1 */}
           <div
             ref={cardRef}
-            className="flex-shrink-0     text-black m-4 rounded-lg"
+            className="flex-shrink-0 text-black my-2 md:m-4 rounded-lg"
           >
             <Link to="/bestseller">
-              <div className="text-center flex  flex-col items-center cursor-pointer">
+              <div className="text-center flex flex-col items-center cursor-pointer">
                 <img
                   src="https://www.bookswagon.com/Images/staticimages/icon1.png"
                   alt=""
-                  // className="w-[80px] "
+                  className="w-[40px] md:w-[60px] lg:w-[80px]"
                 />
-                <p>Best Seller</p>
+                <p className="text-xs md:text-sm lg:text-base">Best Seller</p>
               </div>
             </Link>
           </div>
           {/* Card 2 */}
-          <div className="flex-shrink-0    text-black m-4 rounded-lg">
+          <div className="flex-shrink-0 text-black my-2 md:m-4 rounded-lg">
             <Link to="/awardWinners">
-              <div className="text-center flex  flex-col items-center cursor-pointer">
+              <div className="text-center flex flex-col items-center cursor-pointer">
                 <img
                   src="https://www.bookswagon.com/Images/staticimages/icon8.png"
                   alt=""
-                  // className="w-[80px] "
+                  className="w-[40px] md:w-[60px] lg:w-[80px]"
                 />
-                <p>Award Winners</p>
+                <p className="text-xs md:text-sm lg:text-base">Award Winners</p>
               </div>
             </Link>
           </div>
-          {/* Card 3 */}
-          {/* <div className="flex-shrink-0    text-black m-4 rounded-lg">
-            <div className="text-center flex  flex-col items-center cursor-pointer">
-              <img
-                src="https://www.bookswagon.com/Images/staticimages/TodaysDeal.png"
-                alt=""
-                className="w-[80px] "
-              />
-              <p>Best Seller</p>
-            </div>
-          </div> */}
           {/* Card 4 */}
-          <div className="flex-shrink-0    text-black m-4 rounded-lg">
+          <div className="flex-shrink-0 text-black my-2 md:m-4 rounded-lg">
             <Link to="/boxset">
-              <div className="text-center flex  flex-col items-center cursor-pointer">
+              <div className="text-center flex flex-col items-center cursor-pointer">
                 <img
                   src="https://www.bookswagon.com/Images/staticimages/icon4.png"
                   alt=""
-                  className="w-[80px] "
+                  className="w-[40px] md:w-[60px] lg:w-[80px]"
                 />
-                <p>Box Sets</p>
+                <p className="text-xs md:text-sm lg:text-base">Box Sets</p>
               </div>
             </Link>
-          </div>{" "}
+          </div>
           {/* Card 5 */}
-          <div className="flex-shrink-0   text-black m-4 rounded-lg">
+          <div className="flex-shrink-0 text-black my-2 md:m-4 rounded-lg">
             <Link to="/internationalBestSeller">
-              <div className="text-center flex  flex-col items-center cursor-pointer">
+              <div className="text-center flex flex-col items-center cursor-pointer">
                 <img
                   src="https://www.bookswagon.com/Images/staticimages/icon7.png"
                   alt=""
-                  className="w-[80px] "
+                  className="w-[40px] md:w-[60px] lg:w-[80px]"
                 />
-                <p>International Best Seller</p>
+                <p className="text-xs md:text-sm lg:text-base">
+                  International Best Seller
+                </p>
               </div>
             </Link>
-          </div>{" "}
+          </div>
           {/* Card 6 */}
-          <div className="flex-shrink-0   text-black m-4 rounded-lg">
+          <div className="flex-shrink-0 text-black my-2 md:m-4 rounded-lg">
             <Link to="/newArrivals">
-              <div className="text-center flex  flex-col items-center cursor-pointer">
+              <div className="text-center flex flex-col items-center cursor-pointer">
                 <img
                   src="https://www.bookswagon.com/Images/staticimages/icon2.png"
                   alt=""
-                  className="w-[80px] "
+                  className="w-[40px] md:w-[60px] lg:w-[80px]"
                 />
-                <p>New Arrivals</p>
+                <p className="text-xs md:text-sm lg:text-base">New Arrivals</p>
               </div>
             </Link>
-          </div>{" "}
+          </div>
           {/* Card 7 */}
-          <div className="flex-shrink-0   text-black m-4 rounded-lg">
+          <div className="flex-shrink-0 text-black my-2 md:m-4 rounded-lg">
             <Link to="/fictionBooks">
-              <div className="text-center flex  flex-col items-center cursor-pointer">
+              <div className="text-center flex flex-col items-center cursor-pointer">
                 <img
                   src="https://www.bookswagon.com/Images/staticimages/icon5.png"
                   alt=""
-                  className="w-[80px] "
+                  className="w-[40px] md:w-[60px] lg:w-[80px]"
                 />
-                <p>Fiction Books</p>
+                <p className="text-xs md:text-sm lg:text-base">Fiction Books</p>
               </div>
             </Link>
-          </div>{" "}
+          </div>
           {/* Card 8 */}
-          <div className="flex-shrink-0 h-[100px]    text-black m-4 rounded-lg">
-            <div className="text-center flex  flex-col items-center cursor-pointer">
+          <div className="flex-shrink-0 text-black my-2 md:m-4 rounded-lg">
+            <div className="text-center flex flex-col items-center cursor-pointer">
               <img
                 src="https://www.bookswagon.com/Images/staticimages/tarot.png"
                 alt=""
-                // className="w-[80px] "
+                className="w-[40px] md:w-[60px] lg:w-[80px]"
               />
-              <p>Tarot Cards</p>
+              <p className="text-xs md:text-sm lg:text-base">Tarot Cards</p>
             </div>
           </div>
         </div>
 
-        {/* Previous Button */}
-
-        {/* Next Button */}
         <button
           onClick={scrollNext}
-          className="absolute top-6 right-4   text-black p-3 rounded-full"
+          className="absolute top-[75px] transform -translate-y-1/2 right-0 md:right-4 h-[30px] md:h-[50px] text-black p-2 md:p-3 rounded-full z-10"
         >
-          <MdOutlineKeyboardArrowRight className="text-[70px] cursor-pointer" />
+          <MdOutlineKeyboardArrowRight className="text-[40px] md:text-[70px] cursor-pointer" />
         </button>
       </div>
     </div>

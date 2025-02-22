@@ -108,12 +108,10 @@ const trendingBooks = [
 ];
 
 export default function Trending() {
-  // Refs and state for scroll functionality
   const scrollContainer = useRef(null);
   const cardRef = useRef(null);
   const [cardWidth, setCardWidth] = useState(0);
 
-  // Effect to handle card width calculations
   useEffect(() => {
     if (cardRef.current) {
       setCardWidth(cardRef.current.clientWidth);
@@ -129,7 +127,6 @@ export default function Trending() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Scroll handlers
   const scrollNext = () => {
     if (scrollContainer.current) {
       const container = scrollContainer.current;
@@ -162,58 +159,59 @@ export default function Trending() {
   };
 
   return (
-    <div>
-      {/* Header */}
-      <div className="text-[30px] font-bold text-center py-4">Now Trending</div>
+    <div className="w-full px-4 md:px-6 lg:px-8">
+      <div className="text-[20px] md:text-[25px] lg:text-[30px] font-bold text-center py-2 md:py-3 lg:py-4">
+        Now Trending
+      </div>
 
-      {/* Carousel Container */}
       <div className="relative">
-        {/* Previous Button */}
         <button
           onClick={scrollPrev}
-          className="absolute top-1/2 left-4 h-[50px] text-black p-3 rounded-full"
+          className="absolute top-1/2 left-0 md:left-2 lg:left-4 h-[30px] md:h-[40px] lg:h-[50px] text-black p-2 md:p-3 rounded-full z-10"
         >
-          <MdOutlineKeyboardArrowLeft className="text-[70px] cursor-pointer" />
+          <MdOutlineKeyboardArrowLeft className="text-[40px] md:text-[50px] lg:text-[70px] cursor-pointer" />
         </button>
 
-        {/* Cards Container */}
         <div
-          className="flex overflow-x-hidden scroll-smooth max-w-7xl mx-auto h-[430px]"
+          className="flex overflow-x-hidden scroll-smooth mx-auto h-[350px] md:h-[390px] lg:h-[430px] max-w-full md:max-w-3xl lg:max-w-7xl"
           ref={scrollContainer}
         >
-          {/* Mapping through books array */}
           {trendingBooks.map((book) => (
             <div
               key={book.id}
               ref={book.id === 1 ? cardRef : null}
-              className="flex-shrink-0 w-60 h-80 text-black m-4 rounded-lg"
+              className="flex-shrink-0 w-40 md:w-52 lg:w-60 h-[300px] md:h-[350px] lg:h-[400px] text-black m-2 md:m-3 lg:m-4 rounded-lg"
             >
-              <div className="px-2 shadow-sm rounded-lg border-1 xl:h-[400px] relative">
-                {/* Discount Badge */}
-                <div className="absolute -top-[14px] -right-4 w-[40px] h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full">
+              <div className="px-1 md:px-2 shadow-sm rounded-lg border-1 relative h-full">
+                <div className="absolute -top-[10px] md:-top-[12px] lg:-top-[14px] -right-2 md:-right-3 lg:-right-4 w-[30px] md:w-[35px] lg:w-[40px] h-[30px] md:h-[35px] lg:h-[40px] flex items-center justify-center text-white bg-[#FF0000] rounded-full text-xs md:text-sm lg:text-base">
                   {book.discount}
                 </div>
 
-                {/* Card Content */}
-                <div className="p-4 border-1 xl:h-[400px] rounded-lg flex flex-col items-center gap-2 justify-center shadow-md h-[450px]">
-                  {/* Image Container */}
+                <div className="p-2 md:p-3 lg:p-4 border-1 rounded-lg flex flex-col items-center gap-1 md:gap-1.5 lg:gap-2 justify-center shadow-md h-full">
                   <div className="overflow-hidden">
                     <div className="hover:scale-110 duration-500 transition-transform">
                       <img
                         src={book.image}
-                        className="cursor-pointer w-[170px] h-[240px]"
+                        className="cursor-pointer w-[120px] md:w-[150px] lg:w-[170px] h-[180px] md:h-[210px] lg:h-[240px] object-cover"
                         alt={book.title}
                       />
                     </div>
                   </div>
 
-                  {/* Book Details */}
-                  <div className="text-center w-full px-2 py-2">
-                    <p>{book.title}</p>
-                    <p>{book.author}</p>
-                    <div className="flex justify-center gap-4">
-                      <p>{book.price}</p>
-                      <p>{book.originalPrice}</p>
+                  <div className="text-center w-full px-1 md:px-1.5 lg:px-2 py-1 md:py-1.5 lg:py-2">
+                    <p className="text-xs md:text-sm lg:text-base truncate">
+                      {book.title}
+                    </p>
+                    <p className="text-xs md:text-sm lg:text-base">
+                      {book.author}
+                    </p>
+                    <div className="flex justify-center gap-2 md:gap-3 lg:gap-4">
+                      <p className="text-xs md:text-sm lg:text-base">
+                        ₹{book.price}
+                      </p>
+                      <p className="text-xs md:text-sm lg:text-base line-through text-gray-500">
+                        ₹{book.originalPrice}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -222,17 +220,15 @@ export default function Trending() {
           ))}
         </div>
 
-        {/* Next Button */}
         <button
           onClick={scrollNext}
-          className="absolute top-1/2 right-4 text-black p-3 rounded-full"
+          className="absolute top-1/2 right-0 md:right-2 lg:right-4 h-[30px] md:h-[40px] lg:h-[50px] text-black p-2 md:p-3 rounded-full z-10"
         >
-          <MdOutlineKeyboardArrowRight className="text-[70px] cursor-pointer" />
+          <MdOutlineKeyboardArrowRight className="text-[40px] md:text-[50px] lg:text-[70px] cursor-pointer" />
         </button>
       </div>
 
-      {/* Footer */}
-      <div className="text-center text-[#E42B26] font-semibold underline cursor-pointer py-4">
+      <div className="text-center text-[#E42B26] font-semibold underline cursor-pointer py-2 md:py-3 lg:py-4 text-sm md:text-base lg:text-lg">
         Show All
       </div>
     </div>

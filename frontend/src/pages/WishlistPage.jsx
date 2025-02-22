@@ -21,7 +21,9 @@ export default function CartPage() {
   return (
     <div>
       <BeforeNavbar />
-      <SearchNavbar />
+      <div className="pt-[35px]">
+        <SearchNavbar />
+      </div>
       <Navbar />
       <div className="p-16">
         <h1 className="text-[20px] font-bold">My Wishlist</h1>
@@ -48,7 +50,7 @@ export default function CartPage() {
                     {item.author}
                   </div>
                   <div className="text-[20px] font-semibold">
-                    Price: ${item.prize}
+                    Price: {item.prize}
                   </div>
 
                   <button
@@ -69,7 +71,7 @@ export default function CartPage() {
             ))}
             {/* Display total value of wishlist items */}
             <div className="mt-6 text-2xl font-bold">
-              Total Value: ${totalValue}
+              Total Value:{totalValue}
             </div>
           </ul>
         )}

@@ -9,10 +9,16 @@ import Footer from "../home/Footer";
 export default function Login() {
   return (
     <div>
-      <BeforeNavbar />
-      <SearchNavbar />
-      <Navbar />
-      <LoginPage />
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white w-full">
+        <BeforeNavbar />
+        <div className=" mt-[35px]">
+          <SearchNavbar />
+        </div>
+        <Navbar />
+      </div>
+      <div className="mt-[280px] sm:mt-[160px] md:mt-[220px]">
+        <LoginPage />
+      </div>
       <div className="pt-10 pb-3">
         <Footer />
       </div>

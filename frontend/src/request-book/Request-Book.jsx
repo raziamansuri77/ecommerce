@@ -10,10 +10,12 @@ export default function RequestBook() {
     <div>
       <div className="fixed top-0 left-0 right-0 z-50 bg-white w-full">
         <BeforeNavbar />
-        <SearchNavbar />
+        <div className="mt-[35px]">
+          <SearchNavbar />
+        </div>
         <Navbar />
       </div>
-      <div className="mt-[170px]">
+      <div className="mt-[260px] md:mt-[220px]">
         <RequestBookMain />
         <Footer />
       </div>

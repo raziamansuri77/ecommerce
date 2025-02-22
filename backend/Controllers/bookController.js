@@ -61,3 +61,32 @@ exports.deleteBook = async (req, res) => {
     res.status(500).json({ error: "Failed to delete book" });
   }
 };
+
+// Add this new method to existing bookController.js
+exports.searchBooks = async (req, res) => {
+  try {
+    const { query } = req.query;
+    console.log("Search controller  query:", query);
+    if (!query) {
+      return res.status(400).json({ error: "Search query is required" });
+    }
+
+    const searchRegex = new RegExp(query, "i");
+
+    const books = await Book.find({
+      $or: [
+        { name: { $regex: searchRegex } },
+        { author: { $regex: searchRegex } },
+        { description: { $regex: searchRegex } },
+      ],
+    });
+    console.log("search book response controller", books);
+    res.status(200).json(books);
+  } catch (error) {
+    console.error("Search error:", error);
+    res.status(500).json({
+      error: "Failed to search books",
+      details: error.message,
+    });
+  }
+};
