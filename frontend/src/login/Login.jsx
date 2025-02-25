@@ -16,7 +16,7 @@ export default function Login() {
         </div>
         <Navbar />
       </div>
-      <div className="mt-[280px] sm:mt-[160px] md:mt-[220px]">
+      <div className="mt-[260px] sm:mt-[160px] md:mt-[200px]">
         <LoginPage />
       </div>
       <div className="pt-10 pb-3">

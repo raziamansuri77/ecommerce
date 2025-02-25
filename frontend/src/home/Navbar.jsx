@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { FaSearch } from "react-icons/fa";
-import { FaRegUserCircle } from "react-icons/fa";
-import { IoIosArrowForward } from "react-icons/io";
-import { FaUserCircle } from "react-icons/fa";
+// import { FaSearch } from "react-icons/fa";
+// import { FaRegUserCircle } from "react-icons/fa";
+// import { IoIosArrowForward } from "react-icons/io";
+// import { FaUserCircle } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
-import { MdArrowDropDown } from "react-icons/md";
+// import { MdArrowDropDown } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context/GlobalContext";
 import { useNavigate } from "react-router-dom";

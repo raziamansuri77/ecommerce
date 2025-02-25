@@ -33,7 +33,7 @@ export default function CartPage() {
           <ul className="mt-12 border-2 p-12 rounded-lg bg-[#F8F8F8]">
             {wishlistItems.map((item) => (
               <li
-                key={item.id} // ADD THIS LINE
+                key={item._id} // ADD THIS LINE
                 className="flex gap-6 items-center py-4 border-b"
               >
                 <div className=" ">
@@ -52,26 +52,18 @@ export default function CartPage() {
                   <div className="text-[20px] font-semibold">
                     Price: {item.prize}
                   </div>
-
                   <button
-                    onClick={() => removeFromWishlist(item.id)}
+                    onClick={() => removeFromWishlist(item._id)}
                     className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700"
                   >
                     Remove
-                  </button>
-                  <button
-                    onClick={() => addToCart(item)}
-                    className="mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700 disabled:bg-gray-500 disabled:cursor-not-allowed"
-                    disabled={isInCart(item.id)}
-                  >
-                    {isInCart(item.id) ? "Already in Cart" : "Add to Cart"}
                   </button>
                 </div>
               </li>
             ))}
             {/* Display total value of wishlist items */}
             <div className="mt-6 text-2xl font-bold">
-              Total Value:{totalValue}
+              Total Value: ₹ {totalValue}
             </div>
           </ul>
         )}

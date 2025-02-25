@@ -40,34 +40,26 @@ export default function CommonFile(props) {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center text-xl sm:text-2xl lg:text-[30px] font-bold"></div>
-      <div className="w-full sm:w-[90%] mx-auto">
-        <div className="w-full">
-          <div className="flex justify-end"></div>
-          <div className="grid grid-cols-1 gap-3 py-4">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6    ">
+      <div className="w-full sm:w-[90%] mx-auto  ">
+        <div className="w-full ">
+          {/* <div className="flex justify-end"></div> */}
+          <div className="grid grid-cols-1   md:grid-cols-2 lg:grid-cols-1 gap-3 py-4">
             {displayedBooks.map((book) => (
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-10 p-4 group">
-                <div className="flex flex-col sm:flex-row w-full sm:border-r-2 gap-4 sm:gap-8">
-                  <div className="relative shadow-inner border-2 border-[#E5E5E5] w-full sm:w-auto">
+              <div
+                key={book._id}
+                className="flex flex-col  lg:flex-row  items-center  gap-4 sm:gap-10 p-4 group"
+              >
+                <div className="flex flex-col   lg:px-6 items-center lg:flex-row  py-4  lg:w-[50%] sm:border-r-2  sm:gap-8 lg:gap-4">
+                  <div className="relative shadow-inner border-2 border-[#E5E5E5] mx-auto w-[200px] h-[250px] lg:w-[250px]  lg:h-[200px]  sm:w-auto p-2  ">
                     <img
                       src={book.img}
                       alt={book.name}
-                      className="w-full h-[200px] object-cover"
+                      className="w-full  h-[220px] object-cover lg:h-[180px]"
                     />
-                    <div className="bg-[#FD0000] text-white text-[12px] px-4 py-[1px] absolute -top-2 -left-2 flex items-center justify-center text-center">
-                      {book.discountAmount}
-                    </div>
-                    {hoveredBook === book._id && (
-                      <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                        <span className="text-white font-semibold text-lg">
-                          Quick View
-                        </span>
-                      </div>
-                    )}
                   </div>
-                  <div className="text-center sm:text-left">
-                    <div className="text-gray-600 font-bold line-clamp-1">
+                  <div className="text-center lg:w-full   lg:items-baseline md:flex md:flex-col md:justify-center md:items-center py-4 sm:text-left">
+                    <div className="text-gray-600 font-bold line-clamp-1 lg:items-baseline">
                       {book.name}
                     </div>
                     <div>{book.author}</div>
@@ -78,7 +70,7 @@ export default function CommonFile(props) {
                   </div>
                 </div>
 
-                <div className="w-full sm:mt-[80px] space-y-2">
+                <div className="md:w-full    lg:w-[300px]  space-y-2 w-[300px] mx-auto">
                   <div className="text-[#468d66] font-bold"> Available </div>
                   <div>
                     Ships within
@@ -88,9 +80,9 @@ export default function CommonFile(props) {
                       Explain..
                     </span>{" "}
                   </div>
-                  <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                  <div className="flex flex-col  lg:flex-row    gap-2 sm:gap-4">
                     <Link to="/cart" className="text-blue-500">
-                      <button className="w-full sm:w-auto bg-[#397D58] py-2 px-4 rounded-md text-white">
+                      <button className="w-full   bg-[#397D58] py-2 px-4 rounded-md text-white">
                         Add to cart
                       </button>
                     </Link>

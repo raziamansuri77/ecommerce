@@ -28,7 +28,6 @@ export default function CheckoutPage() {
   }, 0);
 
   const handlePayment = () => {
-    console.log("hello handlePayment function");
     alert("Payment successful!");
   };
 

@@ -4,6 +4,7 @@ import BeforeNavbar from "../home/Before-Navbar";
 import SearchNavbar from "../home/Search-Navbar";
 import Navbar from "../home/Navbar";
 import { useNavigate } from "react-router-dom";
+import Footer from "../home/Footer";
 
 export default function CartPage() {
   const navigate = useNavigate();
@@ -33,12 +34,14 @@ export default function CartPage() {
 
   return (
     <div>
-      <BeforeNavbar />
-      <div className="pt-[35px]">
-        <SearchNavbar />
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white w-full">
+        <BeforeNavbar />
+        <div className="pt-8 sm:pt-6 md:pt-8">
+          <SearchNavbar />
+        </div>
+        <Navbar />
       </div>
-      <Navbar />
-      <div className="p-4 md:p-8 lg:p-16">
+      <div className="p-4 md:p-8 lg:p-16 mt-[280px] md:mt-[220px] pb-8">
         <h1 className="text-[18px] md:text-[20px] font-bold">
           My Shopping Cart
         </h1>
@@ -119,6 +122,7 @@ export default function CartPage() {
           </ul>
         )}
       </div>
+      <Footer />
     </div>
   );
 }

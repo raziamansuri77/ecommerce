@@ -29,7 +29,7 @@ export default function SearchNavbar() {
   };
 
   return (
-    <div className="px-2 md:px-8  flex flex-col md:flex-row justify-between items-center pt-4 md:pt-14 pb-2">
+    <div className="px-2 md:px-10  flex flex-col md:flex-row justify-between items-center pt-4 md:pt-14 pb-2">
       <div className="flex flex-col md:flex-row items-center w-full md:w-auto md:gap-8 lg:gap-20">
         <div className="flex items-center justify-between w-full md:w-auto mb-4 md:mb-0">
           <img

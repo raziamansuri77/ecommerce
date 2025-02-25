@@ -49,10 +49,10 @@ export default function Parent(props) {
         alt=""
         className="text-center mx-auto w-[250px]"
       />
-      <div className="w-[95%] md:w-[90%] mx-auto">
+      <div className="w-[95%] md:w-[90%]  xl:max-w-6xl mx-auto">
         <div className="w-full">
           <div className="flex justify-end"></div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 lg:gap-8 py-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8 py-4">
             {displayedBooks.map((book) => (
               <div
                 className="shadow-inner bg-[#FBFBFB] cursor-pointer p-2 md:p-4 relative group"
@@ -81,8 +81,8 @@ export default function Parent(props) {
                   </div>
                   <div className="text-sm md:text-base">{book.author}</div>
                   <div className="flex justify-between gap-2 md:gap-6 text-sm md:text-base">
-                    <div>{book.prize}</div>
-                    <div className="line-through">{book.discount}</div>
+                    <div>₹ {book.prize}</div>
+                    <div className="line-through">₹ {book.discount}</div>
                   </div>
                 </div>
               </div>

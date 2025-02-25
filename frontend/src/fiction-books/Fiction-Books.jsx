@@ -15,7 +15,6 @@ export default function FictionBooks() {
         </div>
         <Navbar />
       </div>
-      {/* <Parent /> */}
       <div className="mt-[250px] md:mt-[210px]">
         <FictionBooksBase />
         <Footer />

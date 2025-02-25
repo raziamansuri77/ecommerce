@@ -58,11 +58,14 @@ export const GlobalContextProvider = ({ children }) => {
     setWishlistItems([...wishlistItems, newWishlistItem]);
   };
 
-  const removeFromWishlist = (wishlistItemId) => {
-    // Remove an item from the wishlist based on its bookId
-    setWishlistItems(
-      wishlistItems.filter((item) => item.wishlistItemId !== wishlistItemId)
-    );
+  // const removeFromWishlist = (wishlistItemId) => {
+  //   // Remove an item from the wishlist based on its bookId
+  //   setWishlistItems(
+  //     wishlistItems.filter((item) => item.wishlistItemId !== wishlistItemId)
+  //   );
+  // };
+  const removeFromWishlist = (_id) => {
+    setWishlistItems(wishlistItems.filter((item) => item._id !== _id));
   };
 
   const isInCart = (bookId) => {

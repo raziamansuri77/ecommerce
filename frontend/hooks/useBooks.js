@@ -5,7 +5,7 @@ const useBooks = () => {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  console.log("useBooks hook is running");
+  // console.log("useBooks hook is running");
   const fetchBooks = async () => {
     try {
       const response = await axios.get("/api/v1/books");

@@ -45,9 +45,10 @@ export default function Parent(props) {
       <div className="flex gap-3 w-full max-w-[1200px] mx-auto">
         <div className="w-full">
           <div className="flex justify-end"></div>
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 py-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 py-4">
             {displayedBooks.map((book) => (
               <div
+                key={book._id}
                 className="shadow-inner bg-[#FBFBFB] cursor-pointer p-4 relative group"
                 onMouseEnter={() => setHoveredBook(book._id)}
                 onMouseLeave={() => setHoveredBook(null)}
@@ -74,8 +75,8 @@ export default function Parent(props) {
                   </div>
                   <div className="text-sm sm:text-base">{book.author}</div>
                   <div className="flex justify-between gap-4 sm:gap-6 text-sm sm:text-base">
-                    <div>{book.prize}</div>
-                    <div className="line-through">{book.discount}</div>
+                    <div>₹ {book.prize}</div>
+                    <div className="line-through">₹ {book.discount}</div>
                   </div>
                 </div>
               </div>

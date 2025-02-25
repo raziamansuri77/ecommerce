@@ -8,10 +8,16 @@ import ForgotPage from "./Forgot-Page";
 export default function Forgot() {
   return (
     <div>
-      <BeforeNavbar />
-      <SearchNavbar />
-      <Navbar />
-      <ForgotPage />
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white w-full">
+        <BeforeNavbar />
+        <div className=" mt-[35px]">
+          <SearchNavbar />
+        </div>
+        <Navbar />
+      </div>
+      <div className="mt-[260px] sm:mt-[160px] md:mt-[220px]">
+        <ForgotPage />
+      </div>
       <Footer />
     </div>
   );
