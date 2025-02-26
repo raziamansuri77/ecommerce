@@ -1,20 +1,17 @@
 [
   {
-    "img": "https://www.bookswagon.com/productimages/images200/164/9781338792164.jpg",
-    "name": "Boxed - Dog Man: The Supa Buddies Mega Collection:",
+    "img": "https://simg.pothi.com/lhqt8DhO5Px6ONnbqgMq_O874PdFxGTpE2EbkIswahU/rs:fit/w:371/h:477/el:1/g:sm/cb:rev-1/bG9jYWw6Ly8vaW1h/Z2VzL3Byb2R1Y3Rz/LzIwMjQvMTEvU0tV/MjYyMTIvSW1hZ2Vf/MC5qcGc.jpg",
+    "name": "Whispers of the Past",
     "author": "Dav Pilkey",
-
     "prize": "1,565",
     "discount": "1,899",
     "discountAmount": "18%",
-    "description": "A collection of Dog Man adventures featuring the Supa Buddies. Follow the heroic adventures of Dog Man in this complete box set of this bestselling series."
+    "description": "A heart-wrenching tale of love and war set in 18th-century Europe, where a young woman uncovers a family secret that changes her life forever."
   },
-
   {
-    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/530/9781250259530.jpg",
-    "name": "Caraval Paperback Boxed Set",
+    "img": "https://makeheadway.com/_next/image/?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F181188%2F79205a2a5a%2Ff906gciwc4cnpxnwpgdd-1623c775dab129-en.jpg&w=750&q=75",
+    "name": "The Code Breaker's Dilemma",
     "author": "Stephanie Garber",
-
     "prize": "891",
     "discount": "1,268",
     "discountAmount": "30%",
@@ -22,30 +19,27 @@
   },
 
   {
-    "img": "https://www.bookswagon.com/productimages/images200/234/9781484707234.jpg",
-    "name": "Percy Jackson and the Olympians 5 Book",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIRCPNNp8g4E3VduP3S4T1IIJKo2aPkfg7eg&s",
+    "name": "Echoes of the Unknown",
     "author": "Rick Riordan",
-
     "prize": "734",
     "discount": "999",
     "discountAmount": "27%",
     "description": "Join Percy Jackson on his epic adventures with Greek gods and monsters in this complete series of five thrilling books."
   },
   {
-    "img": "https://www.bookswagon.com/productimages/images200/045/9781368098045.jpg",
-    "name": "Percy Jackson and the Olympians 5 Book",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdm_L2cmvqTObyl-LcwnK4rIVpooaYFPlmmw&s",
+    "name": "Mindful Living",
     "author": "Rick Riordan",
-
     "prize": "1,251",
     "discount": "1,821",
     "discountAmount": "31%",
     "description": "Experience the complete Percy Jackson saga in this collection featuring all five books of demigod adventures and Greek mythology."
   },
   {
-    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/886/9780593201886.jpg",
-    "name": "Frank Herbert's Dune Saga 6-Book Boxed Set",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGkKkO19eiynTOa2bHVaZIcChzSl73YCh4Q&s",
+    "name": "The Last Kingdom",
     "author": "Frank Herbert",
-
     "prize": "1,875",
     "discount": "1,999",
     "discountAmount": "6%",
@@ -53,48 +47,44 @@
   },
 
   {
-    "img": "https://www.bookswagon.com/productimages/images200/099/9781368053099.jpg",
-    "name": "Paperback Boxed Set, The-10th Anniversary Edition",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUiRE-chVLxjCfWHlJbvfH5TGJjWiIsZKYpQ&s",
+    "name": "Startup Secrets",
     "author": "Rick Riordan",
-
     "prize": "887",
     "discount": "1,246",
     "discountAmount": "29%",
     "description": "Celebrate the 10th anniversary of this beloved series with this special edition boxed set featuring exclusive content and artwork."
   },
   {
-    "img": "https://www.bookswagon.com/productimages/images200/481/9781101965481.jpg",
-    "name": "George R. R. Martin's A Game of Thrones Leather-",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE1LR7mgI_rUaPo36lAX86mnqVH_Bs6AyKNA&s",
+    "name": "Artificial Minds",
     "author": "George R. R. Mart",
-
     "prize": "1,485",
     "discount": "1,725",
     "discountAmount": "14%",
     "description": "A luxurious leather-bound edition of the epic fantasy series that has captured millions of readers worldwide."
   },
   {
-    "img": "https://www.bookswagon.com/productimages/images200/397/9781338864397.jpg",
-    "name": "Cat Kid Comic Club Collection: From the",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF1xrTZ-puwWyYZ7RQlL-IrjeNS_MJToH5uQ&s",
+    "name": "Poetry of the Soul",
     "author": "Dav Pilkey",
-
     "prize": "982",
     "discount": "1,313",
     "discountAmount": "25%",
     "description": "Join Cat Kid in this hilarious comic collection featuring creative stories and art from the creator of Dog Man."
   },
   {
-    "img": "https://www.bookswagon.com/productimages/images200/613/9780316556613.jpg",
-    "name": "The Naturals Paperback Boxed Set",
+    "img": "https://rukminim2.flixcart.com/image/850/1000/l0tweq80/book/w/s/u/the-art-of-war-original-imagcgzzmyjmcf4f.jpeg?q=90&crop=false",
+    "name": "The Art of War",
     "author": "Jennifer Lynn Barnes",
-
     "prize": "924",
     "discount": "1,317",
     "discountAmount": "30%",
     "description": "Follow a group of teens with natural abilities who work with the FBI to solve cold cases in this thrilling series."
   },
   {
-    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/535/9780349438535.jpg",
-    "name": "Twisted Series 4-Book Boxed Set",
+    "img": "https://www.booksbykilo.in/media/books/BBK/9780717223893-New.jpg",
+    "name": "Questions Kids Ask about Themselves",
     "author": "Ana Huang",
 
     "prize": "951",
@@ -103,30 +93,27 @@
     "description": "Experience the passionate and twisted romance series that has captivated readers worldwide in this complete collection."
   },
   {
-    "img": "https://www.bookswagon.com/productimages/images200/323/9781338603323.jpg",
-    "name": "The Captain Underpants Colossal Color Collection",
+    "img": "https://www.booksbykilo.in/media/books/BBK/978B01IYIUA1S-New.jpg",
+    "name": "The Friends in Fantasy Forest Ilf Stark ",
     "author": "Dav Pilkey",
-
     "prize": "748",
     "discount": "999",
     "discountAmount": "25%",
     "description": "Join the hilarious adventures of George and Harold with their superhero creation Captain Underpants in this colorful collection."
   },
   {
-    "img": "https://www.bookswagon.com/productimages/images200/109/9780008376109.jpg",
-    "name": "The Hobbit & The Lord of the Rings Boxed Set",
+    "img": "https://www.booksbykilo.in/media/books/BBK/9788860981592-New.jpg",
+    "name": "The Roman World (History of the World)Tony Allan",
     "author": "J. R. R. Tolkien",
-
     "prize": "1,688",
     "discount": "1,999",
     "discountAmount": "16%",
-    "description": "Journey through Middle-earth with this classic collection featuring The Hobbit and the complete Lord of the Rings trilogy."
+    "description": "Presents a detailed overview of the history of the Roman Empire, covering the period from when it first came to power in Europe up to the fall of the Western Roman Empire in 476 CE."
   },
   {
-    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/577/9781405294577.jpg",
-    "name": "Tintin Paperback Boxed Set 23 titles",
+    "img": "https://www.booksbykilo.in/media/books/BBK/9781789056259-New.jpg",
+    "name": "Disney Aladdin Walt Disney Animation Studios",
     "author": "Herge",
-
     "prize": "1,599",
     "discount": "1,999",
     "discountAmount": "20%",
@@ -143,60 +130,190 @@
     "description": "Explore this groundbreaking Chinese science fiction trilogy that has become an international phenomenon."
   },
   {
-    "img": "https://www.bookswagon.com/productimages/images200/337/9781984858337.jpg",
-    "name": "Essential Ottolenghi [Special Edition, Two-Book",
+    "img": "https://www.booksbykilo.in/media/books/BBK/9781423101666-New.jpg",
+    "name": "Walt Disney's The Jungle Book Disney",
     "author": "Yotam Ottolengh",
-
     "prize": "655",
     "discount": "850",
     "discountAmount": "23%",
-    "description": "A special edition collection featuring two essential cookbooks from renowned chef Yotam Ottolenghi."
+    "description": "Follow the adventures of a boy named Mowgli and his jungle friends as they face the dangerous tiger Shere Khan and the unknown world of humans. In this delightful retelling of the classic film, new and old fans will fall in love with The Jungle Book. With its oversized, padded cover and beautiful illustrations, this is the perfect companion to The Jungle Book. "
   },
   {
-    "img": "https://www.bookswagon.com/productimages/images200/101/9781250211101.jpg",
-    "name": "Six of Crows Boxed Set",
+    "img": "https://www.booksbykilo.in/media/books/BBK/9781534469617-New.jpg",
+    "name": "Angelina and the Princess Katharine Holabird",
     "author": "Leigh Bardugo",
-
     "prize": "629",
     "discount": "894",
     "discountAmount": "30%",
     "description": "Enter the dark and thrilling world of Ketterdam with this duology following a crew of dangerous outcasts."
   },
   {
-    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/911/9781338312911.jpg",
-    "name": "Harry Potter: The Illustrated Collection",
+    "img": "https://www.booksbykilo.in/media/books/BBK/BBK1001-New.jpg",
+    "name": "How my body works- The Environment Orbis Play",
     "author": "Jim Kay",
-
     "prize": "1,364",
     "discount": "1,700",
     "discountAmount": "20%",
     "description": "Experience the magic of Harry Potter with stunning illustrations by Jim Kay in this beautiful collection."
   },
   {
-    "img": "https://www.bookswagon.com/productimages/images200/916/9780375849916.jpg",
-    "name": "Magic Tree House Books 1-28 Boxed Set",
+    "img": "https://www.booksbykilo.in/media/books/BBK/9788860981592-New.jpg",
+    "name": "The Roman World (History of the World) Tony Allan",
     "author": "Mary Pope Os",
-
     "prize": "1,359",
     "discount": "1,999",
     "discountAmount": "32%",
     "description": "Join Jack and Annie on their magical adventures through time and space in this comprehensive collection of 28 books."
   },
   {
-    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/074/9780545162074.jpg",
-    "name": "Harry Potter Paperback Boxed Set: Books 1-7",
+    "img": "https://www.booksbykilo.in/media/books/BBK/9781900466585-New.jpg",
+    "name": "Numbers with the Gingerbread Man Janet Allison Brown",
     "author": "J K ROWLINGJ K ROWLING",
-
     "prize": "1,140",
     "discount": "1,500",
     "discountAmount": "24%",
     "description": "The complete magical journey of Harry Potter from year one to seven at Hogwarts in this complete paperback collection."
   },
   {
-    "img": "https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/441/9781407135441.jpg",
-    "name": "Classic boxed set",
+    "img": "https://www.booksbykilo.in/media/books/BBK/9781912396306-New.jpg",
+    "name": "A Treasure Cove Story - The Jungle Book Walt Disney",
     "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
+  },
+  {
+    "img": "https://www.booksbykilo.in/media/books/BBK/9781913230272-New.jpg",
+    "name": "Church's Story Kati Teague",
+    "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
+  },
+  {
+    "img": "https://www.booksbykilo.in/media/books/BBK/9780544003194-New.jpg",
+    "name": "A Porcupine Named Fluffy Helen Lester",
+    "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
+  },
+  {
+    "img": "https://www.booksbykilo.in/media/books/BBK/9780276444661-New.jpg",
+    "name": "The Jungle Book Disney ",
+    "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
+  },
+  {
+    "img": "https://www.booksbykilo.in/media/books/BBK/9781472325242-New.jpg",
+    "name": "Disney Frozen Disney",
+    "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
+  },
+  {
+    "img": "https://www.booksbykilo.in/media/books/BBK/9780198480488-New.jpg",
+    "name": "Oxford Reading Tree: Stage 1: First Words: Fun at the Beach Roderick Hunt",
+    "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The Stage 1 Biff, Chip and Kipper Stories provide humorous storylines to engage and motivate children. The popular characters and familiar settings are brought to life by Roderick Hunt and Alex Brychta. The stories are unchanged from the previous edition but the cover notes have been updated to support adults in sharing the story with the child."
+  },
+  {
+    "img": "https://www.booksbykilo.in/media/books/BBK/9780333516256.jpg",
+    "name": "The Christmas Handbook Malcolm Bird",
+    "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
+  },
+  {
+    "img": "https://www.booksbykilo.in/media/books/BBK/9780689807374.jpg",
+    "name": "Anasazi Leonard Everett Fisher",
+    "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
+  },
 
+  {
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3FSeyPtLs9v6kCHY8ay9-2TxaayiPPwBaxQ&s",
+    "name": "The Hidden Truth",
+    "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
+  },
+  {
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJRZMHD_3s1EN_Yp4BX173NWFsLe46wRC3hw&s",
+    "name": "Whispers of the Past",
+    "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
+  },
+  {
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrasZ8DMRUMJKIWHekBurK0Ylr3EwoYli5Zg&s",
+    "name": "The Code Breaker's Dilemma",
+    "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
+  },
+  {
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1QfZ2gt07ciEO6WH2OF7kdV0jeyzDHmJ4sQ&s",
+    "name": "Echoes of the Unknown",
+    "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
+  },
+  {
+    "img": "https://m.media-amazon.com/images/I/71gt7rEsYHL._UF1000,1000_QL80_.jpg",
+    "name": "Mindful Living",
+    "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
+  },
+  {
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0IynRrCm1tNwesnjTWPQ1vQVK5fVINNqACQ&s",
+    "name": "Shadows of the Forgotten",
+    "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
+  },
+  {
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVW-tZVBj3iioD7I5BmGBebubPUdd0AmyHkQ&s",
+    "name": "Beyond the Horizon",
+    "author": "Suzanne Collins",
+    "prize": "876",
+    "discount": "1,286",
+    "discountAmount": "32%",
+    "description": "The complete Hunger Games trilogy in a classic boxed set, following Katniss Everdeen's fight for survival and justice."
+  },
+  {
+    "img": "https://m.media-amazon.com/images/I/91avn4X5FBL._UF1000,1000_QL80_.jpg",
+    "name": "The Quantum Paradox",
+    "author": "Suzanne Collins",
     "prize": "876",
     "discount": "1,286",
     "discountAmount": "32%",

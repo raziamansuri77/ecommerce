@@ -33,6 +33,15 @@ import WishlistPage from "./pages/WishlistPage";
 import FileBase from "./common-file/file-base";
 import CheckoutPage from "./pages/CheckoutPage";
 import SearchResults from "./components/SearchResults";
+import AboutUS from "./components/AboutUS";
+import Career from "./components/Career";
+import Blog from "./components/Blog";
+import CopyrightPolicy from "./components/CopyrightPolicy";
+import ContactUs from "./components/ContactUs";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsOfUse from "./components/TermsOfUse";
+import SecureShopping from "./components/SecureShopping";
+import FAQ from "./components/FAQ";
 
 const routes = [
   // Public Routes
@@ -84,6 +93,16 @@ const routes = [
     element: <SearchResults />,
     protected: true,
   },
+  { path: "/AboutUS", element: <AboutUS />, protected: true },
+  { path: "/Career", element: <Career />, protected: true },
+  { path: "/Blog", element: <Blog />, protected: true },
+  { path: "/CopyrightPolicy", element: <CopyrightPolicy />, protected: true },
+  { path: "/ContactUs", element: <ContactUs />, protected: true },
+  { path: "/PrivacyPolicy", element: <PrivacyPolicy />, protected: true },
+  { path: "/TermsOfUse", element: <TermsOfUse />, protected: true },
+  { path: "/SecureShopping", element: <SecureShopping />, protected: true },
+  { path: "/CopyrightPolicy", element: <CopyrightPolicy />, protected: true },
+  { path: "/FAQ", element: <FAQ />, protected: true },
 ];
 
 function App() {

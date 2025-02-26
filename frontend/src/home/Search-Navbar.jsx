@@ -95,7 +95,7 @@ export default function SearchNavbar() {
             </div>
 
             {isOpen && (
-              <div className="absolute p-2 right-0 md:-right-4 top-8 w-full md:w-56 bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg z-50">
+              <div className="absolute p-2 right-0 md:-right-4 top-6 w-full md:w-56 bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg z-50">
                 <div className="py-1" role="none">
                   {user ? (
                     <>

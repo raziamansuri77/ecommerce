@@ -15,7 +15,7 @@ export default function Forgot() {
         </div>
         <Navbar />
       </div>
-      <div className="mt-[260px] sm:mt-[160px] md:mt-[220px]">
+      <div className="mt-[240px] sm:mt-[160px] md:mt-[190px]">
         <ForgotPage />
       </div>
       <Footer />

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -9,26 +10,41 @@ export default function Footer() {
             {" "}
             Company
           </div>
-          <div className="mb-2">About Us</div>
-          <div className="mb-2">Career</div>
-          <div className="mb-2">Blog</div>
-          <div className="mb-2">Contact Us</div>
+          <Link to="/AboutUS">
+            <div className="mb-2">About Us</div>
+          </Link>
+          <Link to="/Career">
+            <div className="mb-2">Career</div>
+          </Link>
+          <Link to="/Blog">
+            <div className="mb-2">Blog</div>
+          </Link>
+          <Link to="/ContactUs">
+            <div className="mb-2">Contact Us</div>
+          </Link>
         </div>
         <div className="text-center md:text-left">
           <div className="font-semibold text-[#E42B26] italic mb-3">
             Policies
           </div>
-          <div className="mb-2">Privacy Policies</div>
-          <div className="mb-2">Terms of Use</div>
-          <div className="mb-2">Secure Shopping</div>
-          <div className="mb-2">Copyright Policy</div>
+          <Link to="/PrivacyPolicy">
+            <div className="mb-2">Privacy Policies</div>
+          </Link>
+          <Link to="/TermsOfUse">
+            <div className="mb-2">Terms of Use</div>
+          </Link>
+          <Link to="/SecureShopping">
+            <div className="mb-2">Secure Shopping</div>
+          </Link>
         </div>
         <div className="text-center md:text-left">
           <div className="font-semibold text-[#E42B26] italic mb-3">Help</div>
           <div className="mb-2">Payment</div>
           <div className="mb-2">Shipping</div>
           <div className="mb-2">Return</div>
-          <div className="mb-2">FAQ</div>
+          <Link to="/FAQ">
+            <div className="mb-2">FAQ</div>
+          </Link>
         </div>
         <div className="text-center md:text-left">
           <div className="font-semibold text-[#E42B26] italic mb-3">Misc</div>
